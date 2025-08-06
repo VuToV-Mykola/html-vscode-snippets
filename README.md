@@ -1,5 +1,3 @@
-# my-first-snippets-with-helpAI
-
 # HTML5 & BEM Snippets for VS Code
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -25,10 +23,15 @@ BEM-методології. Повністю підтримує семантич
 ## 🚀 Встановлення
 
 1. Склонуйте репозиторій або завантажте файл `html-vscode-snippets.json`
-2. У VS Code:
-   - Відкрийте `File > Preferences > User Snippets`
-   - Виберіть `html-vscode-snippets.json` (або створіть новий файл)
-   - Вставте вміст файлу `html-vscode-snippets.json`
+
+![Version](https://img.shields.io/github/v/release/VuToV-Mykola/html-vscode-snippets)
+![Downloads](https://img.shields.io/github/downloads/VuToV-Mykola/html-vscode-snippets/total) 2.
+У VS Code:
+
+- Відкрийте `File > Preferences > User Snippets`
+- Виберіть `html-vscode-snippets.json` (або створіть новий файл)
+- Вставте вміст файлу `html-vscode-snippets.json`
+
 3. Перезавантажте VS Code
 
 ## 🛠 Використання
