@@ -1,0 +1,1268 @@
+{
+  "Section": {
+    "prefix": "xsection",
+    "body": [
+      "<section class=\"${1:section}\" aria-labelledby=\"${2:section-id}\">",
+      "<!-- Українською: Тематична група контенту / English: Thematic content group -->",
+      "  <h2 id=\"${2:section-id}\" class=\"${1:section}__title\">$3</h2>",
+      "  $0",
+      "</section>"
+    ],
+    "description": "Секція / Section"
+  },
+  "Article": {
+    "prefix": "xarticle",
+    "body": [
+      "<article class=\"${1:article}\">",
+      "<!-- Українською: Незалежний блок контенту / English: Independent content block -->",
+      "  $0",
+      "</article>"
+    ],
+    "description": "Стаття / Article"
+  },
+  "Aside": {
+    "prefix": "xaside",
+    "body": [
+      "<aside class=\"${1:sidebar}\">",
+      "<!-- Українською: Бічний контент / English: Side content -->",
+      "  $0",
+      "</aside>"
+    ],
+    "description": "Бічна панель / Aside"
+  },
+  "Div": {
+    "prefix": "xdiv",
+    "body": [
+      "<div class=\"${1:container}\">",
+      "<!-- Українською: Універсальний контейнер / English: Universal container -->",
+      "  $0",
+      "</div>"
+    ],
+    "description": "Блок / Div"
+  },
+
+  "Heading 2": {
+    "prefix": "xh2",
+    "body": [
+      "<h2 class=\"${1:subtitle}\">",
+      "<!-- Українською: Підзаголовок / English: Subheading -->",
+      "  $0",
+      "</h2>"
+    ],
+    "description": "Заголовок 2 рівня / Heading level 2"
+  },
+  "Heading 3": {
+    "prefix": "xh3",
+    "body": [
+      "<h3 class=\"${1:heading}\">",
+      "<!-- Українською: Підрозділ / English: Subsection -->",
+      "  $0",
+      "</h3>"
+    ],
+    "description": "Заголовок 3 рівня / Heading level 3"
+  },
+  "Heading 4": {
+    "prefix": "xh4",
+    "body": [
+      "<h4 class=\"${1:small-heading}\">",
+      "<!-- Українською: Дрібний заголовок / English: Small heading -->",
+      "  $0",
+      "</h4>"
+    ],
+    "description": "Заголовок 4 рівня / Heading level 4"
+  },
+  "Heading 5": {
+    "prefix": "xh5",
+    "body": [
+      "<h5 class=\"${1:minor-heading}\">",
+      "<!-- Українською: Малий заголовок / English: Minor heading -->",
+      "  $0",
+      "</h5>"
+    ],
+    "description": "Заголовок 5 рівня / Heading level 5"
+  },
+  "Heading 6": {
+    "prefix": "xh6",
+    "body": [
+      "<h6 class=\"${1:tiny-heading}\">",
+      "<!-- Українською: Найменший заголовок / English: Tiny heading -->",
+      "  $0",
+      "</h6>"
+    ],
+    "description": "Заголовок 6 рівня / Heading level 6"
+  },
+
+  "Span": {
+    "prefix": "xspan",
+    "body": [
+      "<span class=\"${1:text}\">",
+      "<!-- Українською: Рядковий контейнер / English: Inline container -->",
+      "  $0",
+      "</span>"
+    ],
+    "description": "Рядковий блок / Span"
+  },
+  "Strong": {
+    "prefix": "xstrong",
+    "body": [
+      "<strong class=\"${1:bold}\">",
+      "<!-- Українською: Важливий текст / English: Important text -->",
+      "  $0",
+      "</strong>"
+    ],
+    "description": "Жирний текст / Strong"
+  },
+  "Emphasis": {
+    "prefix": "xem",
+    "body": [
+      "<em class=\"${1:italic}\">",
+      "<!-- Українською: Текст з наголосом / English: Emphasized text -->",
+      "  $0",
+      "</em>"
+    ],
+    "description": "Курсив / Emphasis"
+  },
+  "Mark": {
+    "prefix": "xmark",
+    "body": [
+      "<mark class=\"${1:highlight}\">",
+      "<!-- Українською: Виділений текст / English: Highlighted text -->",
+      "  $0",
+      "</mark>"
+    ],
+    "description": "Маркований текст / Mark"
+  },
+  "Small": {
+    "prefix": "xsmall",
+    "body": [
+      "<small class=\"${1:fine-print}\">",
+      "<!-- Українською: Дрібний текст / English: Small print -->",
+      "  $0",
+      "</small>"
+    ],
+    "description": "Дрібний текст / Small"
+  },
+  "Abbreviation": {
+    "prefix": "xabbr",
+    "body": [
+      "<abbr title=\"${1:Повна версія}\" class=\"${2:abbreviation}\">",
+      "<!-- Українською: Абревіатура / English: Abbreviation -->",
+      "  $0",
+      "</abbr>"
+    ],
+    "description": "Абревіатура / Abbreviation"
+  },
+  "Time": {
+    "prefix": "xtime",
+    "body": [
+      "<time datetime=\"${1:2023-01-01}\" class=\"${2:time}\">",
+      "<!-- Українською: Часова мітка / English: Time element -->",
+      "  $0",
+      "</time>"
+    ],
+    "description": "Час / Time"
+  },
+  "Blockquote": {
+    "prefix": "xblockquote",
+    "body": [
+      "<blockquote cite=\"${1:source}\" class=\"${2:quote}\">",
+      "<!-- Українською: Цитата / English: Block quotation -->",
+      "  $0",
+      "</blockquote>"
+    ],
+    "description": "Цитата / Blockquote"
+  },
+  "Cite": {
+    "prefix": "xcite",
+    "body": [
+      "<cite class=\"${1:citation}\">",
+      "<!-- Українською: Посилання на джерело / English: Citation -->",
+      "  $0",
+      "</cite>"
+    ],
+    "description": "Цитування / Cite"
+  },
+  "Code": {
+    "prefix": "xcode",
+    "body": [
+      "<code class=\"${1:code}\">",
+      "<!-- Українською: Код програми / English: Code snippet -->",
+      "  $0",
+      "</code>"
+    ],
+    "description": "Код / Code"
+  },
+  "Preformatted Text": {
+    "prefix": "xpre",
+    "body": [
+      "<pre class=\"${1:preformatted}\">",
+      "<!-- Українською: Текст зі збереженням форматування / English: Preformatted text -->",
+      "  $0",
+      "</pre>"
+    ],
+    "description": "Попередньо форматований текст / Preformatted text"
+  },
+  "Variable": {
+    "prefix": "xvar",
+    "body": [
+      "<var class=\"${1:variable}\">",
+      "<!-- Українською: Змінна / English: Variable -->",
+      "  $0",
+      "</var>"
+    ],
+    "description": "Змінна / Variable"
+  },
+  "Sample Output": {
+    "prefix": "xsamp",
+    "body": [
+      "<samp class=\"${1:sample}\">",
+      "<!-- Українською: Приклад виводу / English: Sample output -->",
+      "  $0",
+      "</samp>"
+    ],
+    "description": "Приклад виводу / Sample output"
+  },
+  "Keyboard Input": {
+    "prefix": "xkbd",
+    "body": [
+      "<kbd class=\"${1:keyboard}\">",
+      "<!-- Українською: Введення з клавіатури / English: Keyboard input -->",
+      "  $0",
+      "</kbd>"
+    ],
+    "description": "Клавіатурний ввід / Keyboard input"
+  },
+  "Subscript": {
+    "prefix": "xsub",
+    "body": [
+      "<sub class=\"${1:subscript}\">",
+      "<!-- Українською: Нижній індекс / English: Subscript -->",
+      "  $0",
+      "</sub>"
+    ],
+    "description": "Нижній індекс / Subscript"
+  },
+  "Superscript": {
+    "prefix": "xsup",
+    "body": [
+      "<sup class=\"${1:superscript}\">",
+      "<!-- Українською: Верхній індекс / English: Superscript -->",
+      "  $0",
+      "</sup>"
+    ],
+    "description": "Верхній індекс / Superscript"
+  },
+  "Line Break": {
+    "prefix": "xbr",
+    "body": [
+      "<br>",
+      "<!-- Українською: Розрив рядка / English: Line break -->"
+    ],
+    "description": "Розрив рядка / Line break"
+  },
+  "Horizontal Rule": {
+    "prefix": "xhr",
+    "body": [
+      "<hr class=\"${1:divider}\">",
+      "<!-- Українською: Горизонтальна лінія / English: Horizontal rule -->"
+    ],
+    "description": "Горизонтальна лінія / Horizontal rule"
+  },
+
+  "Ordered List": {
+    "prefix": "xol",
+    "body": [
+      "<ol class=\"${1:ordered-list}\">",
+      "<!-- Українською: Нумерований список / English: Ordered list -->",
+      "  <li class=\"${1:ordered-list}__item\">$0</li>",
+      "</ol>"
+    ],
+    "description": "Нумерований список / Ordered list"
+  },
+  "List Item": {
+    "prefix": "xli",
+    "body": [
+      "<li class=\"${1:list-item}\">",
+      "<!-- Українською: Елемент списку / English: List item -->",
+      "  $0",
+      "</li>"
+    ],
+    "description": "Елемент списку / List item"
+  },
+  "Description List": {
+    "prefix": "xdl",
+    "body": [
+      "<dl class=\"${1:description-list}\">",
+      "<!-- Українською: Список визначень / English: Description list -->",
+      "  <dt class=\"${1:description-list}__term\">$2</dt>",
+      "  <dd class=\"${1:description-list}__definition\">$3</dd>",
+      "</dl>"
+    ],
+    "description": "Список визначень / Description list"
+  },
+  "Definition Term": {
+    "prefix": "xdt",
+    "body": [
+      "<dt class=\"${1:term}\">",
+      "<!-- Українською: Термін для визначення / English: Definition term -->",
+      "  $0",
+      "</dt>"
+    ],
+    "description": "Термін / Definition term"
+  },
+  "Definition Description": {
+    "prefix": "xdd",
+    "body": [
+      "<dd class=\"${1:definition}\">",
+      "<!-- Українською: Визначення терміну / English: Definition description -->",
+      "  $0",
+      "</dd>"
+    ],
+    "description": "Визначення / Definition description"
+  },
+
+  "Anchor": {
+    "prefix": "xa",
+    "body": [
+      "<a href=\"${1:#}\" class=\"${2:link}\" target=\"${3|_self,_blank|}\" rel=\"${4|noopener,noreferrer|}\">",
+      "<!-- Українською: Гіперпосилання / English: Hyperlink -->",
+      "  $0",
+      "</a>"
+    ],
+    "description": "Посилання / Anchor"
+  },
+  "Navigation Link": {
+    "prefix": "xnav-link",
+    "body": [
+      "<a href=\"${1:#}\" class=\"${2:nav-link}\" aria-current=\"${3|page,false|}\">",
+      "<!-- Українською: Навігаційне посилання / English: Navigation link -->",
+      "  $0",
+      "</a>"
+    ],
+    "description": "Навігаційне посилання / Navigation link"
+  },
+  "Mailto Link": {
+    "prefix": "xmailto",
+    "body": [
+      "<a href=\"mailto:${1:email@example.com}\" class=\"${2:email-link}\">",
+      "<!-- Українською: Посилання на email / English: Email link -->",
+      "  $0",
+      "</a>"
+    ],
+    "description": "Email посилання / Mailto link"
+  },
+  "Tel Link": {
+    "prefix": "xtel",
+    "body": [
+      "<a href=\"tel:${1:+380123456789}\" class=\"${2:phone-link}\">",
+      "<!-- Українською: Посилання на телефон / English: Phone link -->",
+      "  $0",
+      "</a>"
+    ],
+    "description": "Телефонне посилання / Tel link"
+  },
+  "Download Link": {
+    "prefix": "xdownload",
+    "body": [
+      "<a href=\"${1:file.pdf}\" class=\"${2:download-link}\" download>",
+      "<!-- Українською: Посилання для завантаження / English: Download link -->",
+      "  $0",
+      "</a>"
+    ],
+    "description": "Посилання завантаження / Download link"
+  },
+
+  "Audio": {
+    "prefix": "xaudio",
+    "body": [
+      "<audio controls class=\"${1:audio-player}\">",
+      "<!-- Українською: Аудіопрогравач / English: Audio player -->",
+      "  <source src=\"${2:audio.mp3}\" type=\"audio/mpeg\">",
+      "  <!-- Українською: Аудіофайл / English: Audio source -->",
+      "  Ваш браузер не підтримує аудіо.",
+      "  <!-- Українською: Повідомлення про непідтримку / English: Fallback message -->",
+      "</audio>"
+    ],
+    "description": "Аудіо / Audio"
+  },
+  "Video": {
+    "prefix": "xvideo",
+    "body": [
+      "<video controls class=\"${1:video-player}\" width=\"${2:640}\" height=\"${3:360}\" poster=\"${4:poster.jpg}\">",
+      "<!-- Українською: Відеопрогравач / English: Video player -->",
+      "  <source src=\"${5:video.mp4}\" type=\"video/mp4\">",
+      "  <!-- Українською: Відеофайл / English: Video source -->",
+      "  Ваш браузер не підтримує відео.",
+      "  <!-- Українською: Повідомлення про непідтримку / English: Fallback message -->",
+      "</video>"
+    ],
+    "description": "Відео / Video"
+  },
+  "Source": {
+    "prefix": "xsource",
+    "body": [
+      "<source src=\"${1:media.ext}\" type=\"${2|audio/mpeg,video/mp4,image/webp|}\">",
+      "<!-- Українською: Джерело медіа / English: Media source -->"
+    ],
+    "description": "Джерело / Source"
+  },
+  "Track": {
+    "prefix": "xtrack",
+    "body": [
+      "<track src=\"${1:subtitles.vtt}\" kind=\"${2|subtitles,captions,descriptions|}\" srclang=\"${3|uk,en|}\" label=\"${4:Ukrainian}\">",
+      "<!-- Українською: Субтитри чи опис / English: Subtitles or descriptions -->"
+    ],
+    "description": "Доріжка / Track"
+  },
+  "Picture": {
+    "prefix": "xpicture",
+    "body": [
+      "<picture class=\"${1:responsive-image}\">",
+      "<!-- Українською: Адаптивне зображення / English: Responsive image -->",
+      "  <source srcset=\"${2:image.webp}\" type=\"image/webp\">",
+      "  <source srcset=\"${3:image.jpg}\" type=\"image/jpeg\">",
+      "  <img src=\"${3:image.jpg}\" alt=\"${4}\" loading=\"lazy\">",
+      "</picture>"
+    ],
+    "description": "Картинка / Picture"
+  },
+  "Figure": {
+    "prefix": "xfigure",
+    "body": [
+      "<figure class=\"${1:figure}\">",
+      "<!-- Українською: Ілюстрація з підписом / English: Image with caption -->",
+      "  <img src=\"${2:image.jpg}\" alt=\"${3}\" class=\"${1:figure}__image\">",
+      "  <figcaption class=\"${1:figure}__caption\">$0</figcaption>",
+      "</figure>"
+    ],
+    "description": "Фігура / Figure"
+  },
+  "Figcaption": {
+    "prefix": "xfigcaption",
+    "body": [
+      "<figcaption class=\"${1:caption}\">",
+      "<!-- Українською: Підпис до ілюстрації / English: Figure caption -->",
+      "  $0",
+      "</figcaption>"
+    ],
+    "description": "Підпис / Figcaption"
+  },
+  "Map": {
+    "prefix": "xmap",
+    "body": [
+      "<map name=\"${1:map-name}\" class=\"${2:image-map}\">",
+      "<!-- Українською: Карта зображення / English: Image map -->",
+      "  <area shape=\"${3|rect,circle,poly|}\" coords=\"${4}\" href=\"${5:#}\" alt=\"${6}\">",
+      "</map>"
+    ],
+    "description": "Карта зображення / Map"
+  },
+  "Area": {
+    "prefix": "xarea",
+    "body": [
+      "<area shape=\"${1|rect,circle,poly|}\" coords=\"${2}\" href=\"${3:#}\" alt=\"${4}\" class=\"${5:hotspot}\">",
+      "<!-- Українською: Активна область / English: Hotspot area -->"
+    ],
+    "description": "Область / Area"
+  },
+  "Embed": {
+    "prefix": "xembed",
+    "body": [
+      "<embed src=\"${1:file.pdf}\" type=\"${2:application/pdf}\" width=\"${3:600}\" height=\"${4:400}\" class=\"${5:embedded}\">",
+      "<!-- Українською: Вбудований об'єкт / English: Embedded object -->"
+    ],
+    "description": "Вбудований об'єкт / Embed"
+  },
+  "Object": {
+    "prefix": "xobject",
+    "body": [
+      "<object data=\"${1:file.swf}\" type=\"${2:application/x-shockwave-flash}\" width=\"${3:600}\" height=\"${4:400}\" class=\"${5:flash-object}\">",
+      "<!-- Українською: Вбудований медіа-об'єкт / English: Embedded media object -->",
+      "  $0",
+      "</object>"
+    ],
+    "description": "Об'єкт / Object"
+  },
+  "Param": {
+    "prefix": "xparam",
+    "body": [
+      "<param name=\"${1:autoplay}\" value=\"${2:true}\">",
+      "<!-- Українською: Параметр об'єкта / English: Object parameter -->"
+    ],
+    "description": "Параметр / Param"
+  },
+  "IFrame": {
+    "prefix": "xiframe",
+    "body": [
+      "<iframe src=\"${1:https://example.com}\" width=\"${2:800}\" height=\"${3:600}\" class=\"${4:embedded-frame}\" loading=\"${5|lazy,eager|}\" allowfullscreen>",
+      "<!-- Українською: Вбудована веб-сторінка / English: Embedded web page -->",
+      "  Ваш браузер не підтримує iframes.",
+      "  <!-- Українською: Повідомлення про непідтримку / English: Fallback message -->",
+      "</iframe>"
+    ],
+    "description": "Вбудований фрейм / IFrame"
+  },
+
+  "Table Row": {
+    "prefix": "xtr",
+    "body": [
+      "<tr class=\"${1:row}\">",
+      "<!-- Українською: Рядок таблиці / English: Table row -->",
+      "  $0",
+      "</tr>"
+    ],
+    "description": "Рядок таблиці / Table row"
+  },
+  "Table Header Cell": {
+    "prefix": "xth",
+    "body": [
+      "<th scope=\"${1|col,row|}\" class=\"${2:header-cell}\">",
+      "<!-- Українською: Заголовок стовпця/рядка / English: Column/row header -->",
+      "  $0",
+      "</th>"
+    ],
+    "description": "Заголовок таблиці / Table header cell"
+  },
+  "Table Data Cell": {
+    "prefix": "xtd",
+    "body": [
+      "<td class=\"${1:data-cell}\">",
+      "<!-- Українською: Комірка з даними / English: Table data cell -->",
+      "  $0",
+      "</td>"
+    ],
+    "description": "Комірка таблиці / Table data cell"
+  },
+  "Table Caption": {
+    "prefix": "xcaption",
+    "body": [
+      "<caption class=\"${1:table-caption}\">",
+      "<!-- Українською: Підпис таблиці / English: Table caption -->",
+      "  $0",
+      "</caption>"
+    ],
+    "description": "Підпис таблиці / Table caption"
+  },
+  "Table Column Group": {
+    "prefix": "xcolgroup",
+    "body": [
+      "<colgroup class=\"${1:column-group}\">",
+      "<!-- Українською: Група стовпців / English: Column group -->",
+      "  <col class=\"${1:column-group}__column\">",
+      "</colgroup>"
+    ],
+    "description": "Група стовпців / Column group"
+  },
+  "Table Column": {
+    "prefix": "xcol",
+    "body": [
+      "<col class=\"${1:column}\" span=\"${2:1}\">",
+      "<!-- Українською: Один/кілька стовпців / English: Table column(s) -->"
+    ],
+    "description": "Стовпець таблиці / Column"
+  },
+
+  "Label": {
+    "prefix": "xlabel",
+    "body": [
+      "<label for=\"${1:input-id}\" class=\"${2:form-label}\">",
+      "<!-- Українською: Мітка для поля вводу / English: Input label -->",
+      "  $0",
+      "</label>"
+    ],
+    "description": "Мітка форми / Label"
+  },
+  "Input": {
+    "prefix": "xinput",
+    "body": [
+      "<input type=\"${1|text,email,password,number,tel,url,search,date,time,checkbox,radio,file,hidden,submit,reset,button|}\" id=\"${2:input-id}\" name=\"${3:input-name}\" class=\"${4:form-input}\" ${5:required}>",
+      "<!-- Українською: Поле вводу / English: Input field -->"
+    ],
+    "description": "Поле вводу / Input"
+  },
+  "Textarea": {
+    "prefix": "xtextarea",
+    "body": [
+      "<textarea id=\"${1:textarea-id}\" name=\"${2:textarea-name}\" class=\"${3:form-textarea}\" rows=\"${4:4}\" cols=\"${5:50}\" ${6:required}>",
+      "<!-- Українською: Багаторядкове поле вводу / English: Multiline text input -->",
+      "  $0",
+      "</textarea>"
+    ],
+    "description": "Текстова область / Textarea"
+  },
+  "Select": {
+    "prefix": "xselect",
+    "body": [
+      "<select id=\"${1:select-id}\" name=\"${2:select-name}\" class=\"${3:form-select}\" ${4:required}>",
+      "<!-- Українською: Випадаючий список / English: Dropdown list -->",
+      "  <option value=\"${5:value1}\">${6:Option 1}</option>",
+      "  <option value=\"${7:value2}\">${8:Option 2}</option>",
+      "</select>"
+    ],
+    "description": "Випадаючий список / Select"
+  },
+  "Option": {
+    "prefix": "xoption",
+    "body": [
+      "<option value=\"${1:value}\" class=\"${2:select-option}\" ${3|selected,disabled|}>",
+      "<!-- Українською: Пункт списку / English: Dropdown option -->",
+      "  $0",
+      "</option>"
+    ],
+    "description": "Пункт списку / Option"
+  },
+  "Option Group": {
+    "prefix": "xoptgroup",
+    "body": [
+      "<optgroup label=\"${1:Group Label}\" class=\"${2:option-group}\">",
+      "<!-- Українською: Група пунктів списку / English: Option group -->",
+      "  <option value=\"${3:value1}\">${4:Option 1}</option>",
+      "</optgroup>"
+    ],
+    "description": "Група опцій / Option group"
+  },
+  "Button": {
+    "prefix": "xbutton",
+    "body": [
+      "<button type=\"${1|button,submit,reset|}\" class=\"${2:btn}\">",
+      "<!-- Українською: Кнопка / English: Button -->",
+      "  $0",
+      "</button>"
+    ],
+    "description": "Кнопка / Button"
+  },
+  "Data List": {
+    "prefix": "xdatalist",
+    "body": [
+      "<datalist id=\"${1:list-id}\" class=\"${2:data-list}\">",
+      "<!-- Українською: Список варіантів для автозаповнення / English: Autocomplete options -->",
+      "  <option value=\"${3:Option 1}\">",
+      "</datalist>"
+    ],
+    "description": "Список даних / Datalist"
+  },
+  "Fieldset": {
+    "prefix": "xfieldset",
+    "body": [
+      "<fieldset class=\"${1:form-group}\">",
+      "<!-- Українською: Група полів форми / English: Form field group -->",
+      "  <legend class=\"${1:form-group}__legend\">${2:Group Title}</legend>",
+      "  $0",
+      "</fieldset>"
+    ],
+    "description": "Група полів / Fieldset"
+  },
+  "Legend": {
+    "prefix": "xlegend",
+    "body": [
+      "<legend class=\"${1:form-legend}\">",
+      "<!-- Українською: Заголовок групи полів / English: Fieldset title -->",
+      "  $0",
+      "</legend>"
+    ],
+    "description": "Заголовок групи / Legend"
+  },
+  "Meter": {
+    "prefix": "xmeter",
+    "body": [
+      "<meter value=\"${1:50}\" min=\"${2:0}\" max=\"${3:100}\" class=\"${4:meter}\">",
+      "<!-- Українською: Візуалізація значення в діапазоні / English: Scalar measurement -->",
+      "  ${1:50}%",
+      "</meter>"
+    ],
+    "description": "Вимірювач / Meter"
+  },
+  "Progress": {
+    "prefix": "xprogress",
+    "body": [
+      "<progress value=\"${1:50}\" max=\"${2:100}\" class=\"${3:progress}\">",
+      "<!-- Українською: Індикатор прогресу / English: Progress indicator -->",
+      "  ${1:50}%",
+      "</progress>"
+    ],
+    "description": "Прогрес-бар / Progress"
+  },
+  "Output": {
+    "prefix": "xoutput",
+    "body": [
+      "<output for=\"${1:input-id}\" class=\"${2:form-output}\">",
+      "<!-- Українською: Результат обчислень / English: Calculation result -->",
+      "  $0",
+      "</output>"
+    ],
+    "description": "Вивід даних / Output"
+  },
+
+  "Navigation": {
+    "prefix": "xnav",
+    "body": [
+      "<nav class=\"${1:navigation}\" aria-label=\"${2:Main navigation}\">",
+      "<!-- Українською: Блок навігації / English: Navigation block -->",
+      "  $0",
+      "</nav>"
+    ],
+    "description": "Навігація / Navigation"
+  },
+  "Section with Heading": {
+    "prefix": "xsection-heading",
+    "body": [
+      "<section class=\"${1:section}\">",
+      "  <h${2:2} class=\"${1:section}__heading\">$3</h${2:2}>",
+      "  $0",
+      "</section>"
+    ],
+    "description": "Секція з заголовком / Section with heading"
+  },
+  "Article with Header": {
+    "prefix": "xarticle-header",
+    "body": [
+      "<article class=\"${1:article}\">",
+      "  <header class=\"${1:article}__header\">",
+      "    <h${2:1} class=\"${1:article}__title\">$3</h${2:1}>",
+      "  </header>",
+      "  $0",
+      "</article>"
+    ],
+    "description": "Стаття з шапкою / Article with header"
+  },
+
+  "Ruby Annotation": {
+    "prefix": "xruby",
+    "body": [
+      "<ruby class=\"${1:ruby}\">",
+      "  ${2:漢字} <rt class=\"${1:ruby}__text\">${3:かんじ}</rt>",
+      "</ruby>"
+    ],
+    "description": "Рубі-аннотація / Ruby annotation"
+  },
+  "Ruby Base Text": {
+    "prefix": "xrb",
+    "body": ["<rb class=\"${1:ruby-base}\">$0</rb>"],
+    "description": "Основний текст рубі / Ruby base text"
+  },
+  "Ruby Parenthesis": {
+    "prefix": "xrp",
+    "body": ["<rp class=\"${1:ruby-parenthesis}\">(${2:})</rp>"],
+    "description": "Дужки рубі / Ruby parenthesis"
+  },
+  "Ruby Text": {
+    "prefix": "xrt",
+    "body": ["<rt class=\"${1:ruby-text}\">$0</rt>"],
+    "description": "Текст рубі / Ruby text"
+  },
+  "Bidirectional Isolation": {
+    "prefix": "xbdi",
+    "body": ["<bdi class=\"${1:bidirectional}\">$0</bdi>"],
+    "description": "Ізоляція двонаправленого тексту / Bidirectional isolation"
+  },
+  "Bidirectional Override": {
+    "prefix": "xbdo",
+    "body": ["<bdo dir=\"${1|rtl,ltr|}\" class=\"${2:direction}\">$0</bdo>"],
+    "description": "Зміна напрямку тексту / Bidirectional override"
+  },
+  "Data": {
+    "prefix": "xdata",
+    "body": ["<data value=\"${1:value}\" class=\"${2:data}\">$0</data>"],
+    "description": "Машинно-читабельні дані / Machine-readable data"
+  },
+  "Time with Timezone": {
+    "prefix": "xtime-tz",
+    "body": [
+      "<time datetime=\"${1:2023-01-01T12:00+02:00}\" class=\"${2:time}\">$0</time>"
+    ],
+    "description": "Час із часовим поясом / Time with timezone"
+  },
+
+  "SVG Container": {
+    "prefix": "xsvg",
+    "body": [
+      "<svg width=\"${1:100}\" height=\"${2:100}\" class=\"${3:svg}\">",
+      "  <circle cx=\"${4:50}\" cy=\"${5:50}\" r=\"${6:40}\" fill=\"${7:red}\"/>",
+      "</svg>"
+    ],
+    "description": "SVG-контейнер / SVG container"
+  },
+  "MathML Formula": {
+    "prefix": "xmath",
+    "body": [
+      "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"${1:math}\">",
+      "  <mrow>",
+      "    <msup><mi>a</mi><mn>2</mn></msup>",
+      "    <mo>+</mo>",
+      "    <msup><mi>b</mi><mn>2</mn></msup>",
+      "    <mo>=</mo>",
+      "    <msup><mi>c</mi><mn>2</mn></msup>",
+      "  </mrow>",
+      "</math>"
+    ],
+    "description": "Математична формула / MathML formula"
+  },
+
+  "Template": {
+    "prefix": "xtemplate",
+    "body": ["<template class=\"${1:template}\">", "  $0", "</template>"],
+    "description": "Шаблон для клонування / Template for cloning"
+  },
+  "Slot": {
+    "prefix": "xslot",
+    "body": ["<slot name=\"${1:slot-name}\" class=\"${2:slot}\">$0</slot>"],
+    "description": "Слот для теневого DOM / Shadow DOM slot"
+  },
+
+  "Base": {
+    "prefix": "xbase",
+    "body": [
+      "<base href=\"${1:https://example.com/}\" target=\"${2:_blank}\">"
+    ],
+    "description": "Базова URL-адреса / Base URL"
+  },
+  "Link": {
+    "prefix": "xlink",
+    "body": [
+      "<link rel=\"${1|stylesheet,icon,preload|}\" href=\"${2:file.css}\" class=\"${3:link}\">"
+    ],
+    "description": "Зовнішній ресурс / External resource"
+  },
+  "Meta Description": {
+    "prefix": "xmeta-desc",
+    "body": ["<meta name=\"description\" content=\"${1:Page description}\">"],
+    "description": "Опис сторінки / Page description"
+  },
+  "Meta Keywords": {
+    "prefix": "xmeta-keywords",
+    "body": ["<meta name=\"keywords\" content=\"${1:keyword1, keyword2}\">"],
+    "description": "Ключові слова / Keywords"
+  },
+  "Style": {
+    "prefix": "xstyle",
+    "body": ["<style class=\"${1:styles}\">", "  $0", "</style>"],
+    "description": "CSS-стилі / CSS styles"
+  },
+  "Script": {
+    "prefix": "xscript",
+    "body": [
+      "<script${1: type=\"module\"} class=\"${2:script}\">",
+      "  $0",
+      "</script>"
+    ],
+    "description": "JavaScript-код / JavaScript code"
+  },
+  "Noscript": {
+    "prefix": "xnoscript",
+    "body": [
+      "<noscript class=\"${1:nojs}\">",
+      "  ${2:Please enable JavaScript to view this content.}",
+      "</noscript>"
+    ],
+    "description": "Контент без JS / No-JS content"
+  },
+
+  "Dialog": {
+    "prefix": "xdialog",
+    "body": [
+      "<dialog open class=\"${1:dialog}\">",
+      "  <form method=\"dialog\">",
+      "    <button class=\"${1:dialog}__close\">Close</button>",
+      "  </form>",
+      "  $0",
+      "</dialog>"
+    ],
+    "description": "Діалогове вікно / Dialog window"
+  },
+  "Menu": {
+    "prefix": "xmenu",
+    "body": [
+      "<menu class=\"${1:menu}\">",
+      "  <li class=\"${1:menu}__item\">$0</li>",
+      "</menu>"
+    ],
+    "description": "Список команд / Menu of commands"
+  },
+  "Command": {
+    "prefix": "xcommand",
+    "body": [
+      "<command type=\"${1|command,checkbox,radio|}\" label=\"${2:Label}\" class=\"${3:command}\">"
+    ],
+    "description": "Команда меню / Menu command"
+  },
+  "Full HTML5 Template": {
+    "prefix": "z!",
+    "body": [
+      "<!DOCTYPE html>",
+      "<!-- Українською: Декларація типу документу HTML5 / English: HTML5 document type declaration -->",
+      "<html lang=\"${1|uk,en|}\">",
+      "<!-- Українською: Вказує мову сторінки / English: Specifies page language -->",
+      "<head>",
+      "  <meta charset=\"UTF-8\">",
+      "  <!-- Українською: Кодування символів (UTF-8 підтримує всі мови) / English: Character encoding (UTF-8 supports all languages) -->",
+      "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "  <!-- Українською: Налаштування адаптивного дизайну / English: Responsive design settings -->",
+      "  <title>${2:Page Title}</title>",
+      "  <!-- Українською: Заголовок сторінки (вкладка браузера) / English: Page title (browser tab) -->",
+      "  <meta name=\"description\" content=\"${3:Page description}\">",
+      "  <!-- Українською: Опис сторінки для SEO / English: Page description for SEO -->",
+      "  <link rel=\"stylesheet\" href=\"${4:css/main.css}\">",
+      "  <!-- Українською: Підключення CSS стилів / English: CSS stylesheet link -->",
+      "</head>",
+      "<body class=\"page\">",
+      "  <header class=\"header\">",
+      "    <!-- Українською: Верхня частина сторінки (лого, навігація) / English: Top section (logo, navigation) -->",
+      "    $5",
+      "  </header>",
+      "  <main class=\"main\">",
+      "    <!-- Українською: Основний вміст сторінки / English: Main page content -->",
+      "    $6",
+      "  </main>",
+      "  <footer class=\"footer\">",
+      "    <!-- Українською: Нижня частина сторінки (копірайт, посилання) / English: Bottom section (copyright, links) -->",
+      "    $7",
+      "  </footer>",
+      "  <script src=\"${8:js/app.js}\" defer></script>",
+      "  <!-- Українською: Підключення JavaScript з відкладеним виконанням / English: JavaScript with deferred execution -->",
+      "</body>",
+      "</html>"
+    ],
+    "description": "Повний HTML5 шаблон / Full HTML5 template"
+  },
+
+  "BEM Navigation": {
+    "prefix": "znav",
+    "body": [
+      "<nav class=\"${1:nav}\" aria-label=\"${2:Main navigation}\">",
+      "<!-- Українською: Головна навігація сайту / English: Main website navigation -->",
+      "  <ul class=\"${1:nav}__list\">",
+      "    <li class=\"${1:nav}__item\">",
+      "      <a href=\"#\" class=\"${1:nav}__link\" aria-current=\"page\">${3:Home}</a>",
+      "      <!-- Українською: Посилання на головну сторінку / English: Link to home page -->",
+      "    </li>",
+      "  </ul>",
+      "</nav>"
+    ],
+    "description": "Навігація з BEM / BEM navigation"
+  },
+
+  "Accessible Form": {
+    "prefix": "zform",
+    "body": [
+      "<form class=\"${1:form}\" aria-labelledby=\"${1:form}__heading\">",
+      "<!-- Українською: Доступна форма для користувачів / English: Accessible user form -->",
+      "  <h2 id=\"${1:form}__heading\" class=\"${1:form}__title\">${2:Form Title}</h2>",
+      "  <div class=\"${1:form}__group\">",
+      "    <label for=\"${3:input-id}\" class=\"${1:form}__label\">${4:Label}</label>",
+      "    <!-- Українською: Мітка для поля вводу / English: Input field label -->",
+      "    <input type=\"${5|text,email,password|}\" id=\"${3:input-id}\" class=\"${1:form}__input\" required>",
+      "    <!-- Українською: Поле вводу з обов'язковим заповненням / English: Required input field -->",
+      "  </div>",
+      "  <button type=\"submit\" class=\"${1:form}__submit\">${6:Submit}</button>",
+      "  <!-- Українською: Кнопка відправки форми / English: Form submit button -->",
+      "</form>"
+    ],
+    "description": "Доступна форма / Accessible form"
+  },
+
+  "Modal Dialog": {
+    "prefix": "zmodal",
+    "body": [
+      "<div class=\"${1:modal}\" id=\"${2:modal-id}\" aria-hidden=\"true\">",
+      "<!-- Українською: Модальне вікно (спливаюче) / English: Modal dialog (popup) -->",
+      "  <div class=\"${1:modal}__overlay\" tabindex=\"-1\" data-modal-close></div>",
+      "  <!-- Українською: Фон модального вікна / English: Modal background overlay -->",
+      "  <div class=\"${1:modal}__content\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"${2:modal-id}__title\">",
+      "    <button class=\"${1:modal}__close\" aria-label=\"Close modal\" data-modal-close>&times;</button>",
+      "    <!-- Українською: Кнопка закриття модального вікна / English: Modal close button -->",
+      "    <h2 id=\"${2:modal-id}__title\" class=\"${1:modal}__title\">${3:Modal Title}</h2>",
+      "    <div class=\"${1:modal}__body\">",
+      "      $4",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Модальне вікно / Modal dialog"
+  },
+
+  "Card Component": {
+    "prefix": "zcard",
+    "body": [
+      "<article class=\"${1:card}\">",
+      "<!-- Українською: Картка товару/послуги / English: Product/service card -->",
+      "  <img src=\"${2:image.jpg}\" alt=\"${3}\" class=\"${1:card}__image\" loading=\"lazy\">",
+      "  <!-- Українською: Зображення картки з відкладеним завантаженням / English: Card image with lazy loading -->",
+      "  <div class=\"${1:card}__content\">",
+      "    <h3 class=\"${1:card}__title\">${4:Title}</h3>",
+      "    <p class=\"${1:card}__text\">${5:Description}</p>",
+      "    <a href=\"${6:#}\" class=\"${1:card}__link\">${7:Read more}</a>",
+      "    <!-- Українською: Посилання \"Детальніше\" / English: \"Read more\" link -->",
+      "  </div>",
+      "</article>"
+    ],
+    "description": "Картка з BEM / BEM card component"
+  },
+
+  "Grid Layout": {
+    "prefix": "zgrid",
+    "body": [
+      "<div class=\"${1:grid}\">",
+      "<!-- Українською: Сітковий макет сторінки / English: Grid page layout -->",
+      "  <div class=\"${1:grid}__item\">$2</div>",
+      "  <!-- Українською: Елемент сітки 1 / English: Grid item 1 -->",
+      "  <div class=\"${1:grid}__item\">$3</div>",
+      "  <!-- Українською: Елемент сітки 2 / English: Grid item 2 -->",
+      "  <div class=\"${1:grid}__item\">$4</div>",
+      "  <!-- Українською: Елемент сітки 3 / English: Grid item 3 -->",
+      "</div>"
+    ],
+    "description": "CSS Grid розмітка / CSS Grid layout"
+  },
+
+  "FAQ Section": {
+    "prefix": "zfaq",
+    "body": [
+      "<section class=\"${1:faq}\" aria-labelledby=\"${1:faq}__heading\">",
+      "<!-- Українською: Секція \"Питання та відповіді\" / English: \"Frequently Asked Questions\" section -->",
+      "  <h2 id=\"${1:faq}__heading\" class=\"${1:faq}__title\">${2:FAQ}</h2>",
+      "  <div class=\"${1:faq}__item\">",
+      "    <h3 class=\"${1:faq}__question\">",
+      "      <button type=\"button\" aria-expanded=\"false\" aria-controls=\"${3:answer1}\">",
+      "        ${4:Question 1}",
+      "      </button>",
+      "      <!-- Українською: Питання, що розгортається / English: Expandable question -->",
+      "    </h3>",
+      "    <div id=\"${3:answer1}\" class=\"${1:faq}__answer\" hidden>",
+      "      ${5:Answer 1}",
+      "      <!-- Українською: Відповідь, що прихована за замовчуванням / English: Answer (hidden by default) -->",
+      "    </div>",
+      "  </div>",
+      "</section>"
+    ],
+    "description": "Секція FAQ / FAQ section"
+  },
+
+  "Breadcrumbs": {
+    "prefix": "zbread",
+    "body": [
+      "<nav class=\"${1:breadcrumbs}\" aria-label=\"${2:Breadcrumb}\">",
+      "<!-- Українською: Навігаційний ланцюжок (шлях до сторінки) / English: Breadcrumb navigation (page path) -->",
+      "  <ol class=\"${1:breadcrumbs}__list\">",
+      "    <li class=\"${1:breadcrumbs}__item\">",
+      "      <a href=\"${3:#}\" class=\"${1:breadcrumbs}__link\">${4:Home}</a>",
+      "      <!-- Українською: Посилання на головну сторінку / English: Link to home page -->",
+      "    </li>",
+      "    <li class=\"${1:breadcrumbs}__item\" aria-current=\"page\">",
+      "      ${5:Current Page}",
+      "      <!-- Українською: Поточна сторінка (активний елемент) / English: Current page (active item) -->",
+      "    </li>",
+      "  </ol>",
+      "</nav>"
+    ],
+    "description": "Навігаційний ланцюжок / Breadcrumbs"
+  },
+
+  "Pagination": {
+    "prefix": "zpagination",
+    "body": [
+      "<nav class=\"${1:pagination}\" aria-label=\"${2:Pagination}\">",
+      "<!-- Українською: Пагінація (розбиття на сторінки) / English: Pagination (page navigation) -->",
+      "  <ul class=\"${1:pagination}__list\">",
+      "    <li class=\"${1:pagination}__item\">",
+      "      <a href=\"${3:#}\" class=\"${1:pagination}__link ${1:pagination}__link--prev\" aria-label=\"Previous\">",
+      "        &laquo;",
+      "      </a>",
+      "      <!-- Українською: Кнопка \"Попередня сторінка\" / English: \"Previous page\" button -->",
+      "    </li>",
+      "    <li class=\"${1:pagination}__item\">",
+      "      <a href=\"${4:#}\" class=\"${1:pagination}__link\" aria-current=\"page\">1</a>",
+      "      <!-- Українською: Поточна сторінка / English: Current page -->",
+      "    </li>",
+      "    <li class=\"${1:pagination}__item\">",
+      "      <a href=\"${5:#}\" class=\"${1:pagination}__link ${1:pagination}__link--next\" aria-label=\"Next\">",
+      "        &raquo;",
+      "      </a>",
+      "      <!-- Українською: Кнопка \"Наступна сторінка\" / English: \"Next page\" button -->",
+      "    </li>",
+      "  </ul>",
+      "</nav>"
+    ],
+    "description": "Пагінація / Pagination"
+  },
+
+  "Testimonial": {
+    "prefix": "ztestimonial",
+    "body": [
+      "<blockquote class=\"${1:testimonial}\">",
+      "<!-- Українською: Блок відгуку клієнта / English: Customer testimonial block -->",
+      "  <div class=\"${1:testimonial}__content\">",
+      "    <p class=\"${1:testimonial}__text\">${2:Testimonial text}</p>",
+      "    <footer class=\"${1:testimonial}__footer\">",
+      "      <img src=\"${3:avatar.jpg}\" alt=\"${4}\" class=\"${1:testimonial}__avatar\">",
+      "      <!-- Українською: Аватар автора відгуку / English: Testimonial author avatar -->",
+      "      <cite class=\"${1:testimonial}__author\">${5:Author Name}</cite>",
+      "      <!-- Українською: Ім'я автора відгуку / English: Testimonial author name -->",
+      "    </footer>",
+      "  </div>",
+      "</blockquote>"
+    ],
+    "description": "Відгук / Testimonial"
+  },
+
+  "Price Card": {
+    "prefix": "zprice",
+    "body": [
+      "<div class=\"${1:price-card}\">",
+      "<!-- Українською: Картка з ціною та характеристиками / English: Pricing card with features -->",
+      "  <h3 class=\"${1:price-card}__title\">${2:Plan Name}</h3>",
+      "  <p class=\"${1:price-card}__amount\">${3:$9.99}<span class=\"${1:price-card}__period\">${4:/month}</span></p>",
+      "  <!-- Українською: Ціна та період оплати / English: Price and payment period -->",
+      "  <ul class=\"${1:price-card}__features\">",
+      "    <li class=\"${1:price-card}__feature\">${5:Feature 1}</li>",
+      "    <!-- Українською: Характеристика тарифу / English: Plan feature -->",
+      "  </ul>",
+      "  <button type=\"button\" class=\"${1:price-card}__button\">${6:Select Plan}</button>",
+      "  <!-- Українською: Кнопка вибору тарифу / English: \"Select Plan\" button -->",
+      "</div>"
+    ],
+    "description": "Цінова картка / Price card"
+  },
+
+  "Timeline": {
+    "prefix": "ztimeline",
+    "body": [
+      "<div class=\"${1:timeline}\">",
+      "<!-- Українською: Хронологія подій / English: Events timeline -->",
+      "  <div class=\"${1:timeline}__item\">",
+      "    <time class=\"${1:timeline}__date\">${2:2023}</time>",
+      "    <!-- Українською: Дата події / English: Event date -->",
+      "    <div class=\"${1:timeline}__content\">",
+      "      <h4 class=\"${1:timeline}__title\">${3:Event Title}</h4>",
+      "      <p class=\"${1:timeline}__text\">${4:Event description}</p>",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Хронологія / Timeline"
+  },
+
+  "Stats Grid": {
+    "prefix": "zstats",
+    "body": [
+      "<div class=\"${1:stats}\">",
+      "<!-- Українською: Блок статистики / English: Statistics block -->",
+      "  <div class=\"${1:stats}__item\">",
+      "    <span class=\"${1:stats}__number\">${2:100}+</span>",
+      "    <!-- Українською: Числове значення / English: Numeric value -->",
+      "    <span class=\"${1:stats}__label\">${3:Clients}</span>",
+      "    <!-- Українською: Підпис до значення / English: Value label -->",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Статистика / Stats grid"
+  },
+
+  "Hero Section": {
+    "prefix": "zhero",
+    "body": [
+      "<section class=\"${1:hero}\">",
+      "<!-- Українською: Головний баннер сторінки / English: Main page banner -->",
+      "  <div class=\"${1:hero}__content\">",
+      "    <h1 class=\"${1:hero}__title\">${2:Main Heading}</h1>",
+      "    <p class=\"${1:hero}__text\">${3:Hero section description}</p>",
+      "    <a href=\"${4:#}\" class=\"${1:hero}__button\">${5:Call to Action}</a>",
+      "    <!-- Українською: Кнопка заклику до дії / English: Call to action button -->",
+      "  </div>",
+      "  <img src=\"${6:hero-image.jpg}\" alt=\"${7}\" class=\"${1:hero}__image\" loading=\"lazy\">",
+      "  <!-- Українською: Головне зображення з відкладеним завантаженням / English: Hero image with lazy loading -->",
+      "</section>"
+    ],
+    "description": "Герой-секція / Hero section"
+  },
+
+  "Feature List": {
+    "prefix": "zfeatures",
+    "body": [
+      "<ul class=\"${1:features}\">",
+      "<!-- Українською: Список переваг / English: Features list -->",
+      "  <li class=\"${1:features}__item\">",
+      "    <svg class=\"${1:features}__icon\">${2:Icon}</svg>",
+      "    <!-- Українською: Іконка переваги / English: Feature icon -->",
+      "    <h3 class=\"${1:features}__title\">${3:Feature Title}</h3>",
+      "    <p class=\"${1:features}__text\">${4:Feature description}</p>",
+      "  </li>",
+      "</ul>"
+    ],
+    "description": "Список особливостей / Feature list"
+  },
+
+  "Contact Form": {
+    "prefix": "zcontact",
+    "body": [
+      "<form class=\"${1:contact-form}\">",
+      "<!-- Українською: Форма зворотного зв'язку / English: Contact form -->",
+      "  <div class=\"${1:contact-form}__group\">",
+      "    <label for=\"${2:name}\" class=\"${1:contact-form}__label\">${3:Name}</label>",
+      "    <input type=\"text\" id=\"${2:name}\" class=\"${1:contact-form}__input\" required>",
+      "    <!-- Українською: Поле для імені / English: Name input field -->",
+      "  </div>",
+      "  <button type=\"submit\" class=\"${1:contact-form}__submit\">${4:Send Message}</button>",
+      "  <!-- Українською: Кнопка відправки повідомлення / English: \"Send message\" button -->",
+      "</form>"
+    ],
+    "description": "Контактна форма / Contact form"
+  },
+
+  "Team Grid": {
+    "prefix": "zteam",
+    "body": [
+      "<div class=\"${1:team}\">",
+      "<!-- Українською: Сітка членів команди / English: Team members grid -->",
+      "  <div class=\"${1:team}__member\">",
+      "    <img src=\"${2:member.jpg}\" alt=\"${3}\" class=\"${1:team}__photo\">",
+      "    <!-- Українською: Фото члена команди / English: Team member photo -->",
+      "    <h3 class=\"${1:team}__name\">${4:Name}</h3>",
+      "    <p class=\"${1:team}__position\">${5:Position}</p>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Команда / Team grid"
+  },
+
+  "Accordion": {
+    "prefix": "zaccordion",
+    "body": [
+      "<div class=\"${1:accordion}\">",
+      "<!-- Українською: Акордеон (розгортаючі блоки) / English: Accordion (expandable blocks) -->",
+      "  <div class=\"${1:accordion}__item\">",
+      "    <h3 class=\"${1:accordion}__header\">",
+      "      <button type=\"button\" aria-expanded=\"false\" class=\"${1:accordion}__trigger\">",
+      "        ${2:Question}",
+      "      </button>",
+      "      <!-- Українською: Кнопка розгортання / English: Expand trigger -->",
+      "    </h3>",
+      "    <div class=\"${1:accordion}__panel\" hidden>",
+      "      ${3:Answer}",
+      "      <!-- Українською: Вміст, що прихований за замовчуванням / English: Content (hidden by default) -->",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Акордеон / Accordion"
+  },
+
+  "Tab System": {
+    "prefix": "ztabs",
+    "body": [
+      "<div class=\"${1:tabs}\">",
+      "<!-- Українською: Система вкладок / English: Tab system -->",
+      "  <div role=\"tablist\" class=\"${1:tabs}__nav\">",
+      "    <button type=\"button\" role=\"tab\" id=\"${2:tab1}\" aria-selected=\"true\" class=\"${1:tabs}__trigger\">",
+      "      ${3:Tab 1}",
+      "    </button>",
+      "    <!-- Українською: Кнопка вкладки 1 / English: Tab 1 button -->",
+      "  </div>",
+      "  <div role=\"tabpanel\" aria-labelledby=\"${2:tab1}\" class=\"${1:tabs}__panel\">",
+      "    ${4:Content 1}",
+      "    <!-- Українською: Вміст вкладки 1 / English: Tab 1 content -->",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Система вкладок / Tab system"
+  }
+}

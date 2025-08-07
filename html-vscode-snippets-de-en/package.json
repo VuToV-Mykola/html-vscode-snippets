@@ -1,0 +1,26 @@
+{
+  "name": "html-vscode-snippets-de-en",
+  "displayName": "HTML Snippets (DE/EN)",
+  "description": "HTML snippets with German and English comments",
+  "version": "1.0.0",
+  "publisher": "VuToV-Mykola",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VuToV-Mykola/html-vscode-snippets.git"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/html-vscode-snippets-de-en.json"
+      }
+    ]
+  }
+}

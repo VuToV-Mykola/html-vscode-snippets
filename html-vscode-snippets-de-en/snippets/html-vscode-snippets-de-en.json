@@ -1,0 +1,1249 @@
+{
+  "Section": {
+    "prefix": "xsection",
+    "body": [
+      "<section class=\"${1:section}\" aria-labelledby=\"${2:section-id}\">",
+      "<!-- Deutsch: Thematische Inhaltsgruppe / English: Thematic content group -->",
+      "  <h2 id=\"${2:section-id}\" class=\"${1:section}__title\">$3</h2>",
+      "  $0",
+      "</section>"
+    ],
+    "description": "Abschnitt / Section"
+  },
+  "Article": {
+    "prefix": "xarticle",
+    "body": [
+      "<article class=\"${1:article}\">",
+      "<!-- Deutsch: Unabhängiger Inhaltsblock / English: Independent content block -->",
+      "  $0",
+      "</article>"
+    ],
+    "description": "Artikel / Article"
+  },
+  "Aside": {
+    "prefix": "xaside",
+    "body": [
+      "<aside class=\"${1:sidebar}\">",
+      "<!-- Deutsch: Seiteninhalt / English: Side content -->",
+      "  $0",
+      "</aside>"
+    ],
+    "description": "Seitenleiste / Aside"
+  },
+  "Div": {
+    "prefix": "xdiv",
+    "body": [
+      "<div class=\"${1:container}\">",
+      "<!-- Deutsch: Universeller Container / English: Universal container -->",
+      "  $0",
+      "</div>"
+    ],
+    "description": "Block / Div"
+  },
+
+  "Heading 2": {
+    "prefix": "xh2",
+    "body": [
+      "<h2 class=\"${1:subtitle}\">",
+      "<!-- Deutsch: Untertitel / English: Subheading -->",
+      "  $0",
+      "</h2>"
+    ],
+    "description": "Überschrift Ebene 2 / Heading level 2"
+  },
+  "Heading 3": {
+    "prefix": "xh3",
+    "body": [
+      "<h3 class=\"${1:heading}\">",
+      "<!-- Deutsch: Unterabschnitt / English: Subsection -->",
+      "  $0",
+      "</h3>"
+    ],
+    "description": "Überschrift Ebene 3 / Heading level 3"
+  },
+  "Heading 4": {
+    "prefix": "xh4",
+    "body": [
+      "<h4 class=\"${1:small-heading}\">",
+      "<!-- Deutsch: Kleine Überschrift / English: Small heading -->",
+      "  $0",
+      "</h4>"
+    ],
+    "description": "Überschrift Ebene 4 / Heading level 4"
+  },
+  "Heading 5": {
+    "prefix": "xh5",
+    "body": [
+      "<h5 class=\"${1:minor-heading}\">",
+      "<!-- Deutsch: Geringfügige Überschrift / English: Minor heading -->",
+      "  $0",
+      "</h5>"
+    ],
+    "description": "Überschrift Ebene 5 / Heading level 5"
+  },
+  "Heading 6": {
+    "prefix": "xh6",
+    "body": [
+      "<h6 class=\"${1:tiny-heading}\">",
+      "<!-- Deutsch: Winzige Überschrift / English: Tiny heading -->",
+      "  $0",
+      "</h6>"
+    ],
+    "description": "Überschrift Ebene 6 / Heading level 6"
+  },
+
+  "Span": {
+    "prefix": "xspan",
+    "body": [
+      "<span class=\"${1:text}\">",
+      "<!-- Deutsch: Inline-Container / English: Inline container -->",
+      "  $0",
+      "</span>"
+    ],
+    "description": "Inline-Block / Span"
+  },
+  "Strong": {
+    "prefix": "xstrong",
+    "body": [
+      "<strong class=\"${1:bold}\">",
+      "<!-- Deutsch: Wichtiger Text / English: Important text -->",
+      "  $0",
+      "</strong>"
+    ],
+    "description": "Fetter Text / Strong"
+  },
+  "Emphasis": {
+    "prefix": "xem",
+    "body": [
+      "<em class=\"${1:italic}\">",
+      "<!-- Deutsch: Betonter Text / English: Emphasized text -->",
+      "  $0",
+      "</em>"
+    ],
+    "description": "Kursiv / Emphasis"
+  },
+  "Mark": {
+    "prefix": "xmark",
+    "body": [
+      "<mark class=\"${1:highlight}\">",
+      "<!-- Deutsch: Hervorgehobener Text / English: Highlighted text -->",
+      "  $0",
+      "</mark>"
+    ],
+    "description": "Markierter Text / Mark"
+  },
+  "Small": {
+    "prefix": "xsmall",
+    "body": [
+      "<small class=\"${1:fine-print}\">",
+      "<!-- Deutsch: Kleingedruckter Text / English: Small print -->",
+      "  $0",
+      "</small>"
+    ],
+    "description": "Kleiner Text / Small"
+  },
+  "Abbreviation": {
+    "prefix": "xabbr",
+    "body": [
+      "<abbr title=\"${1:Vollversion}\" class=\"${2:abbreviation}\">",
+      "<!-- Deutsch: Abkürzung / English: Abbreviation -->",
+      "  $0",
+      "</abbr>"
+    ],
+    "description": "Abkürzung / Abbreviation"
+  },
+  "Time": {
+    "prefix": "xtime",
+    "body": [
+      "<time datetime=\"${1:2023-01-01}\" class=\"${2:time}\">",
+      "<!-- Deutsch: Zeitelement / English: Time element -->",
+      "  $0",
+      "</time>"
+    ],
+    "description": "Zeit / Time"
+  },
+  "Blockquote": {
+    "prefix": "xblockquote",
+    "body": [
+      "<blockquote cite=\"${1:source}\" class=\"${2:quote}\">",
+      "<!-- Deutsch: Zitat / English: Block quotation -->",
+      "  $0",
+      "</blockquote>"
+    ],
+    "description": "Zitat / Blockquote"
+  },
+  "Cite": {
+    "prefix": "xcite",
+    "body": [
+      "<cite class=\"${1:citation}\">",
+      "<!-- Deutsch: Quellenangabe / English: Citation -->",
+      "  $0",
+      "</cite>"
+    ],
+    "description": "Zitierung / Cite"
+  },
+  "Code": {
+    "prefix": "xcode",
+    "body": [
+      "<code class=\"${1:code}\">",
+      "<!-- Deutsch: Programmcode / English: Code snippet -->",
+      "  $0",
+      "</code>"
+    ],
+    "description": "Code / Code"
+  },
+  "Preformatted Text": {
+    "prefix": "xpre",
+    "body": [
+      "<pre class=\"${1:preformatted}\">",
+      "<!-- Deutsch: Text mit beibehaltenem Format / English: Preformatted text -->",
+      "  $0",
+      "</pre>"
+    ],
+    "description": "Vorformatierter Text / Preformatted text"
+  },
+  "Variable": {
+    "prefix": "xvar",
+    "body": [
+      "<var class=\"${1:variable}\">",
+      "<!-- Deutsch: Variable / English: Variable -->",
+      "  $0",
+      "</var>"
+    ],
+    "description": "Variable / Variable"
+  },
+  "Sample Output": {
+    "prefix": "xsamp",
+    "body": [
+      "<samp class=\"${1:sample}\">",
+      "<!-- Deutsch: Beispielausgabe / English: Sample output -->",
+      "  $0",
+      "</samp>"
+    ],
+    "description": "Beispielausgabe / Sample output"
+  },
+  "Keyboard Input": {
+    "prefix": "xkbd",
+    "body": [
+      "<kbd class=\"${1:keyboard}\">",
+      "<!-- Deutsch: Tastatureingabe / English: Keyboard input -->",
+      "  $0",
+      "</kbd>"
+    ],
+    "description": "Tastatureingabe / Keyboard input"
+  },
+  "Subscript": {
+    "prefix": "xsub",
+    "body": [
+      "<sub class=\"${1:subscript}\">",
+      "<!-- Deutsch: Tiefgestellter Text / English: Subscript -->",
+      "  $0",
+      "</sub>"
+    ],
+    "description": "Tiefgestellt / Subscript"
+  },
+  "Superscript": {
+    "prefix": "xsup",
+    "body": [
+      "<sup class=\"${1:superscript}\">",
+      "<!-- Deutsch: Hochgestellter Text / English: Superscript -->",
+      "  $0",
+      "</sup>"
+    ],
+    "description": "Hochgestellt / Superscript"
+  },
+  "Line Break": {
+    "prefix": "xbr",
+    "body": ["<br>", "<!-- Deutsch: Zeilenumbruch / English: Line break -->"],
+    "description": "Zeilenumbruch / Line break"
+  },
+  "Horizontal Rule": {
+    "prefix": "xhr",
+    "body": [
+      "<hr class=\"${1:divider}\">",
+      "<!-- Deutsch: Horizontale Linie / English: Horizontal rule -->"
+    ],
+    "description": "Horizontale Linie / Horizontal rule"
+  },
+
+  "Ordered List": {
+    "prefix": "xol",
+    "body": [
+      "<ol class=\"${1:ordered-list}\">",
+      "<!-- Deutsch: Nummerierte Liste / English: Ordered list -->",
+      "  <li class=\"${1:ordered-list}__item\">$0</li>",
+      "</ol>"
+    ],
+    "description": "Nummerierte Liste / Ordered list"
+  },
+  "List Item": {
+    "prefix": "xli",
+    "body": [
+      "<li class=\"${1:list-item}\">",
+      "<!-- Deutsch: Listenelement / English: List item -->",
+      "  $0",
+      "</li>"
+    ],
+    "description": "Listenelement / List item"
+  },
+  "Description List": {
+    "prefix": "xdl",
+    "body": [
+      "<dl class=\"${1:description-list}\">",
+      "<!-- Deutsch: Definitionsliste / English: Description list -->",
+      "  <dt class=\"${1:description-list}__term\">$2</dt>",
+      "  <dd class=\"${1:description-list}__definition\">$3</dd>",
+      "</dl>"
+    ],
+    "description": "Definitionsliste / Description list"
+  },
+  "Definition Term": {
+    "prefix": "xdt",
+    "body": [
+      "<dt class=\"${1:term}\">",
+      "<!-- Deutsch: Definitionsbegriff / English: Definition term -->",
+      "  $0",
+      "</dt>"
+    ],
+    "description": "Begriff / Definition term"
+  },
+  "Definition Description": {
+    "prefix": "xdd",
+    "body": [
+      "<dd class=\"${1:definition}\">",
+      "<!-- Deutsch: Definitionsbeschreibung / English: Definition description -->",
+      "  $0",
+      "</dd>"
+    ],
+    "description": "Definition / Definition description"
+  },
+
+  "Anchor": {
+    "prefix": "xa",
+    "body": [
+      "<a href=\"${1:#}\" class=\"${2:link}\" target=\"${3|_self,_blank|}\" rel=\"${4|noopener,noreferrer|}\">",
+      "<!-- Deutsch: Hyperlink / English: Hyperlink -->",
+      "  $0",
+      "</a>"
+    ],
+    "description": "Link / Anchor"
+  },
+  "Navigation Link": {
+    "prefix": "xnav-link",
+    "body": [
+      "<a href=\"${1:#}\" class=\"${2:nav-link}\" aria-current=\"${3|page,false|}\">",
+      "<!-- Deutsch: Navigationslink / English: Navigation link -->",
+      "  $0",
+      "</a>"
+    ],
+    "description": "Navigationslink / Navigation link"
+  },
+  "Mailto Link": {
+    "prefix": "xmailto",
+    "body": [
+      "<a href=\"mailto:${1:email@example.com}\" class=\"${2:email-link}\">",
+      "<!-- Deutsch: E-Mail-Link / English: Email link -->",
+      "  $0",
+      "</a>"
+    ],
+    "description": "E-Mail-Link / Mailto link"
+  },
+  "Tel Link": {
+    "prefix": "xtel",
+    "body": [
+      "<a href=\"tel:${1:+380123456789}\" class=\"${2:phone-link}\">",
+      "<!-- Deutsch: Telefonlink / English: Phone link -->",
+      "  $0",
+      "</a>"
+    ],
+    "description": "Telefonlink / Tel link"
+  },
+  "Download Link": {
+    "prefix": "xdownload",
+    "body": [
+      "<a href=\"${1:file.pdf}\" class=\"${2:download-link}\" download>",
+      "<!-- Deutsch: Download-Link / English: Download link -->",
+      "  $0",
+      "</a>"
+    ],
+    "description": "Download-Link / Download link"
+  },
+
+  "Audio": {
+    "prefix": "xaudio",
+    "body": [
+      "<audio controls class=\"${1:audio-player}\">",
+      "<!-- Deutsch: Audioplayer / English: Audio player -->",
+      "  <source src=\"${2:audio.mp3}\" type=\"audio/mpeg\">",
+      "  <!-- Deutsch: Audioquelle / English: Audio source -->",
+      "  Ihr Browser unterstützt kein Audio.",
+      "  <!-- Deutsch: Fallback-Nachricht / English: Fallback message -->",
+      "</audio>"
+    ],
+    "description": "Audio / Audio"
+  },
+  "Video": {
+    "prefix": "xvideo",
+    "body": [
+      "<video controls class=\"${1:video-player}\" width=\"${2:640}\" height=\"${3:360}\" poster=\"${4:poster.jpg}\">",
+      "<!-- Deutsch: Videoplayer / English: Video player -->",
+      "  <source src=\"${5:video.mp4}\" type=\"video/mp4\">",
+      "  <!-- Deutsch: Videoquelle / English: Video source -->",
+      "  Ihr Browser unterstützt kein Video.",
+      "  <!-- Deutsch: Fallback-Nachricht / English: Fallback message -->",
+      "</video>"
+    ],
+    "description": "Video / Video"
+  },
+  "Source": {
+    "prefix": "xsource",
+    "body": [
+      "<source src=\"${1:media.ext}\" type=\"${2|audio/mpeg,video/mp4,image/webp|}\">",
+      "<!-- Deutsch: Medienquelle / English: Media source -->"
+    ],
+    "description": "Quelle / Source"
+  },
+  "Track": {
+    "prefix": "xtrack",
+    "body": [
+      "<track src=\"${1:subtitles.vtt}\" kind=\"${2|subtitles,captions,descriptions|}\" srclang=\"${3|uk,en|}\" label=\"${4:German}\">",
+      "<!-- Deutsch: Untertitel oder Beschreibungen / English: Subtitles or descriptions -->"
+    ],
+    "description": "Spur / Track"
+  },
+  "Picture": {
+    "prefix": "xpicture",
+    "body": [
+      "<picture class=\"${1:responsive-image}\">",
+      "<!-- Deutsch: Responsives Bild / English: Responsive image -->",
+      "  <source srcset=\"${2:image.webp}\" type=\"image/webp\">",
+      "  <source srcset=\"${3:image.jpg}\" type=\"image/jpeg\">",
+      "  <img src=\"${3:image.jpg}\" alt=\"${4}\" loading=\"lazy\">",
+      "</picture>"
+    ],
+    "description": "Bild / Picture"
+  },
+
+  "Figure": {
+    "prefix": "xfigure",
+    "body": [
+      "<figure class=\"${1:figure}\">",
+      "<!-- Deutsch: Bild mit Beschriftung / English: Image with caption -->",
+      "  <img src=\"${2:image.jpg}\" alt=\"${3}\" class=\"${1:figure}__image\">",
+      "  <figcaption class=\"${1:figure}__caption\">$0</figcaption>",
+      "</figure>"
+    ],
+    "description": "Abbildung / Figure"
+  },
+  "Figcaption": {
+    "prefix": "xfigcaption",
+    "body": [
+      "<figcaption class=\"${1:caption}\">",
+      "<!-- Deutsch: Bildbeschriftung / English: Figure caption -->",
+      "  $0",
+      "</figcaption>"
+    ],
+    "description": "Bildunterschrift / Figcaption"
+  },
+  "Map": {
+    "prefix": "xmap",
+    "body": [
+      "<map name=\"${1:map-name}\" class=\"${2:image-map}\">",
+      "<!-- Deutsch: Imagemap / English: Image map -->",
+      "  <area shape=\"${3|rect,circle,poly|}\" coords=\"${4}\" href=\"${5:#}\" alt=\"${6}\">",
+      "</map>"
+    ],
+    "description": "Imagemap / Map"
+  },
+  "Area": {
+    "prefix": "xarea",
+    "body": [
+      "<area shape=\"${1|rect,circle,poly|}\" coords=\"${2}\" href=\"${3:#}\" alt=\"${4}\" class=\"${5:hotspot}\">",
+      "<!-- Deutsch: Aktiver Bereich / English: Hotspot area -->"
+    ],
+    "description": "Bereich / Area"
+  },
+  "Embed": {
+    "prefix": "xembed",
+    "body": [
+      "<embed src=\"${1:file.pdf}\" type=\"${2:application/pdf}\" width=\"${3:600}\" height=\"${4:400}\" class=\"${5:embedded}\">",
+      "<!-- Deutsch: Eingebettetes Objekt / English: Embedded object -->"
+    ],
+    "description": "Eingebettet / Embed"
+  },
+  "Object": {
+    "prefix": "xobject",
+    "body": [
+      "<object data=\"${1:file.swf}\" type=\"${2:application/x-shockwave-flash}\" width=\"${3:600}\" height=\"${4:400}\" class=\"${5:flash-object}\">",
+      "<!-- Deutsch: Eingebettetes Medienobjekt / English: Embedded media object -->",
+      "  $0",
+      "</object>"
+    ],
+    "description": "Objekt / Object"
+  },
+  "Param": {
+    "prefix": "xparam",
+    "body": [
+      "<param name=\"${1:autoplay}\" value=\"${2:true}\">",
+      "<!-- Deutsch: Objektparameter / English: Object parameter -->"
+    ],
+    "description": "Parameter / Param"
+  },
+  "IFrame": {
+    "prefix": "xiframe",
+    "body": [
+      "<iframe src=\"${1:https://example.com}\" width=\"${2:800}\" height=\"${3:600}\" class=\"${4:embedded-frame}\" loading=\"${5|lazy,eager|}\" allowfullscreen>",
+      "<!-- Deutsch: Eingebettete Webseite / English: Embedded web page -->",
+      "  Ihr Browser unterstützt keine iframes.",
+      "  <!-- Deutsch: Fallback-Nachricht / English: Fallback message -->",
+      "</iframe>"
+    ],
+    "description": "Eingebetteter Frame / IFrame"
+  },
+
+  "Table Row": {
+    "prefix": "xtr",
+    "body": [
+      "<tr class=\"${1:row}\">",
+      "<!-- Deutsch: Tabellenzeile / English: Table row -->",
+      "  $0",
+      "</tr>"
+    ],
+    "description": "Tabellenzeile / Table row"
+  },
+  "Table Header Cell": {
+    "prefix": "xth",
+    "body": [
+      "<th scope=\"${1|col,row|}\" class=\"${2:header-cell}\">",
+      "<!-- Deutsch: Spalten-/Zeilenkopf / English: Column/row header -->",
+      "  $0",
+      "</th>"
+    ],
+    "description": "Tabellenkopf / Table header cell"
+  },
+  "Table Data Cell": {
+    "prefix": "xtd",
+    "body": [
+      "<td class=\"${1:data-cell}\">",
+      "<!-- Deutsch: Datenzelle / English: Table data cell -->",
+      "  $0",
+      "</td>"
+    ],
+    "description": "Tabellenzelle / Table data cell"
+  },
+  "Table Caption": {
+    "prefix": "xcaption",
+    "body": [
+      "<caption class=\"${1:table-caption}\">",
+      "<!-- Deutsch: Tabellenbeschriftung / English: Table caption -->",
+      "  $0",
+      "</caption>"
+    ],
+    "description": "Tabellenüberschrift / Table caption"
+  },
+  "Table Column Group": {
+    "prefix": "xcolgroup",
+    "body": [
+      "<colgroup class=\"${1:column-group}\">",
+      "<!-- Deutsch: Spaltengruppe / English: Column group -->",
+      "  <col class=\"${1:column-group}__column\">",
+      "</colgroup>"
+    ],
+    "description": "Spaltengruppe / Column group"
+  },
+  "Table Column": {
+    "prefix": "xcol",
+    "body": [
+      "<col class=\"${1:column}\" span=\"${2:1}\">",
+      "<!-- Deutsch: Eine/mehrere Spalten / English: Table column(s) -->"
+    ],
+    "description": "Tabellenspalte / Column"
+  },
+
+  "Label": {
+    "prefix": "xlabel",
+    "body": [
+      "<label for=\"${1:input-id}\" class=\"${2:form-label}\">",
+      "<!-- Deutsch: Eingabefeldbeschriftung / English: Input label -->",
+      "  $0",
+      "</label>"
+    ],
+    "description": "Formularbeschriftung / Label"
+  },
+  "Input": {
+    "prefix": "xinput",
+    "body": [
+      "<input type=\"${1|text,email,password,number,tel,url,search,date,time,checkbox,radio,file,hidden,submit,reset,button|}\" id=\"${2:input-id}\" name=\"${3:input-name}\" class=\"${4:form-input}\" ${5:required}>",
+      "<!-- Deutsch: Eingabefeld / English: Input field -->"
+    ],
+    "description": "Eingabe / Input"
+  },
+  "Textarea": {
+    "prefix": "xtextarea",
+    "body": [
+      "<textarea id=\"${1:textarea-id}\" name=\"${2:textarea-name}\" class=\"${3:form-textarea}\" rows=\"${4:4}\" cols=\"${5:50}\" ${6:required}>",
+      "<!-- Deutsch: Mehrzeiliges Eingabefeld / English: Multiline text input -->",
+      "  $0",
+      "</textarea>"
+    ],
+    "description": "Textbereich / Textarea"
+  },
+  "Select": {
+    "prefix": "xselect",
+    "body": [
+      "<select id=\"${1:select-id}\" name=\"${2:select-name}\" class=\"${3:form-select}\" ${4:required}>",
+      "<!-- Deutsch: Dropdown-Liste / English: Dropdown list -->",
+      "  <option value=\"${5:value1}\">${6:Option 1}</option>",
+      "  <option value=\"${7:value2}\">${8:Option 2}</option>",
+      "</select>"
+    ],
+    "description": "Auswahl / Select"
+  },
+  "Option": {
+    "prefix": "xoption",
+    "body": [
+      "<option value=\"${1:value}\" class=\"${2:select-option}\" ${3|selected,disabled|}>",
+      "<!-- Deutsch: Listenoption / English: Dropdown option -->",
+      "  $0",
+      "</option>"
+    ],
+    "description": "Option / Option"
+  },
+  "Option Group": {
+    "prefix": "xoptgroup",
+    "body": [
+      "<optgroup label=\"${1:Group Label}\" class=\"${2:option-group}\">",
+      "<!-- Deutsch: Optionsgruppe / English: Option group -->",
+      "  <option value=\"${3:value1}\">${4:Option 1}</option>",
+      "</optgroup>"
+    ],
+    "description": "Optionsgruppe / Option group"
+  },
+
+  "Button": {
+    "prefix": "xbutton",
+    "body": [
+      "<button type=\"${1|button,submit,reset|}\" class=\"${2:btn}\">",
+      "<!-- Deutsch: Schaltfläche / English: Button -->",
+      "  $0",
+      "</button>"
+    ],
+    "description": "Schaltfläche / Button"
+  },
+  "Data List": {
+    "prefix": "xdatalist",
+    "body": [
+      "<datalist id=\"${1:list-id}\" class=\"${2:data-list}\">",
+      "<!-- Deutsch: Autovervollständigungsoptionen / English: Autocomplete options -->",
+      "  <option value=\"${3:Option 1}\">",
+      "</datalist>"
+    ],
+    "description": "Datenliste / Datalist"
+  },
+  "Fieldset": {
+    "prefix": "xfieldset",
+    "body": [
+      "<fieldset class=\"${1:form-group}\">",
+      "<!-- Deutsch: Formularfeldgruppe / English: Form field group -->",
+      "  <legend class=\"${1:form-group}__legend\">${2:Group Title}</legend>",
+      "  $0",
+      "</fieldset>"
+    ],
+    "description": "Feldgruppe / Fieldset"
+  },
+  "Legend": {
+    "prefix": "xlegend",
+    "body": [
+      "<legend class=\"${1:form-legend}\">",
+      "<!-- Deutsch: Feldgruppentitel / English: Fieldset title -->",
+      "  $0",
+      "</legend>"
+    ],
+    "description": "Legende / Legend"
+  },
+  "Meter": {
+    "prefix": "xmeter",
+    "body": [
+      "<meter value=\"${1:50}\" min=\"${2:0}\" max=\"${3:100}\" class=\"${4:meter}\">",
+      "<!-- Deutsch: Skalare Messung / English: Scalar measurement -->",
+      "  ${1:50}%",
+      "</meter>"
+    ],
+    "description": "Messanzeige / Meter"
+  },
+  "Progress": {
+    "prefix": "xprogress",
+    "body": [
+      "<progress value=\"${1:50}\" max=\"${2:100}\" class=\"${3:progress}\">",
+      "<!-- Deutsch: Fortschrittsanzeige / English: Progress indicator -->",
+      "  ${1:50}%",
+      "</progress>"
+    ],
+    "description": "Fortschrittsbalken / Progress"
+  },
+  "Output": {
+    "prefix": "xoutput",
+    "body": [
+      "<output for=\"${1:input-id}\" class=\"${2:form-output}\">",
+      "<!-- Deutsch: Berechnungsergebnis / English: Calculation result -->",
+      "  $0",
+      "</output>"
+    ],
+    "description": "Ausgabe / Output"
+  },
+
+  "Navigation": {
+    "prefix": "xnav",
+    "body": [
+      "<nav class=\"${1:navigation}\" aria-label=\"${2:Hauptnavigation}\">",
+      "<!-- Deutsch: Navigationsblock / English: Navigation block -->",
+      "  $0",
+      "</nav>"
+    ],
+    "description": "Navigation / Navigation"
+  },
+  "Section with Heading": {
+    "prefix": "xsection-heading",
+    "body": [
+      "<section class=\"${1:section}\">",
+      "  <h${2:2} class=\"${1:section}__heading\">$3</h${2:2}>",
+      "  $0",
+      "</section>"
+    ],
+    "description": "Abschnitt mit Überschrift / Section with heading"
+  },
+  "Article with Header": {
+    "prefix": "xarticle-header",
+    "body": [
+      "<article class=\"${1:article}\">",
+      "  <header class=\"${1:article}__header\">",
+      "    <h${2:1} class=\"${1:article}__title\">$3</h${2:1}>",
+      "  </header>",
+      "  $0",
+      "</article>"
+    ],
+    "description": "Artikel mit Kopfbereich / Article with header"
+  },
+
+  "Ruby Annotation": {
+    "prefix": "xruby",
+    "body": [
+      "<ruby class=\"${1:ruby}\">",
+      "  ${2:漢字} <rt class=\"${1:ruby}__text\">${3:かんじ}</rt>",
+      "</ruby>"
+    ],
+    "description": "Ruby-Annotation / Ruby annotation"
+  },
+  "Ruby Base Text": {
+    "prefix": "xrb",
+    "body": ["<rb class=\"${1:ruby-base}\">$0</rb>"],
+    "description": "Ruby-Basistext / Ruby base text"
+  },
+  "Ruby Parenthesis": {
+    "prefix": "xrp",
+    "body": ["<rp class=\"${1:ruby-parenthesis}\">(${2:})</rp>"],
+    "description": "Ruby-Klammern / Ruby parenthesis"
+  },
+  "Ruby Text": {
+    "prefix": "xrt",
+    "body": ["<rt class=\"${1:ruby-text}\">$0</rt>"],
+    "description": "Ruby-Text / Ruby text"
+  },
+  "Bidirectional Isolation": {
+    "prefix": "xbdi",
+    "body": ["<bdi class=\"${1:bidirectional}\">$0</bdi>"],
+    "description": "Bidirektionale Isolation / Bidirectional isolation"
+  },
+  "Bidirectional Override": {
+    "prefix": "xbdo",
+    "body": ["<bdo dir=\"${1|rtl,ltr|}\" class=\"${2:direction}\">$0</bdo>"],
+    "description": "Bidirektionale Überschreibung / Bidirectional override"
+  },
+  "Data": {
+    "prefix": "xdata",
+    "body": ["<data value=\"${1:value}\" class=\"${2:data}\">$0</data>"],
+    "description": "Maschinenlesbare Daten / Machine-readable data"
+  },
+  "Time with Timezone": {
+    "prefix": "xtime-tz",
+    "body": [
+      "<time datetime=\"${1:2023-01-01T12:00+02:00}\" class=\"${2:time}\">$0</time>"
+    ],
+    "description": "Zeit mit Zeitzone / Time with timezone"
+  },
+
+  "SVG Container": {
+    "prefix": "xsvg",
+    "body": [
+      "<svg width=\"${1:100}\" height=\"${2:100}\" class=\"${3:svg}\">",
+      "  <circle cx=\"${4:50}\" cy=\"${5:50}\" r=\"${6:40}\" fill=\"${7:red}\"/>",
+      "</svg>"
+    ],
+    "description": "SVG-Container / SVG container"
+  },
+  "MathML Formula": {
+    "prefix": "xmath",
+    "body": [
+      "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"${1:math}\">",
+      "  <mrow>",
+      "    <msup><mi>a</mi><mn>2</mn></msup>",
+      "    <mo>+</mo>",
+      "    <msup><mi>b</mi><mn>2</mn></msup>",
+      "    <mo>=</mo>",
+      "    <msup><mi>c</mi><mn>2</mn></msup>",
+      "  </mrow>",
+      "</math>"
+    ],
+    "description": "Mathematische Formel / MathML formula"
+  },
+
+  "Template": {
+    "prefix": "xtemplate",
+    "body": ["<template class=\"${1:template}\">", "  $0", "</template>"],
+    "description": "Vorlage zum Klonen / Template for cloning"
+  },
+  "Slot": {
+    "prefix": "xslot",
+    "body": ["<slot name=\"${1:slot-name}\" class=\"${2:slot}\">$0</slot>"],
+    "description": "Slot für Shadow DOM / Shadow DOM slot"
+  },
+
+  "Base": {
+    "prefix": "xbase",
+    "body": [
+      "<base href=\"${1:https://example.com/}\" target=\"${2:_blank}\">"
+    ],
+    "description": "Basis-URL / Base URL"
+  },
+  "Link": {
+    "prefix": "xlink",
+    "body": [
+      "<link rel=\"${1|stylesheet,icon,preload|}\" href=\"${2:file.css}\" class=\"${3:link}\">"
+    ],
+    "description": "Externe Ressource / External resource"
+  },
+  "Meta Description": {
+    "prefix": "xmeta-desc",
+    "body": ["<meta name=\"description\" content=\"${1:Seitenbeschreibung}\">"],
+    "description": "Seitenbeschreibung / Page description"
+  },
+  "Meta Keywords": {
+    "prefix": "xmeta-keywords",
+    "body": ["<meta name=\"keywords\" content=\"${1:keyword1, keyword2}\">"],
+    "description": "Schlüsselwörter / Keywords"
+  },
+  "Style": {
+    "prefix": "xstyle",
+    "body": ["<style class=\"${1:styles}\">", "  $0", "</style>"],
+    "description": "CSS-Styles / CSS styles"
+  },
+  "Script": {
+    "prefix": "xscript",
+    "body": [
+      "<script${1: type=\"module\"} class=\"${2:script}\">",
+      "  $0",
+      "</script>"
+    ],
+    "description": "JavaScript-Code / JavaScript code"
+  },
+  "Noscript": {
+    "prefix": "xnoscript",
+    "body": [
+      "<noscript class=\"${1:nojs}\">",
+      "  ${2:Bitte aktivieren Sie JavaScript, um diesen Inhalt anzuzeigen.}",
+      "</noscript>"
+    ],
+    "description": "Inhalt ohne JS / No-JS content"
+  },
+
+  "Dialog": {
+    "prefix": "xdialog",
+    "body": [
+      "<dialog open class=\"${1:dialog}\">",
+      "  <form method=\"dialog\">",
+      "    <button class=\"${1:dialog}__close\">Schließen</button>",
+      "  </form>",
+      "  $0",
+      "</dialog>"
+    ],
+    "description": "Dialogfenster / Dialog window"
+  },
+  "Menu": {
+    "prefix": "xmenu",
+    "body": [
+      "<menu class=\"${1:menu}\">",
+      "  <li class=\"${1:menu}__item\">$0</li>",
+      "</menu>"
+    ],
+    "description": "Befehlsliste / Menu of commands"
+  },
+  "Command": {
+    "prefix": "xcommand",
+    "body": [
+      "<command type=\"${1|command,checkbox,radio|}\" label=\"${2:Label}\" class=\"${3:command}\">"
+    ],
+    "description": "Menübefehl / Menu command"
+  },
+  "Full HTML5 Template": {
+    "prefix": "z!",
+    "body": [
+      "<!DOCTYPE html>",
+      "<!-- Deutsch: HTML5-Dokumenttypdeklaration / English: HTML5 document type declaration -->",
+      "<html lang=\"${1|de,en|}\">",
+      "<!-- Deutsch: Gibt die Seiten Sprache an / English: Specifies page language -->",
+      "<head>",
+      "  <meta charset=\"UTF-8\">",
+      "  <!-- Deutsch: Zeichenkodierung (UTF-8 unterstützt alle Sprachen) / English: Character encoding (UTF-8 supports all languages) -->",
+      "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "  <!-- Deutsch: Einstellungen für responsives Design / English: Responsive design settings -->",
+      "  <title>${2:Seitentitel}</title>",
+      "  <!-- Deutsch: Seitentitel (Browser-Tab) / English: Page title (browser tab) -->",
+      "  <meta name=\"description\" content=\"${3:Seitenbeschreibung}\">",
+      "  <!-- Deutsch: Seitenbeschreibung für SEO / English: Page description for SEO -->",
+      "  <link rel=\"stylesheet\" href=\"${4:css/main.css}\">",
+      "  <!-- Deutsch: CSS-Stylesheet-Link / English: CSS stylesheet link -->",
+      "</head>",
+      "<body class=\"page\">",
+      "  <header class=\"header\">",
+      "    <!-- Deutsch: Kopfbereich (Logo, Navigation) / English: Top section (logo, navigation) -->",
+      "    $5",
+      "  </header>",
+      "  <main class=\"main\">",
+      "    <!-- Deutsch: Hauptinhalt der Seite / English: Main page content -->",
+      "    $6",
+      "  </main>",
+      "  <footer class=\"footer\">",
+      "    <!-- Deutsch: Fußbereich (Copyright, Links) / English: Bottom section (copyright, links) -->",
+      "    $7",
+      "  </footer>",
+      "  <script src=\"${8:js/app.js}\" defer></script>",
+      "  <!-- Deutsch: JavaScript mit verzögerter Ausführung / English: JavaScript with deferred execution -->",
+      "</body>",
+      "</html>"
+    ],
+    "description": "Vollständige HTML5-Vorlage / Full HTML5 template"
+  },
+  "BEM Navigation": {
+    "prefix": "znav",
+    "body": [
+      "<nav class=\"${1:nav}\" aria-label=\"${2:Hauptnavigation}\">",
+      "<!-- Deutsch: Hauptnavigation der Website / English: Main website navigation -->",
+      "  <ul class=\"${1:nav}__list\">",
+      "    <li class=\"${1:nav}__item\">",
+      "      <a href=\"#\" class=\"${1:nav}__link\" aria-current=\"page\">${3:Startseite}</a>",
+      "      <!-- Deutsch: Link zur Startseite / English: Link to home page -->",
+      "    </li>",
+      "  </ul>",
+      "</nav>"
+    ],
+    "description": "Navigation mit BEM / BEM navigation"
+  },
+  "Accessible Form": {
+    "prefix": "zform",
+    "body": [
+      "<form class=\"${1:form}\" aria-labelledby=\"${1:form}__heading\">",
+      "<!-- Deutsch: Barrierefreies Formular / English: Accessible user form -->",
+      "  <h2 id=\"${1:form}__heading\" class=\"${1:form}__title\">${2:Formulartitel}</h2>",
+      "  <div class=\"${1:form}__group\">",
+      "    <label for=\"${3:input-id}\" class=\"${1:form}__label\">${4:Beschriftung}</label>",
+      "    <!-- Deutsch: Eingabefeldbeschriftung / English: Input field label -->",
+      "    <input type=\"${5|text,email,password|}\" id=\"${3:input-id}\" class=\"${1:form}__input\" required>",
+      "    <!-- Deutsch: Pflichteingabefeld / English: Required input field -->",
+      "  </div>",
+      "  <button type=\"submit\" class=\"${1:form}__submit\">${6:Absenden}</button>",
+      "  <!-- Deutsch: Formularabsendebutton / English: Form submit button -->",
+      "</form>"
+    ],
+    "description": "Barrierefreies Formular / Accessible form"
+  },
+  "Modal Dialog": {
+    "prefix": "zmodal",
+    "body": [
+      "<div class=\"${1:modal}\" id=\"${2:modal-id}\" aria-hidden=\"true\">",
+      "<!-- Deutsch: Modales Fenster (Popup) / English: Modal dialog (popup) -->",
+      "  <div class=\"${1:modal}__overlay\" tabindex=\"-1\" data-modal-close></div>",
+      "  <!-- Deutsch: Modal-Hintergrund / English: Modal background overlay -->",
+      "  <div class=\"${1:modal}__content\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"${2:modal-id}__title\">",
+      "    <button class=\"${1:modal}__close\" aria-label=\"Modal schließen\" data-modal-close>&times;</button>",
+      "    <!-- Deutsch: Modal-Schließbutton / English: Modal close button -->",
+      "    <h2 id=\"${2:modal-id}__title\" class=\"${1:modal}__title\">${3:Modal-Titel}</h2>",
+      "    <div class=\"${1:modal}__body\">",
+      "      $4",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Modales Fenster / Modal dialog"
+  },
+  "Card Component": {
+    "prefix": "zcard",
+    "body": [
+      "<article class=\"${1:card}\">",
+      "<!-- Deutsch: Produkt-/Dienstleistungskarte / English: Product/service card -->",
+      "  <img src=\"${2:image.jpg}\" alt=\"${3}\" class=\"${1:card}__image\" loading=\"lazy\">",
+      "  <!-- Deutsch: Kartenbild mit verzögertem Laden / English: Card image with lazy loading -->",
+      "  <div class=\"${1:card}__content\">",
+      "    <h3 class=\"${1:card}__title\">${4:Titel}</h3>",
+      "    <p class=\"${1:card}__text\">${5:Beschreibung}</p>",
+      "    <a href=\"${6:#}\" class=\"${1:card}__link\">${7:Mehr lesen}</a>",
+      "    <!-- Deutsch: \"Mehr lesen\"-Link / English: \"Read more\" link -->",
+      "  </div>",
+      "</article>"
+    ],
+    "description": "Karte mit BEM / BEM card component"
+  },
+  "Grid Layout": {
+    "prefix": "zgrid",
+    "body": [
+      "<div class=\"${1:grid}\">",
+      "<!-- Deutsch: Rasterlayout der Seite / English: Grid page layout -->",
+      "  <div class=\"${1:grid}__item\">$2</div>",
+      "  <!-- Deutsch: Rasterelement 1 / English: Grid item 1 -->",
+      "  <div class=\"${1:grid}__item\">$3</div>",
+      "  <!-- Deutsch: Rasterelement 2 / English: Grid item 2 -->",
+      "  <div class=\"${1:grid}__item\">$4</div>",
+      "  <!-- Deutsch: Rasterelement 3 / English: Grid item 3 -->",
+      "</div>"
+    ],
+    "description": "CSS Grid Layout / CSS Grid layout"
+  },
+  "FAQ Section": {
+    "prefix": "zfaq",
+    "body": [
+      "<section class=\"${1:faq}\" aria-labelledby=\"${1:faq}__heading\">",
+      "<!-- Deutsch: \"Häufig gestellte Fragen\"-Abschnitt / English: \"Frequently Asked Questions\" section -->",
+      "  <h2 id=\"${1:faq}__heading\" class=\"${1:faq}__title\">${2:FAQ}</h2>",
+      "  <div class=\"${1:faq}__item\">",
+      "    <h3 class=\"${1:faq}__question\">",
+      "      <button type=\"button\" aria-expanded=\"false\" aria-controls=\"${3:answer1}\">",
+      "        ${4:Frage 1}",
+      "      </button>",
+      "      <!-- Deutsch: Aufklappbare Frage / English: Expandable question -->",
+      "    </h3>",
+      "    <div id=\"${3:answer1}\" class=\"${1:faq}__answer\" hidden>",
+      "      ${5:Antwort 1}",
+      "      <!-- Deutsch: Standardmäßig ausgeblendete Antwort / English: Answer (hidden by default) -->",
+      "    </div>",
+      "  </div>",
+      "</section>"
+    ],
+    "description": "FAQ-Abschnitt / FAQ section"
+  },
+  "Breadcrumbs": {
+    "prefix": "zbread",
+    "body": [
+      "<nav class=\"${1:breadcrumbs}\" aria-label=\"${2:Brotkrümel}\">",
+      "<!-- Deutsch: Navigationspfad (Seitenpfad) / English: Breadcrumb navigation (page path) -->",
+      "  <ol class=\"${1:breadcrumbs}__list\">",
+      "    <li class=\"${1:breadcrumbs}__item\">",
+      "      <a href=\"${3:#}\" class=\"${1:breadcrumbs}__link\">${4:Startseite}</a>",
+      "      <!-- Deutsch: Link zur Startseite / English: Link to home page -->",
+      "    </li>",
+      "    <li class=\"${1:breadcrumbs}__item\" aria-current=\"page\">",
+      "      ${5:Aktuelle Seite}",
+      "      <!-- Deutsch: Aktuelle Seite (aktives Element) / English: Current page (active item) -->",
+      "    </li>",
+      "  </ol>",
+      "</nav>"
+    ],
+    "description": "Navigationspfad / Breadcrumbs"
+  },
+  "Pagination": {
+    "prefix": "zpagination",
+    "body": [
+      "<nav class=\"${1:pagination}\" aria-label=\"${2:Seitennummerierung}\">",
+      "<!-- Deutsch: Seitenumbruch / English: Pagination (page navigation) -->",
+      "  <ul class=\"${1:pagination}__list\">",
+      "    <li class=\"${1:pagination}__item\">",
+      "      <a href=\"${3:#}\" class=\"${1:pagination}__link ${1:pagination}__link--prev\" aria-label=\"Vorherige\">",
+      "        &laquo;",
+      "      </a>",
+      "      <!-- Deutsch: \"Vorherige Seite\"-Button / English: \"Previous page\" button -->",
+      "    </li>",
+      "    <li class=\"${1:pagination}__item\">",
+      "      <a href=\"${4:#}\" class=\"${1:pagination}__link\" aria-current=\"page\">1</a>",
+      "      <!-- Deutsch: Aktuelle Seite / English: Current page -->",
+      "    </li>",
+      "    <li class=\"${1:pagination}__item\">",
+      "      <a href=\"${5:#}\" class=\"${1:pagination}__link ${1:pagination}__link--next\" aria-label=\"Nächste\">",
+      "        &raquo;",
+      "      </a>",
+      "      <!-- Deutsch: \"Nächste Seite\"-Button / English: \"Next page\" button -->",
+      "    </li>",
+      "  </ul>",
+      "</nav>"
+    ],
+    "description": "Seitenumbruch / Pagination"
+  },
+  "Testimonial": {
+    "prefix": "ztestimonial",
+    "body": [
+      "<blockquote class=\"${1:testimonial}\">",
+      "<!-- Deutsch: Kundenbewertungsblock / English: Customer testimonial block -->",
+      "  <div class=\"${1:testimonial}__content\">",
+      "    <p class=\"${1:testimonial}__text\">${2:Bewertungstext}</p>",
+      "    <footer class=\"${1:testimonial}__footer\">",
+      "      <img src=\"${3:avatar.jpg}\" alt=\"${4}\" class=\"${1:testimonial}__avatar\">",
+      "      <!-- Deutsch: Bewertungsautor-Avatar / English: Testimonial author avatar -->",
+      "      <cite class=\"${1:testimonial}__author\">${5:Autorenname}</cite>",
+      "      <!-- Deutsch: Name des Bewertungsautors / English: Testimonial author name -->",
+      "    </footer>",
+      "  </div>",
+      "</blockquote>"
+    ],
+    "description": "Kundenbewertung / Testimonial"
+  },
+  "Price Card": {
+    "prefix": "zprice",
+    "body": [
+      "<div class=\"${1:price-card}\">",
+      "<!-- Deutsch: Preis- und Merkmalskarte / English: Pricing card with features -->",
+      "  <h3 class=\"${1:price-card}__title\">${2:Plan Name}</h3>",
+      "  <p class=\"${1:price-card}__amount\">${3:€9,99}<span class=\"${1:price-card}__period\">${4:/Monat}</span></p>",
+      "  <!-- Deutsch: Preis und Zahlungszeitraum / English: Price and payment period -->",
+      "  <ul class=\"${1:price-card}__features\">",
+      "    <li class=\"${1:price-card}__feature\">${5:Merkmal 1}</li>",
+      "    <!-- Deutsch: Tarifmerkmal / English: Plan feature -->",
+      "  </ul>",
+      "  <button type=\"button\" class=\"${1:price-card}__button\">${6:Plan wählen}</button>",
+      "  <!-- Deutsch: Tarifauswahlbutton / English: \"Select Plan\" button -->",
+      "</div>"
+    ],
+    "description": "Preiskarte / Price card"
+  },
+  "Timeline": {
+    "prefix": "ztimeline",
+    "body": [
+      "<div class=\"${1:timeline}\">",
+      "<!-- Deutsch: Ereignischronologie / English: Events timeline -->",
+      "  <div class=\"${1:timeline}__item\">",
+      "    <time class=\"${1:timeline}__date\">${2:2023}</time>",
+      "    <!-- Deutsch: Ereignisdatum / English: Event date -->",
+      "    <div class=\"${1:timeline}__content\">",
+      "      <h4 class=\"${1:timeline}__title\">${3:Ereignistitel}</h4>",
+      "      <p class=\"${1:timeline}__text\">${4:Ereignisbeschreibung}</p>",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Zeitstrahl / Timeline"
+  },
+  "Stats Grid": {
+    "prefix": "zstats",
+    "body": [
+      "<div class=\"${1:stats}\">",
+      "<!-- Deutsch: Statistikblock / English: Statistics block -->",
+      "  <div class=\"${1:stats}__item\">",
+      "    <span class=\"${1:stats}__number\">${2:100}+</span>",
+      "    <!-- Deutsch: Zahlenwert / English: Numeric value -->",
+      "    <span class=\"${1:stats}__label\">${3:Kunden}</span>",
+      "    <!-- Deutsch: Wertbeschriftung / English: Value label -->",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Statistiken / Stats grid"
+  },
+  "Hero Section": {
+    "prefix": "zhero",
+    "body": [
+      "<section class=\"${1:hero}\">",
+      "<!-- Deutsch: Hauptbanner der Seite / English: Main page banner -->",
+      "  <div class=\"${1:hero}__content\">",
+      "    <h1 class=\"${1:hero}__title\">${2:Hauptüberschrift}</h1>",
+      "    <p class=\"${1:hero}__text\">${3:Hero-Bereichsbeschreibung}</p>",
+      "    <a href=\"${4:#}\" class=\"${1:hero}__button\">${5:Handlungsaufforderung}</a>",
+      "    <!-- Deutsch: Call-to-Action-Button / English: Call to action button -->",
+      "  </div>",
+      "  <img src=\"${6:hero-image.jpg}\" alt=\"${7}\" class=\"${1:hero}__image\" loading=\"lazy\">",
+      "  <!-- Deutsch: Hauptbild mit verzögertem Laden / English: Hero image with lazy loading -->",
+      "</section>"
+    ],
+    "description": "Hero-Bereich / Hero section"
+  },
+  "Feature List": {
+    "prefix": "zfeatures",
+    "body": [
+      "<ul class=\"${1:features}\">",
+      "<!-- Deutsch: Merkmalsliste / English: Features list -->",
+      "  <li class=\"${1:features}__item\">",
+      "    <svg class=\"${1:features}__icon\">${2:Symbol}</svg>",
+      "    <!-- Deutsch: Merkmalssymbol / English: Feature icon -->",
+      "    <h3 class=\"${1:features}__title\">${3:Merkmalstitel}</h3>",
+      "    <p class=\"${1:features}__text\">${4:Merkmalbeschreibung}</p>",
+      "  </li>",
+      "</ul>"
+    ],
+    "description": "Merkmaleliste / Feature list"
+  },
+  "Contact Form": {
+    "prefix": "zcontact",
+    "body": [
+      "<form class=\"${1:contact-form}\">",
+      "<!-- Deutsch: Kontaktformular / English: Contact form -->",
+      "  <div class=\"${1:contact-form}__group\">",
+      "    <label for=\"${2:name}\" class=\"${1:contact-form}__label\">${3:Name}</label>",
+      "    <input type=\"text\" id=\"${2:name}\" class=\"${1:contact-form}__input\" required>",
+      "    <!-- Deutsch: Namenseingabefeld / English: Name input field -->",
+      "  </div>",
+      "  <button type=\"submit\" class=\"${1:contact-form}__submit\">${4:Nachricht senden}</button>",
+      "  <!-- Deutsch: Nachrichtensendebutton / English: \"Send message\" button -->",
+      "</form>"
+    ],
+    "description": "Kontaktformular / Contact form"
+  },
+  "Team Grid": {
+    "prefix": "zteam",
+    "body": [
+      "<div class=\"${1:team}\">",
+      "<!-- Deutsch: Teammitgliederraster / English: Team members grid -->",
+      "  <div class=\"${1:team}__member\">",
+      "    <img src=\"${2:member.jpg}\" alt=\"${3}\" class=\"${1:team}__photo\">",
+      "    <!-- Deutsch: Teammitgliedfoto / English: Team member photo -->",
+      "    <h3 class=\"${1:team}__name\">${4:Name}</h3>",
+      "    <p class=\"${1:team}__position\">${5:Position}</p>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Team / Team grid"
+  },
+  "Accordion": {
+    "prefix": "zaccordion",
+    "body": [
+      "<div class=\"${1:accordion}\">",
+      "<!-- Deutsch: Akkordeon (aufklappbare Blöcke) / English: Accordion (expandable blocks) -->",
+      "  <div class=\"${1:accordion}__item\">",
+      "    <h3 class=\"${1:accordion}__header\">",
+      "      <button type=\"button\" aria-expanded=\"false\" class=\"${1:accordion}__trigger\">",
+      "        ${2:Frage}",
+      "      </button>",
+      "      <!-- Deutsch: Aufklappbutton / English: Expand trigger -->",
+      "    </h3>",
+      "    <div class=\"${1:accordion}__panel\" hidden>",
+      "      ${3:Antwort}",
+      "      <!-- Deutsch: Standardmäßig ausgeblendeter Inhalt / English: Content (hidden by default) -->",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Akkordeon / Accordion"
+  },
+  "Tab System": {
+    "prefix": "ztabs",
+    "body": [
+      "<div class=\"${1:tabs}\">",
+      "<!-- Deutsch: Tab-System / English: Tab system -->",
+      "  <div role=\"tablist\" class=\"${1:tabs}__nav\">",
+      "    <button type=\"button\" role=\"tab\" id=\"${2:tab1}\" aria-selected=\"true\" class=\"${1:tabs}__trigger\">",
+      "      ${3:Tab 1}",
+      "    </button>",
+      "    <!-- Deutsch: Tab-1-Button / English: Tab 1 button -->",
+      "  </div>",
+      "  <div role=\"tabpanel\" aria-labelledby=\"${2:tab1}\" class=\"${1:tabs}__panel\">",
+      "    ${4:Inhalt 1}",
+      "    <!-- Deutsch: Tab-1-Inhalt / English: Tab 1 content -->",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Tab-System / Tab system"
+  }
+}
