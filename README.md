@@ -4,19 +4,14 @@
 [![BEM](https://img.shields.io/badge/BEM-000000?style=for-the-badge&logo=bem&logoColor=white)](https://en.bem.info/)
 [![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
 [![Version](https://img.shields.io/github/v/release/VuToV-Mykola/html-vscode-snippets)](https://github.com/VuToV-Mykola/html-vscode-snippets/releases)
-[![Downloads](https://img.shields.io/github/downloads/VuToV-Mykola/html-vscode-snippets/total)](https://github.com/VuToV-Mykola/html-vscode-snippets)
+[![Downloads](https://img.shields.io/github/downloads/ІМ_РЕПОЗИТОРІЮ/html-bem-snippets/total?label=Downloads)](https://github.com/VuToV-Mykola/html-vscode-snippets/releases/latest)
+
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Колекція зручних снипетів для швидкої HTML5-верстки з використанням
 BEM-методології. Повністю підтримує семантичну верстку, доступність та сучасні
 підходи до розробки. Розроблено завдячуючи знанням отриманим на курсах GoIT з
 використанням штучного інтелекту.
-
----
-
-## 📥 Завантажити
-
-[![Download JSON](https://img.shields.io/badge/Download-JSON_File-007ACC?style=for-the-badge&logo=visual-studio-code)](https://github.com/VuToV-Mykola/html-vscode-snippets/raw/main/html-vscode-snippets.json)
 
 ---
 
@@ -36,7 +31,7 @@ BEM-методології. Повністю підтримує семантич
 
 1. **Завантажте файл снипетів**:
 
-   - [Безпосереднє завантаження JSON](https://github.com/VuToV-Mykola/html-vscode-snippets/raw/main/html-vscode-snippets.json)
+   - [Безпосереднє завантаження JSON](https://github.com/VuToV-Mykola/html-vscode-snippets/releases/latest)
    - Або клонуйте репозиторій:
      ```bash
      git clone https://github.com/VuToV-Mykola/html-vscode-snippets.git
