@@ -33,7 +33,7 @@
   "Address": {
     "prefix": "xaddress",
     "body": [
-      "<address class=\"${1:адреса}\">",
+      "<address class=\"${1:address}\">",
       "<!-- Українською: Контактна інформація / English: Contact Information -->",
       "  $0",
       "</address>"
