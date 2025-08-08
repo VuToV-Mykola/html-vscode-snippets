@@ -19,7 +19,7 @@ courses and the use of artificial intelligence.
 
 ## 🎥 Video Example
 
-🇬🇧 [Watch video](https://www.youtube.com/watch?v=ZEnn5RbKXUw)
+🇬🇧 [![Video Demo](https://img.youtube.com/vi/ZEnn5RbKXUw/0.jpg)](https://www.youtube.com/watch?v=ZEnn5RbKXUw)
 
 ## ✨ Features
 

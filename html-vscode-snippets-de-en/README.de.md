@@ -19,7 +19,7 @@ mit Unterstützung durch künstliche Intelligenz.
 
 ## 🎥 Video-Beispiel
 
-🇩🇪 [Video ansehen](https://www.youtube.com/watch?v=ZEnn5RbKXUw)
+🇩🇪 [![Video Demo](https://img.youtube.com/vi/ZEnn5RbKXUw/0.jpg)](https://www.youtube.com/watch?v=ZEnn5RbKXUw)
 
 ## ✨ Funktionen
 

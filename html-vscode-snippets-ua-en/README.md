@@ -19,8 +19,7 @@ BEM-методології. Повністю підтримує семантич
 
 ## 🎥 Відео-приклад
 
-🇺🇦 [Переглянути відео](https://www.youtube.com/watch?v=ZEnn5RbKXUw)
-
+🇺🇦 [![Video Demo](https://img.youtube.com/vi/ZEnn5RbKXUw/0.jpg)](https://www.youtube.com/watch?v=ZEnn5RbKXUw)
 
 ## ✨ Особливості
 
