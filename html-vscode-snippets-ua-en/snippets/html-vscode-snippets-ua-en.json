@@ -2,7 +2,7 @@
   "Section": {
     "prefix": "xsection",
     "body": [
-      "<section class=\"${1:section}\" aria-labelledby=\"${2:section-id}\">",
+      "<section class=\"${1:section}\" >",
       "<!-- Українською: Тематична група контенту / English: Thematic content group -->",
       "  <h2 id=\"${2:section-id}\" class=\"${1:section}__title\">$3</h2>",
       "  $0",
@@ -30,6 +30,16 @@
     ],
     "description": "Бічна панель / Aside"
   },
+  "Address": {
+    "prefix": "xaddress",
+    "body": [
+      "<address class=\"${1:адреса}\">",
+      "<!-- Українською: Контактна інформація / English: Contact Information -->",
+      "  $0",
+      "</address>"
+    ],
+    "description": "Контактна інформація / Contact Information"
+  },
   "Div": {
     "prefix": "xdiv",
     "body": [
@@ -43,7 +53,7 @@
   "Heading 1": {
     "prefix": "xh1",
     "body": [
-      "<h1 class=\"${1:subtitle}\">",
+      "<h1 class=\"${1:page-title}\">",
       "<!-- Українською: Заголовок 1 рівня / English: Heading level 1 -->",
       "  $0",
       "</h1>"
@@ -54,7 +64,7 @@
   "Heading 2": {
     "prefix": "xh2",
     "body": [
-      "<h2 class=\"${1:subtitle}\">",
+      "<h2 class=\"${1:section-title}\">",
       "<!-- Українською: Заголовок 2 рівня / English: Heading level 2 -->",
       "  $0",
       "</h2>"
@@ -64,7 +74,7 @@
   "Heading 3": {
     "prefix": "xh3",
     "body": [
-      "<h3 class=\"${1:heading}\">",
+      "<h3 class=\"${1:section-subtitle}\">",
       "<!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->",
       "  $0",
       "</h3>"
@@ -293,21 +303,27 @@
     "body": [
       "<ol class=\"${1:ordered-list}\">",
       "<!-- Українською: Нумерований список / English: Ordered list -->",
-      "  <li class=\"${1:ordered-list}__item\">$0</li>",
+      "<li class=\"${1:list-item}\">",
+      "<!-- Українською: Елемент списку / English: List item -->",
+      "  $0",
+      "</li>",
       "</ol>"
     ],
     "description": "Нумерований список / Ordered list"
   },
   "UnorderedList": {
-  "prefix": "xul",
-  "body": [
-    "<ul class=\"${1:список}\">",
-    "<!-- Українською: Ненумерований список / English: Unordered List -->",
-    "  $0",
-    "</ul>"
-  ],
-  "description": "Ненумерований список / Unordered List"
-},
+    "prefix": "xul",
+    "body": [
+      "<ul class=\"${1:unordered-list}\">",
+      "<!-- Українською: Ненумерований список / English: Unordered List -->",
+      "<li class=\"${1:list-item}\">",
+      "<!-- Українською: Елемент списку / English: List item -->",
+      "  $0",
+      "</li>",
+      "</ul>"
+    ],
+    "description": "Ненумерований список / Unordered List"
+  },
   "List Item": {
     "prefix": "xli",
     "body": [
@@ -352,7 +368,7 @@
   "Image": {
     "prefix": "ximg",
     "body": [
-      "<img src=\"${1:image.jpg}\" alt=\"${2:опис зображення}\" class=\"${3:image}\" width=\"${4:300}\" height=\"${5:200}\" loading=\"${6|lazy,eager|}\">",
+      "<img src=\"${1:image.jpg}\" alt=\"${2:description}\" class=\"${3:image}\" width=\"${4:300}\" height=\"${5:200}\" loading=\"${6|lazy,eager|}\">",
       "<!-- Українською: Зображення / English: Image -->"
     ],
     "description": "Зображення / Image"
