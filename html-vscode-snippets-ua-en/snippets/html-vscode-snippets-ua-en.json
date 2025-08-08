@@ -40,12 +40,22 @@
     ],
     "description": "Блок / Div"
   },
+  "Heading 1": {
+    "prefix": "xh1",
+    "body": [
+      "<h1 class=\"${1:subtitle}\">",
+      "<!-- Українською: Заголовок 1 рівня / English: Heading level 1 -->",
+      "  $0",
+      "</h1>"
+    ],
+    "description": "Заголовок 1 рівня / Heading level 1"
+  },
 
   "Heading 2": {
     "prefix": "xh2",
     "body": [
       "<h2 class=\"${1:subtitle}\">",
-      "<!-- Українською: Підзаголовок / English: Subheading -->",
+      "<!-- Українською: Заголовок 2 рівня / English: Heading level 2 -->",
       "  $0",
       "</h2>"
     ],
@@ -55,7 +65,7 @@
     "prefix": "xh3",
     "body": [
       "<h3 class=\"${1:heading}\">",
-      "<!-- Українською: Підрозділ / English: Subsection -->",
+      "<!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->",
       "  $0",
       "</h3>"
     ],
@@ -65,7 +75,7 @@
     "prefix": "xh4",
     "body": [
       "<h4 class=\"${1:small-heading}\">",
-      "<!-- Українською: Дрібний заголовок / English: Small heading -->",
+      "<!-- Українською: Заголовок 4 рівня / English: Heading level 4 -->",
       "  $0",
       "</h4>"
     ],
@@ -75,7 +85,7 @@
     "prefix": "xh5",
     "body": [
       "<h5 class=\"${1:minor-heading}\">",
-      "<!-- Українською: Малий заголовок / English: Minor heading -->",
+      "<!-- Українською: Заголовок 5 рівня / English: Heading level 5 -->",
       "  $0",
       "</h5>"
     ],
@@ -85,7 +95,7 @@
     "prefix": "xh6",
     "body": [
       "<h6 class=\"${1:tiny-heading}\">",
-      "<!-- Українською: Найменший заголовок / English: Tiny heading -->",
+      "<!-- Українською: Заголовок 6 рівня / English: Heading level 6 -->",
       "  $0",
       "</h6>"
     ],
@@ -319,6 +329,14 @@
       "</dd>"
     ],
     "description": "Визначення / Definition description"
+  },
+  "Image": {
+    "prefix": "ximg",
+    "body": [
+      "<img src=\"${1:image.jpg}\" alt=\"${2:опис зображення}\" class=\"${3:image}\" width=\"${4:300}\" height=\"${5:200}\" loading=\"${6|lazy,eager|}\">",
+      "<!-- Українською: Зображення / English: Image -->"
+    ],
+    "description": "Зображення / Image"
   },
 
   "Anchor": {
