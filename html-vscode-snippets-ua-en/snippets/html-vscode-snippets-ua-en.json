@@ -298,6 +298,16 @@
     ],
     "description": "Нумерований список / Ordered list"
   },
+  "UnorderedList": {
+  "prefix": "xul",
+  "body": [
+    "<ul class=\"${1:список}\">",
+    "<!-- Українською: Ненумерований список / English: Unordered List -->",
+    "  $0",
+    "</ul>"
+  ],
+  "description": "Ненумерований список / Unordered List"
+},
   "List Item": {
     "prefix": "xli",
     "body": [

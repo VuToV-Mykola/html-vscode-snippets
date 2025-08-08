@@ -295,6 +295,16 @@
     ],
     "description": "Nummerierte Liste / Ordered list"
   },
+  "UnorderedList": {
+    "prefix": "xul",
+    "body": [
+      "<ul class=\"${1:liste}\">",
+      "<!-- Deutsch: Ungeordnete Liste / English: Unordered List -->",
+      "  $0",
+      "</ul>"
+    ],
+    "description": "Ungeordnete Liste / Unordered List"
+  },
   "List Item": {
     "prefix": "xli",
     "body": [

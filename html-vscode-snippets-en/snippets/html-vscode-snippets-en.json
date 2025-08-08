@@ -293,6 +293,16 @@
     ],
     "description": "Ordered list"
   },
+  "UnorderedList": {
+    "prefix": "xul",
+    "body": [
+      "<ul class=\"${1:list}\">",
+      "<!-- English: Unordered List -->",
+      "  $0",
+      "</ul>"
+    ],
+    "description": "Unordered List"
+  },
   "List Item": {
     "prefix": "xli",
     "body": [
@@ -303,6 +313,7 @@
     ],
     "description": "List item"
   },
+
   "Description List": {
     "prefix": "xdl",
     "body": [
