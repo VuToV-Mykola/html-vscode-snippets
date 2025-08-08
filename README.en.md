@@ -17,6 +17,10 @@ methodology. Fully supports semantic structure, accessibility, and modern
 development practices. Developed thanks to the knowledge gained from GoIT
 courses and the use of artificial intelligence.
 
+## 🎥 Video Example
+
+🇬🇧 [Watch video](./assets/example.mov)
+
 ## ✨ Features
 
 - 🔤 111 HTML5 tags with `x` prefix (e.g. `xarticle`, `xform`)

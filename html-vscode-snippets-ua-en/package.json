@@ -2,7 +2,7 @@
   "name": "html-vscode-snippets-ua-en",
   "displayName": "HTML Snippets (UA/EN)",
   "description": "HTML snippets with Ukrainian and English comments",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "publisher": "VuToV-Mykola",
   "license": "MIT",
   "repository": {
@@ -13,7 +13,26 @@
     "vscode": "^1.80.0"
   },
   "categories": [
-    "Snippets"
+    "Snippets",
+    "Azure",
+    "Data Science",
+    "Debuggers",
+    "Extension Packs",
+    "Education",
+    "Formatters",
+    "Keymaps",
+    "Language Packs",
+    "Linters",
+    "Machine Learning",
+    "Notebooks",
+    "Programming Languages",
+    "SCM Providers",
+    "Snippets",
+    "Testing",
+    "Themes",
+    "Visualization",
+    "Other",
+    "Languages"
   ],
   "contributes": {
     "snippets": [

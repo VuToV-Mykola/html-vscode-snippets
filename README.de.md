@@ -1,5 +1,7 @@
 ### 🌐 Wählen Sie Ihre bevorzugte Sprache:
-[🇺🇦 Ukrainisch](README.md) | [🇬🇧 Englisch](README.en.md) | [🇩🇪 Deutsch](README.de.md)
+
+[🇺🇦 Ukrainisch](README.md) | [🇬🇧 Englisch](README.en.md) |
+[🇩🇪 Deutsch](README.de.md)
 
 # HTML5 + BEM Snippets für VS Code
 
@@ -10,7 +12,14 @@
 [![Downloads](https://img.shields.io/github/downloads/VuToV-Mykola/html-vscode-snippets/total?label=Downloads)](https://github.com/VuToV-Mykola/html-vscode-snippets/releases/latest)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Eine Sammlung praktischer Snippets für schnelles HTML5-Markup mit der BEM-Methodik. Unterstützt vollständig semantisches Markup, Barrierefreiheit und moderne Entwicklungsansätze. Entwickelt dank des Wissens aus den GoIT-Kursen und mit Unterstützung durch künstliche Intelligenz.
+Eine Sammlung praktischer Snippets für schnelles HTML5-Markup mit der
+BEM-Methodik. Unterstützt vollständig semantisches Markup, Barrierefreiheit und
+moderne Entwicklungsansätze. Entwickelt dank des Wissens aus den GoIT-Kursen und
+mit Unterstützung durch künstliche Intelligenz.
+
+## 🎥 Video-Beispiel
+
+🇩🇪 [Video ansehen](./assets/example.mov)
 
 ## ✨ Funktionen
 
@@ -24,11 +33,13 @@ Eine Sammlung praktischer Snippets für schnelles HTML5-Markup mit der BEM-Metho
 
 ## 🚀 Installation
 
-1. Lade die `.vsix`-Datei von den [Releases](https://github.com/VuToV-Mykola/html-vscode-snippets/releases/latest) herunter
+1. Lade die `.vsix`-Datei von den
+   [Releases](https://github.com/VuToV-Mykola/html-vscode-snippets/releases/latest)
+   herunter
 2. In VS Code:
-    - Öffne die Befehlsübersicht (Ctrl+Shift+P)
-    - Wähle `Extensions: Install from VSIX...`
-    - Wähle die Datei `html-bem-snippets.vsix`
+   - Öffne die Befehlsübersicht (Ctrl+Shift+P)
+   - Wähle `Extensions: Install from VSIX...`
+   - Wähle die Datei `html-bem-snippets.vsix`
 
 ## 🛠 Anwendungsbeispiele
 
