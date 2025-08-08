@@ -101,7 +101,16 @@
     ],
     "description": "Überschrift Ebene 6 / Heading level 6"
   },
-
+  "Paragraph": {
+    "prefix": "xp",
+    "body": [
+      "<p class=\"${1:paragraph}\">",
+      "<!-- Deutsch: Absatz / English: Paragraph -->",
+      "  $0",
+      "</p>"
+    ],
+    "description": "Absatz / Paragraph"
+  },
   "Span": {
     "prefix": "xspan",
     "body": [

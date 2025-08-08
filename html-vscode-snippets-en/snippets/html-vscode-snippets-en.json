@@ -100,6 +100,16 @@
     ],
     "description": "Heading level 6"
   },
+  "Paragraph": {
+    "prefix": "xp",
+    "body": [
+      "<p class=\"${1:paragraph}\">",
+      "<!-- English: Paragraph -->",
+      "  $0",
+      "</p>"
+    ],
+    "description": "Paragraph"
+  },
   "Span": {
     "prefix": "xspan",
     "body": [

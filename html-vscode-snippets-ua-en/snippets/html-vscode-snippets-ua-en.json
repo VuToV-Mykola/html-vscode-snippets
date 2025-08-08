@@ -101,7 +101,16 @@
     ],
     "description": "Заголовок 6 рівня / Heading level 6"
   },
-
+  "Paragraph": {
+    "prefix": "xp",
+    "body": [
+      "<p class=\"${1:paragraph}\">",
+      "<!-- Українською: Абзац / English: Paragraph -->",
+      "  $0",
+      "</p>"
+    ],
+    "description": "Абзац / Paragraph"
+  },
   "Span": {
     "prefix": "xspan",
     "body": [
