@@ -2,9 +2,9 @@
   "Section": {
     "prefix": "xsection",
     "body": [
-      "<section class=\"${1:section}\" >",
+      "<section class=\"${1:section}\">",
       "<!-- Українською: Тематична група контенту / English: Thematic content group -->",
-      "  <h2 id=\"${2:section-id}\" class=\"${1:section}__title\">$3</h2>",
+      "  <h2 class=\"${1:section}__title\" id=\"${2:section-id}\">$3</h2>",
       "  $0",
       "</section>"
     ],
@@ -60,7 +60,6 @@
     ],
     "description": "Заголовок 1 рівня / Heading level 1"
   },
-
   "Heading 2": {
     "prefix": "xh2",
     "body": [
@@ -174,7 +173,7 @@
   "Abbreviation": {
     "prefix": "xabbr",
     "body": [
-      "<abbr title=\"${1:Повна версія}\" class=\"${2:abbreviation}\">",
+      "<abbr class=\"${2:abbreviation}\" title=\"${1:Повна версія}\">",
       "<!-- Українською: Абревіатура / English: Abbreviation -->",
       "  $0",
       "</abbr>"
@@ -184,7 +183,7 @@
   "Time": {
     "prefix": "xtime",
     "body": [
-      "<time datetime=\"${1:2023-01-01}\" class=\"${2:time}\">",
+      "<time class=\"${2:time}\" datetime=\"${1:2023-01-01}\">",
       "<!-- Українською: Часова мітка / English: Time element -->",
       "  $0",
       "</time>"
@@ -194,7 +193,7 @@
   "Blockquote": {
     "prefix": "xblockquote",
     "body": [
-      "<blockquote cite=\"${1:source}\" class=\"${2:quote}\">",
+      "<blockquote class=\"${2:quote}\" cite=\"${1:source}\">",
       "<!-- Українською: Цитата / English: Block quotation -->",
       "  $0",
       "</blockquote>"
@@ -303,10 +302,10 @@
     "body": [
       "<ol class=\"${1:ordered-list}\">",
       "<!-- Українською: Нумерований список / English: Ordered list -->",
-      "<li class=\"${1:list-item}\">",
-      "<!-- Українською: Елемент списку / English: List item -->",
-      "  $0",
-      "</li>",
+      "  <li class=\"${1:list-item}\">",
+      "  <!-- Українською: Елемент списку / English: List item -->",
+      "    $0",
+      "  </li>",
       "</ol>"
     ],
     "description": "Нумерований список / Ordered list"
@@ -316,10 +315,10 @@
     "body": [
       "<ul class=\"${1:unordered-list}\">",
       "<!-- Українською: Ненумерований список / English: Unordered List -->",
-      "<li class=\"${1:list-item}\">",
-      "<!-- Українською: Елемент списку / English: List item -->",
-      "  $0",
-      "</li>",
+      "  <li class=\"${1:list-item}\">",
+      "  <!-- Українською: Елемент списку / English: List item -->",
+      "    $0",
+      "  </li>",
       "</ul>"
     ],
     "description": "Ненумерований список / Unordered List"
@@ -368,7 +367,7 @@
   "Image": {
     "prefix": "ximg",
     "body": [
-      "<img src=\"${1:image.jpg}\" alt=\"${2:description}\" class=\"${3:image}\" width=\"${4:300}\" height=\"${5:200}\" loading=\"${6|lazy,eager|}\">",
+      "<img class=\"${3:image}\" src=\"${1:image.jpg}\" alt=\"${2:description}\" width=\"${4:300}\" height=\"${5:200}\" loading=\"${6|lazy,eager|}\">",
       "<!-- Українською: Зображення / English: Image -->"
     ],
     "description": "Зображення / Image"
@@ -377,7 +376,7 @@
   "Anchor": {
     "prefix": "xa",
     "body": [
-      "<a href=\"${1:#}\" class=\"${2:link}\" target=\"${3|_self,_blank|}\" rel=\"${4|noopener,noreferrer|}\">",
+      "<a class=\"${2:link}\" href=\"${1:#}\" target=\"${3|_self,_blank|}\" rel=\"${4|noopener,noreferrer|}\">",
       "<!-- Українською: Гіперпосилання / English: Hyperlink -->",
       "  $0",
       "</a>"
@@ -387,7 +386,7 @@
   "Navigation Link": {
     "prefix": "xnav-link",
     "body": [
-      "<a href=\"${1:#}\" class=\"${2:nav-link}\" aria-current=\"${3|page,false|}\">",
+      "<a class=\"${2:nav-link}\" href=\"${1:#}\" aria-current=\"${3|page,false|}\">",
       "<!-- Українською: Навігаційне посилання / English: Navigation link -->",
       "  $0",
       "</a>"
@@ -397,7 +396,7 @@
   "Mailto Link": {
     "prefix": "xmailto",
     "body": [
-      "<a href=\"mailto:${1:email@example.com}\" class=\"${2:email-link}\">",
+      "<a class=\"${2:email-link}\" href=\"mailto:${1:email@example.com}\">",
       "<!-- Українською: Посилання на email / English: Email link -->",
       "  $0",
       "</a>"
@@ -407,7 +406,7 @@
   "Tel Link": {
     "prefix": "xtel",
     "body": [
-      "<a href=\"tel:${1:+380123456789}\" class=\"${2:phone-link}\">",
+      "<a class=\"${2:phone-link}\" href=\"tel:${1:+380123456789}\">",
       "<!-- Українською: Посилання на телефон / English: Phone link -->",
       "  $0",
       "</a>"
@@ -417,7 +416,7 @@
   "Download Link": {
     "prefix": "xdownload",
     "body": [
-      "<a href=\"${1:file.pdf}\" class=\"${2:download-link}\" download>",
+      "<a class=\"${2:download-link}\" href=\"${1:file.pdf}\" download>",
       "<!-- Українською: Посилання для завантаження / English: Download link -->",
       "  $0",
       "</a>"
@@ -428,7 +427,7 @@
   "Audio": {
     "prefix": "xaudio",
     "body": [
-      "<audio controls class=\"${1:audio-player}\">",
+      "<audio class=\"${1:audio-player}\" controls>",
       "<!-- Українською: Аудіопрогравач / English: Audio player -->",
       "  <source src=\"${2:audio.mp3}\" type=\"audio/mpeg\">",
       "  <!-- Українською: Аудіофайл / English: Audio source -->",
@@ -441,7 +440,7 @@
   "Video": {
     "prefix": "xvideo",
     "body": [
-      "<video controls class=\"${1:video-player}\" width=\"${2:640}\" height=\"${3:360}\" poster=\"${4:poster.jpg}\">",
+      "<video class=\"${1:video-player}\" controls width=\"${2:640}\" height=\"${3:360}\" poster=\"${4:poster.jpg}\">",
       "<!-- Українською: Відеопрогравач / English: Video player -->",
       "  <source src=\"${5:video.mp4}\" type=\"video/mp4\">",
       "  <!-- Українською: Відеофайл / English: Video source -->",
@@ -462,7 +461,7 @@
   "Track": {
     "prefix": "xtrack",
     "body": [
-      "<track src=\"${1:subtitles.vtt}\" kind=\"${2|subtitles,captions,descriptions|}\" srclang=\"${3|uk,en|}\" label=\"${4:Ukrainian}\">",
+      "<track src=\"${1:subtitles.vtt}\" srclang=\"${3|uk,en|}\" kind=\"${2|subtitles,captions,descriptions|}\" label=\"${4:Ukrainian}\">",
       "<!-- Українською: Субтитри чи опис / English: Subtitles or descriptions -->"
     ],
     "description": "Доріжка / Track"
@@ -484,7 +483,7 @@
     "body": [
       "<figure class=\"${1:figure}\">",
       "<!-- Українською: Ілюстрація з підписом / English: Image with caption -->",
-      "  <img src=\"${2:image.jpg}\" alt=\"${3}\" class=\"${1:figure}__image\">",
+      "  <img class=\"${1:figure}__image\" src=\"${2:image.jpg}\" alt=\"${3}\">",
       "  <figcaption class=\"${1:figure}__caption\">$0</figcaption>",
       "</figure>"
     ],
@@ -503,7 +502,7 @@
   "Map": {
     "prefix": "xmap",
     "body": [
-      "<map name=\"${1:map-name}\" class=\"${2:image-map}\">",
+      "<map class=\"${2:image-map}\" name=\"${1:map-name}\">",
       "<!-- Українською: Карта зображення / English: Image map -->",
       "  <area shape=\"${3|rect,circle,poly|}\" coords=\"${4}\" href=\"${5:#}\" alt=\"${6}\">",
       "</map>"
@@ -513,7 +512,7 @@
   "Area": {
     "prefix": "xarea",
     "body": [
-      "<area shape=\"${1|rect,circle,poly|}\" coords=\"${2}\" href=\"${3:#}\" alt=\"${4}\" class=\"${5:hotspot}\">",
+      "<area class=\"${5:hotspot}\" shape=\"${1|rect,circle,poly|}\" coords=\"${2}\" href=\"${3:#}\" alt=\"${4}\">",
       "<!-- Українською: Активна область / English: Hotspot area -->"
     ],
     "description": "Область / Area"
@@ -521,7 +520,7 @@
   "Embed": {
     "prefix": "xembed",
     "body": [
-      "<embed src=\"${1:file.pdf}\" type=\"${2:application/pdf}\" width=\"${3:600}\" height=\"${4:400}\" class=\"${5:embedded}\">",
+      "<embed class=\"${5:embedded}\" src=\"${1:file.pdf}\" type=\"${2:application/pdf}\" width=\"${3:600}\" height=\"${4:400}\">",
       "<!-- Українською: Вбудований об'єкт / English: Embedded object -->"
     ],
     "description": "Вбудований об'єкт / Embed"
@@ -529,7 +528,7 @@
   "Object": {
     "prefix": "xobject",
     "body": [
-      "<object data=\"${1:file.swf}\" type=\"${2:application/x-shockwave-flash}\" width=\"${3:600}\" height=\"${4:400}\" class=\"${5:flash-object}\">",
+      "<object class=\"${5:flash-object}\" data=\"${1:file.swf}\" type=\"${2:application/x-shockwave-flash}\" width=\"${3:600}\" height=\"${4:400}\">",
       "<!-- Українською: Вбудований медіа-об'єкт / English: Embedded media object -->",
       "  $0",
       "</object>"
@@ -547,7 +546,7 @@
   "IFrame": {
     "prefix": "xiframe",
     "body": [
-      "<iframe src=\"${1:https://example.com}\" width=\"${2:800}\" height=\"${3:600}\" class=\"${4:embedded-frame}\" loading=\"${5|lazy,eager|}\" allowfullscreen>",
+      "<iframe class=\"${4:embedded-frame}\" src=\"${1:https://example.com}\" width=\"${2:800}\" height=\"${3:600}\" loading=\"${5|lazy,eager|}\" allowfullscreen>",
       "<!-- Українською: Вбудована веб-сторінка / English: Embedded web page -->",
       "  Ваш браузер не підтримує iframes.",
       "  <!-- Українською: Повідомлення про непідтримку / English: Fallback message -->",
@@ -569,7 +568,7 @@
   "Table Header Cell": {
     "prefix": "xth",
     "body": [
-      "<th scope=\"${1|col,row|}\" class=\"${2:header-cell}\">",
+      "<th class=\"${2:header-cell}\" scope=\"${1|col,row|}\">",
       "<!-- Українською: Заголовок стовпця/рядка / English: Column/row header -->",
       "  $0",
       "</th>"
@@ -618,7 +617,7 @@
   "Label": {
     "prefix": "xlabel",
     "body": [
-      "<label for=\"${1:input-id}\" class=\"${2:form-label}\">",
+      "<label class=\"${2:form-label}\" for=\"${1:input-id}\">",
       "<!-- Українською: Мітка для поля вводу / English: Input label -->",
       "  $0",
       "</label>"
@@ -628,7 +627,7 @@
   "Input": {
     "prefix": "xinput",
     "body": [
-      "<input type=\"${1|text,email,password,number,tel,url,search,date,time,checkbox,radio,file,hidden,submit,reset,button|}\" id=\"${2:input-id}\" name=\"${3:input-name}\" class=\"${4:form-input}\" ${5:required}>",
+      "<input class=\"${4:form-input}\" type=\"${1|text,email,password,number,tel,url,search,date,time,checkbox,radio,file,hidden,submit,reset,button|}\" id=\"${2:input-id}\" name=\"${3:input-name}\" ${5:required}>",
       "<!-- Українською: Поле вводу / English: Input field -->"
     ],
     "description": "Поле вводу / Input"
@@ -636,7 +635,7 @@
   "Textarea": {
     "prefix": "xtextarea",
     "body": [
-      "<textarea id=\"${1:textarea-id}\" name=\"${2:textarea-name}\" class=\"${3:form-textarea}\" rows=\"${4:4}\" cols=\"${5:50}\" ${6:required}>",
+      "<textarea class=\"${3:form-textarea}\" id=\"${1:textarea-id}\" name=\"${2:textarea-name}\" rows=\"${4:4}\" cols=\"${5:50}\" ${6:required}>",
       "<!-- Українською: Багаторядкове поле вводу / English: Multiline text input -->",
       "  $0",
       "</textarea>"
@@ -646,7 +645,7 @@
   "Select": {
     "prefix": "xselect",
     "body": [
-      "<select id=\"${1:select-id}\" name=\"${2:select-name}\" class=\"${3:form-select}\" ${4:required}>",
+      "<select class=\"${3:form-select}\" id=\"${1:select-id}\" name=\"${2:select-name}\" ${4:required}>",
       "<!-- Українською: Випадаючий список / English: Dropdown list -->",
       "  <option value=\"${5:value1}\">${6:Option 1}</option>",
       "  <option value=\"${7:value2}\">${8:Option 2}</option>",
@@ -657,7 +656,7 @@
   "Option": {
     "prefix": "xoption",
     "body": [
-      "<option value=\"${1:value}\" class=\"${2:select-option}\" ${3|selected,disabled|}>",
+      "<option class=\"${2:select-option}\" value=\"${1:value}\" ${3|selected,disabled|}>",
       "<!-- Українською: Пункт списку / English: Dropdown option -->",
       "  $0",
       "</option>"
@@ -667,7 +666,7 @@
   "Option Group": {
     "prefix": "xoptgroup",
     "body": [
-      "<optgroup label=\"${1:Group Label}\" class=\"${2:option-group}\">",
+      "<optgroup class=\"${2:option-group}\" label=\"${1:Group Label}\">",
       "<!-- Українською: Група пунктів списку / English: Option group -->",
       "  <option value=\"${3:value1}\">${4:Option 1}</option>",
       "</optgroup>"
@@ -677,7 +676,7 @@
   "Button": {
     "prefix": "xbutton",
     "body": [
-      "<button type=\"${1|button,submit,reset|}\" class=\"${2:btn}\">",
+      "<button class=\"${2:btn}\" type=\"${1|button,submit,reset|}\">",
       "<!-- Українською: Кнопка / English: Button -->",
       "  $0",
       "</button>"
@@ -687,7 +686,7 @@
   "Data List": {
     "prefix": "xdatalist",
     "body": [
-      "<datalist id=\"${1:list-id}\" class=\"${2:data-list}\">",
+      "<datalist class=\"${2:data-list}\" id=\"${1:list-id}\">",
       "<!-- Українською: Список варіантів для автозаповнення / English: Autocomplete options -->",
       "  <option value=\"${3:Option 1}\">",
       "</datalist>"
@@ -718,7 +717,7 @@
   "Meter": {
     "prefix": "xmeter",
     "body": [
-      "<meter value=\"${1:50}\" min=\"${2:0}\" max=\"${3:100}\" class=\"${4:meter}\">",
+      "<meter class=\"${4:meter}\" value=\"${1:50}\" min=\"${2:0}\" max=\"${3:100}\">",
       "<!-- Українською: Візуалізація значення в діапазоні / English: Scalar measurement -->",
       "  ${1:50}%",
       "</meter>"
@@ -728,7 +727,7 @@
   "Progress": {
     "prefix": "xprogress",
     "body": [
-      "<progress value=\"${1:50}\" max=\"${2:100}\" class=\"${3:progress}\">",
+      "<progress class=\"${3:progress}\" value=\"${1:50}\" max=\"${2:100}\">",
       "<!-- Українською: Індикатор прогресу / English: Progress indicator -->",
       "  ${1:50}%",
       "</progress>"
@@ -738,7 +737,7 @@
   "Output": {
     "prefix": "xoutput",
     "body": [
-      "<output for=\"${1:input-id}\" class=\"${2:form-output}\">",
+      "<output class=\"${2:form-output}\" for=\"${1:input-id}\">",
       "<!-- Українською: Результат обчислень / English: Calculation result -->",
       "  $0",
       "</output>"
@@ -810,18 +809,18 @@
   },
   "Bidirectional Override": {
     "prefix": "xbdo",
-    "body": ["<bdo dir=\"${1|rtl,ltr|}\" class=\"${2:direction}\">$0</bdo>"],
+    "body": ["<bdo class=\"${2:direction}\" dir=\"${1|rtl,ltr|}\">$0</bdo>"],
     "description": "Зміна напрямку тексту / Bidirectional override"
   },
   "Data": {
     "prefix": "xdata",
-    "body": ["<data value=\"${1:value}\" class=\"${2:data}\">$0</data>"],
+    "body": ["<data class=\"${2:data}\" value=\"${1:value}\">$0</data>"],
     "description": "Машинно-читабельні дані / Machine-readable data"
   },
   "Time with Timezone": {
     "prefix": "xtime-tz",
     "body": [
-      "<time datetime=\"${1:2023-01-01T12:00+02:00}\" class=\"${2:time}\">$0</time>"
+      "<time class=\"${2:time}\" datetime=\"${1:2023-01-01T12:00+02:00}\">$0</time>"
     ],
     "description": "Час із часовим поясом / Time with timezone"
   },
@@ -829,7 +828,7 @@
   "SVG Container": {
     "prefix": "xsvg",
     "body": [
-      "<svg width=\"${1:100}\" height=\"${2:100}\" class=\"${3:svg}\">",
+      "<svg class=\"${3:svg}\" width=\"${1:100}\" height=\"${2:100}\">",
       "  <circle cx=\"${4:50}\" cy=\"${5:50}\" r=\"${6:40}\" fill=\"${7:red}\"/>",
       "</svg>"
     ],
@@ -838,7 +837,7 @@
   "MathML Formula": {
     "prefix": "xmath",
     "body": [
-      "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"${1:math}\">",
+      "<math class=\"${1:math}\" xmlns=\"http://www.w3.org/1998/Math/MathML\">",
       "  <mrow>",
       "    <msup><mi>a</mi><mn>2</mn></msup>",
       "    <mo>+</mo>",
@@ -872,7 +871,7 @@
   "Link": {
     "prefix": "xlink",
     "body": [
-      "<link rel=\"${1|stylesheet,icon,preload|}\" href=\"${2:file.css}\" class=\"${3:link}\">"
+      "<link class=\"${3:link}\" rel=\"${1|stylesheet,icon,preload|}\" href=\"${2:file.css}\">"
     ],
     "description": "Зовнішній ресурс / External resource"
   },
@@ -894,7 +893,7 @@
   "Script": {
     "prefix": "xscript",
     "body": [
-      "<script${1: type=\"module\"} class=\"${2:script}\">",
+      "<script class=\"${2:script}\"${1: type=\"module\"}>",
       "  $0",
       "</script>"
     ],
@@ -913,7 +912,7 @@
   "Dialog": {
     "prefix": "xdialog",
     "body": [
-      "<dialog open class=\"${1:dialog}\">",
+      "<dialog class=\"${1:dialog}\" open>",
       "  <form method=\"dialog\">",
       "    <button class=\"${1:dialog}__close\">Close</button>",
       "  </form>",
@@ -934,14 +933,14 @@
   "Command": {
     "prefix": "xcommand",
     "body": [
-      "<command type=\"${1|command,checkbox,radio|}\" label=\"${2:Label}\" class=\"${3:command}\">"
+      "<command class=\"${3:command}\" type=\"${1|command,checkbox,radio|}\" label=\"${2:Label}\">"
     ],
     "description": "Команда меню / Menu command"
   },
   "Full HTML5 Template": {
     "prefix": "z!",
     "body": [
-      "<!DOCTYPE html>",
+      "<!doctype html>",
       "<!-- Українською: Декларація типу документу HTML5 / English: HTML5 document type declaration -->",
       "<html lang=\"${1|uk,en|}\">",
       "<!-- Українською: Вказує мову сторінки / English: Specifies page language -->",
@@ -950,12 +949,13 @@
       "  <!-- Українською: Кодування символів (UTF-8 підтримує всі мови) / English: Character encoding (UTF-8 supports all languages) -->",
       "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
       "  <!-- Українською: Налаштування адаптивного дизайну / English: Responsive design settings -->",
-      "  <title>${2:Page Title}</title>",
-      "  <!-- Українською: Заголовок сторінки (вкладка браузера) / English: Page title (browser tab) -->",
-      "  <meta name=\"description\" content=\"${3:Page description}\">",
+
+      "  <meta name=\"description\" content=\"${2:Page description}\">",
       "  <!-- Українською: Опис сторінки для SEO / English: Page description for SEO -->",
-      "  <link rel=\"stylesheet\" href=\"${4:css/main.css}\">",
+      "  <link rel=\"stylesheet\" href=\"${3:css/main.css}\">",
       "  <!-- Українською: Підключення CSS стилів / English: CSS stylesheet link -->",
+      "  <title>${4:Page Title}</title>",
+      "  <!-- Українською: Заголовок сторінки (вкладка браузера) / English: Page title (browser tab) -->",
       "</head>",
       "<body class=\"page\">",
       "  <header class=\"header\">",
@@ -985,7 +985,7 @@
       "<!-- Українською: Головна навігація сайту / English: Main website navigation -->",
       "  <ul class=\"${1:nav}__list\">",
       "    <li class=\"${1:nav}__item\">",
-      "      <a href=\"#\" class=\"${1:nav}__link\" aria-current=\"page\">${3:Home}</a>",
+      "      <a class=\"${1:nav}__link\" href=\"#\" aria-current=\"page\">${3:Home}</a>",
       "      <!-- Українською: Посилання на головну сторінку / English: Link to home page -->",
       "    </li>",
       "  </ul>",
@@ -1001,9 +1001,9 @@
       "<!-- Українською: Доступна форма для користувачів / English: Accessible user form -->",
       "  <h2 id=\"${1:form}__heading\" class=\"${1:form}__title\">${2:Form Title}</h2>",
       "  <div class=\"${1:form}__group\">",
-      "    <label for=\"${3:input-id}\" class=\"${1:form}__label\">${4:Label}</label>",
+      "    <label class=\"${1:form}__label\" for=\"${3:input-id}\">${4:Label}</label>",
       "    <!-- Українською: Мітка для поля вводу / English: Input field label -->",
-      "    <input type=\"${5|text,email,password|}\" id=\"${3:input-id}\" class=\"${1:form}__input\" required>",
+      "    <input class=\"${1:form}__input\" type=\"${5|text,email,password|}\" id=\"${3:input-id}\" required>",
       "    <!-- Українською: Поле вводу з обов'язковим заповненням / English: Required input field -->",
       "  </div>",
       "  <button type=\"submit\" class=\"${1:form}__submit\">${6:Submit}</button>",
@@ -1023,7 +1023,7 @@
       "  <div class=\"${1:modal}__content\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"${2:modal-id}__title\">",
       "    <button class=\"${1:modal}__close\" aria-label=\"Close modal\" data-modal-close>&times;</button>",
       "    <!-- Українською: Кнопка закриття модального вікна / English: Modal close button -->",
-      "    <h2 id=\"${2:modal-id}__title\" class=\"${1:modal}__title\">${3:Modal Title}</h2>",
+      "    <h2 class=\"${1:modal}__title\" id=\"${2:modal-id}__title\">${3:Modal Title}</h2>",
       "    <div class=\"${1:modal}__body\">",
       "      $4",
       "    </div>",
@@ -1038,12 +1038,12 @@
     "body": [
       "<article class=\"${1:card}\">",
       "<!-- Українською: Картка товару/послуги / English: Product/service card -->",
-      "  <img src=\"${2:image.jpg}\" alt=\"${3}\" class=\"${1:card}__image\" loading=\"lazy\">",
+      "  <img class=\"${1:card}__image\" src=\"${2:image.jpg}\" alt=\"${3}\" loading=\"lazy\">",
       "  <!-- Українською: Зображення картки з відкладеним завантаженням / English: Card image with lazy loading -->",
       "  <div class=\"${1:card}__content\">",
       "    <h3 class=\"${1:card}__title\">${4:Title}</h3>",
       "    <p class=\"${1:card}__text\">${5:Description}</p>",
-      "    <a href=\"${6:#}\" class=\"${1:card}__link\">${7:Read more}</a>",
+      "    <a class=\"${1:card}__link\" href=\"${6:#}\">${7:Read more}</a>",
       "    <!-- Українською: Посилання \"Детальніше\" / English: \"Read more\" link -->",
       "  </div>",
       "</article>"
@@ -1072,15 +1072,15 @@
     "body": [
       "<section class=\"${1:faq}\" aria-labelledby=\"${1:faq}__heading\">",
       "<!-- Українською: Секція \"Питання та відповіді\" / English: \"Frequently Asked Questions\" section -->",
-      "  <h2 id=\"${1:faq}__heading\" class=\"${1:faq}__title\">${2:FAQ}</h2>",
+      "  <h2 class=\"${1:faq}__title\" id=\"${1:faq}__heading\">${2:FAQ}</h2>",
       "  <div class=\"${1:faq}__item\">",
       "    <h3 class=\"${1:faq}__question\">",
-      "      <button type=\"button\" aria-expanded=\"false\" aria-controls=\"${3:answer1}\">",
+      "      <button class=\"${1:faq}__trigger\" type=\"button\" aria-expanded=\"false\" aria-controls=\"${3:answer1}\">",
       "        ${4:Question 1}",
       "      </button>",
       "      <!-- Українською: Питання, що розгортається / English: Expandable question -->",
       "    </h3>",
-      "    <div id=\"${3:answer1}\" class=\"${1:faq}__answer\" hidden>",
+      "    <div class=\"${1:faq}__answer\" id=\"${3:answer1}\" hidden>",
       "      ${5:Answer 1}",
       "      <!-- Українською: Відповідь, що прихована за замовчуванням / English: Answer (hidden by default) -->",
       "    </div>",
@@ -1097,7 +1097,7 @@
       "<!-- Українською: Навігаційний ланцюжок (шлях до сторінки) / English: Breadcrumb navigation (page path) -->",
       "  <ol class=\"${1:breadcrumbs}__list\">",
       "    <li class=\"${1:breadcrumbs}__item\">",
-      "      <a href=\"${3:#}\" class=\"${1:breadcrumbs}__link\">${4:Home}</a>",
+      "      <a class=\"${1:breadcrumbs}__link\" href=\"${3:#}\">${4:Home}</a>",
       "      <!-- Українською: Посилання на головну сторінку / English: Link to home page -->",
       "    </li>",
       "    <li class=\"${1:breadcrumbs}__item\" aria-current=\"page\">",
@@ -1117,17 +1117,17 @@
       "<!-- Українською: Пагінація (розбиття на сторінки) / English: Pagination (page navigation) -->",
       "  <ul class=\"${1:pagination}__list\">",
       "    <li class=\"${1:pagination}__item\">",
-      "      <a href=\"${3:#}\" class=\"${1:pagination}__link ${1:pagination}__link--prev\" aria-label=\"Previous\">",
+      "      <a class=\"${1:pagination}__link ${1:pagination}__link--prev\" href=\"${3:#}\" aria-label=\"Previous\">",
       "        &laquo;",
       "      </a>",
       "      <!-- Українською: Кнопка \"Попередня сторінка\" / English: \"Previous page\" button -->",
       "    </li>",
       "    <li class=\"${1:pagination}__item\">",
-      "      <a href=\"${4:#}\" class=\"${1:pagination}__link\" aria-current=\"page\">1</a>",
+      "      <a class=\"${1:pagination}__link\" href=\"${4:#}\" aria-current=\"page\">1</a>",
       "      <!-- Українською: Поточна сторінка / English: Current page -->",
       "    </li>",
       "    <li class=\"${1:pagination}__item\">",
-      "      <a href=\"${5:#}\" class=\"${1:pagination}__link ${1:pagination}__link--next\" aria-label=\"Next\">",
+      "      <a class=\"${1:pagination}__link ${1:pagination}__link--next\" href=\"${5:#}\" aria-label=\"Next\">",
       "        &raquo;",
       "      </a>",
       "      <!-- Українською: Кнопка \"Наступна сторінка\" / English: \"Next page\" button -->",
@@ -1146,7 +1146,7 @@
       "  <div class=\"${1:testimonial}__content\">",
       "    <p class=\"${1:testimonial}__text\">${2:Testimonial text}</p>",
       "    <footer class=\"${1:testimonial}__footer\">",
-      "      <img src=\"${3:avatar.jpg}\" alt=\"${4}\" class=\"${1:testimonial}__avatar\">",
+      "      <img class=\"${1:testimonial}__avatar\" src=\"${3:avatar.jpg}\" alt=\"${4}\">",
       "      <!-- Українською: Аватар автора відгуку / English: Testimonial author avatar -->",
       "      <cite class=\"${1:testimonial}__author\">${5:Author Name}</cite>",
       "      <!-- Українською: Ім'я автора відгуку / English: Testimonial author name -->",
@@ -1169,7 +1169,7 @@
       "    <li class=\"${1:price-card}__feature\">${5:Feature 1}</li>",
       "    <!-- Українською: Характеристика тарифу / English: Plan feature -->",
       "  </ul>",
-      "  <button type=\"button\" class=\"${1:price-card}__button\">${6:Select Plan}</button>",
+      "  <button class=\"${1:price-card}__button\" type=\"button\">${6:Select Plan}</button>",
       "  <!-- Українською: Кнопка вибору тарифу / English: \"Select Plan\" button -->",
       "</div>"
     ],
@@ -1218,10 +1218,10 @@
       "  <div class=\"${1:hero}__content\">",
       "    <h1 class=\"${1:hero}__title\">${2:Main Heading}</h1>",
       "    <p class=\"${1:hero}__text\">${3:Hero section description}</p>",
-      "    <a href=\"${4:#}\" class=\"${1:hero}__button\">${5:Call to Action}</a>",
+      "    <a class=\"${1:hero}__button\" href=\"${4:#}\">${5:Call to Action}</a>",
       "    <!-- Українською: Кнопка заклику до дії / English: Call to action button -->",
       "  </div>",
-      "  <img src=\"${6:hero-image.jpg}\" alt=\"${7}\" class=\"${1:hero}__image\" loading=\"lazy\">",
+      "  <img class=\"${1:hero}__image\" src=\"${6:hero-image.jpg}\" alt=\"${7}\" loading=\"lazy\">",
       "  <!-- Українською: Головне зображення з відкладеним завантаженням / English: Hero image with lazy loading -->",
       "</section>"
     ],
@@ -1250,11 +1250,11 @@
       "<form class=\"${1:contact-form}\">",
       "<!-- Українською: Форма зворотного зв'язку / English: Contact form -->",
       "  <div class=\"${1:contact-form}__group\">",
-      "    <label for=\"${2:name}\" class=\"${1:contact-form}__label\">${3:Name}</label>",
-      "    <input type=\"text\" id=\"${2:name}\" class=\"${1:contact-form}__input\" required>",
+      "    <label class=\"${1:contact-form}__label\" for=\"${2:name}\">${3:Name}</label>",
+      "    <input class=\"${1:contact-form}__input\" type=\"text\" id=\"${2:name}\" required>",
       "    <!-- Українською: Поле для імені / English: Name input field -->",
       "  </div>",
-      "  <button type=\"submit\" class=\"${1:contact-form}__submit\">${4:Send Message}</button>",
+      "  <button class=\"${1:contact-form}__submit\" type=\"submit\">${4:Send Message}</button>",
       "  <!-- Українською: Кнопка відправки повідомлення / English: \"Send message\" button -->",
       "</form>"
     ],
@@ -1267,7 +1267,7 @@
       "<div class=\"${1:team}\">",
       "<!-- Українською: Сітка членів команди / English: Team members grid -->",
       "  <div class=\"${1:team}__member\">",
-      "    <img src=\"${2:member.jpg}\" alt=\"${3}\" class=\"${1:team}__photo\">",
+      "    <img class=\"${1:team}__photo\" src=\"${2:member.jpg}\" alt=\"${3}\">",
       "    <!-- Українською: Фото члена команди / English: Team member photo -->",
       "    <h3 class=\"${1:team}__name\">${4:Name}</h3>",
       "    <p class=\"${1:team}__position\">${5:Position}</p>",
@@ -1284,7 +1284,7 @@
       "<!-- Українською: Акордеон (розгортаючі блоки) / English: Accordion (expandable blocks) -->",
       "  <div class=\"${1:accordion}__item\">",
       "    <h3 class=\"${1:accordion}__header\">",
-      "      <button type=\"button\" aria-expanded=\"false\" class=\"${1:accordion}__trigger\">",
+      "      <button class=\"${1:accordion}__trigger\" type=\"button\" aria-expanded=\"false\">",
       "        ${2:Question}",
       "      </button>",
       "      <!-- Українською: Кнопка розгортання / English: Expand trigger -->",
@@ -1304,13 +1304,13 @@
     "body": [
       "<div class=\"${1:tabs}\">",
       "<!-- Українською: Система вкладок / English: Tab system -->",
-      "  <div role=\"tablist\" class=\"${1:tabs}__nav\">",
-      "    <button type=\"button\" role=\"tab\" id=\"${2:tab1}\" aria-selected=\"true\" class=\"${1:tabs}__trigger\">",
+      "  <div class=\"${1:tabs}__nav\" role=\"tablist\">",
+      "    <button class=\"${1:tabs}__trigger\" role=\"tab\" id=\"${2:tab1}\" aria-selected=\"true\">",
       "      ${3:Tab 1}",
       "    </button>",
       "    <!-- Українською: Кнопка вкладки 1 / English: Tab 1 button -->",
       "  </div>",
-      "  <div role=\"tabpanel\" aria-labelledby=\"${2:tab1}\" class=\"${1:tabs}__panel\">",
+      "  <div class=\"${1:tabs}__panel\" role=\"tabpanel\" aria-labelledby=\"${2:tab1}\">",
       "    ${4:Content 1}",
       "    <!-- Українською: Вміст вкладки 1 / English: Tab 1 content -->",
       "  </div>",

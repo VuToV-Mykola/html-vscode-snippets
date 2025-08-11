@@ -2,9 +2,9 @@
   "Section": {
     "prefix": "xsection",
     "body": [
-      "<section class=\"${1:section}\" >",
+      "<section class=\"${1:section}\">",
       "<!-- English: Thematic content group -->",
-      "  <h2 id=\"${2:section-id}\" class=\"${1:section}__title\">$3</h2>",
+      "  <h2 class=\"${1:section}__title\" id=\"${2:section-id}\">$3</h2>",
       "  $0",
       "</section>"
     ],
@@ -31,15 +31,15 @@
     "description": "Aside"
   },
   "Address": {
-  "prefix": "xaddress",
-  "body": [
-    "<address class=\"${1:address}\">",
-    "<!-- English: Contact Information -->",
-    "  $0",
-    "</address>"
-  ],
-  "description": "Contact Information"
-},
+    "prefix": "xaddress",
+    "body": [
+      "<address class=\"${1:address}\">",
+      "<!-- English: Contact Information -->",
+      "  $0",
+      "</address>"
+    ],
+    "description": "Contact Information"
+  },
   "Div": {
     "prefix": "xdiv",
     "body": [
@@ -58,7 +58,7 @@
       "  $0",
       "</h1>"
     ],
-    "description": "Heading level 2"
+    "description": "Heading level 1"
   },
   "Heading 2": {
     "prefix": "xh2",
@@ -173,7 +173,7 @@
   "Abbreviation": {
     "prefix": "xabbr",
     "body": [
-      "<abbr title=\"${1:Full version}\" class=\"${2:abbreviation}\">",
+      "<abbr class=\"${2:abbreviation}\" title=\"${1:Vollständige Version}\">",
       "<!-- English: Abbreviation -->",
       "  $0",
       "</abbr>"
@@ -183,7 +183,7 @@
   "Time": {
     "prefix": "xtime",
     "body": [
-      "<time datetime=\"${1:2023-01-01}\" class=\"${2:time}\">",
+      "<time class=\"${2:time}\" datetime=\"${1:2023-01-01}\">",
       "<!-- English: Time element -->",
       "  $0",
       "</time>"
@@ -193,7 +193,7 @@
   "Blockquote": {
     "prefix": "xblockquote",
     "body": [
-      "<blockquote cite=\"${1:source}\" class=\"${2:quote}\">",
+      "<blockquote class=\"${2:quote}\" cite=\"${1:source}\">",
       "<!-- English: Block quotation -->",
       "  $0",
       "</blockquote>"
@@ -208,7 +208,7 @@
       "  $0",
       "</cite>"
     ],
-    "description": "Cite"
+    "description": "Citation"
   },
   "Code": {
     "prefix": "xcode",
@@ -293,15 +293,16 @@
     ],
     "description": "Horizontal rule"
   },
+
   "Ordered List": {
     "prefix": "xol",
     "body": [
       "<ol class=\"${1:ordered-list}\">",
       "<!-- English: Ordered list -->",
-      "<li class=\"${1:list-item}\">",
-      "<!-- English: List item -->",
-      "  $0",
-      "</li>",
+      "  <li class=\"${1:list-item}\">",
+      "  <!-- English: List item -->",
+      "    $0",
+      "  </li>",
       "</ol>"
     ],
     "description": "Ordered list"
@@ -311,13 +312,13 @@
     "body": [
       "<ul class=\"${1:unordered-list}\">",
       "<!-- English: Unordered List -->",
-      "<li class=\"${1:list-item}\">",
-      "<!-- English: List item -->",
-      "  $0",
-      "</li>",
+      "  <li class=\"${1:list-item}\">",
+      "  <!-- English: List item -->",
+      "    $0",
+      "  </li>",
       "</ul>"
     ],
-    "description": "Unordered List"
+    "description": "Unordered list"
   },
   "List Item": {
     "prefix": "xli",
@@ -329,7 +330,6 @@
     ],
     "description": "List item"
   },
-
   "Description List": {
     "prefix": "xdl",
     "body": [
@@ -364,15 +364,16 @@
   "Image": {
     "prefix": "ximg",
     "body": [
-      "<img src=\"${1:image.jpg}\" alt=\"${2:description}\" class=\"${3:image}\" width=\"${4:300}\" height=\"${5:200}\" loading=\"${6|lazy,eager|}\">",
+      "<img class=\"${3:image}\" src=\"${1:image.jpg}\" alt=\"${2:description}\" width=\"${4:300}\" height=\"${5:200}\" loading=\"${6|lazy,eager|}\">",
       "<!-- English: Image -->"
     ],
     "description": "Image"
   },
+
   "Anchor": {
     "prefix": "xa",
     "body": [
-      "<a href=\"${1:#}\" class=\"${2:link}\" target=\"${3|_self,_blank|}\" rel=\"${4|noopener,noreferrer|}\">",
+      "<a class=\"${2:link}\" href=\"${1:#}\" target=\"${3|_self,_blank|}\" rel=\"${4|noopener,noreferrer|}\">",
       "<!-- English: Hyperlink -->",
       "  $0",
       "</a>"
@@ -382,7 +383,7 @@
   "Navigation Link": {
     "prefix": "xnav-link",
     "body": [
-      "<a href=\"${1:#}\" class=\"${2:nav-link}\" aria-current=\"${3|page,false|}\">",
+      "<a class=\"${2:nav-link}\" href=\"${1:#}\" aria-current=\"${3|page,false|}\">",
       "<!-- English: Navigation link -->",
       "  $0",
       "</a>"
@@ -392,42 +393,43 @@
   "Mailto Link": {
     "prefix": "xmailto",
     "body": [
-      "<a href=\"mailto:${1:email@example.com}\" class=\"${2:email-link}\">",
+      "<a class=\"${2:email-link}\" href=\"mailto:${1:email@example.com}\">",
       "<!-- English: Email link -->",
       "  $0",
       "</a>"
     ],
-    "description": "Mailto link"
+    "description": "Email link"
   },
   "Tel Link": {
     "prefix": "xtel",
     "body": [
-      "<a href=\"tel:${1:+380123456789}\" class=\"${2:phone-link}\">",
+      "<a class=\"${2:phone-link}\" href=\"tel:${1:+380123456789}\">",
       "<!-- English: Phone link -->",
       "  $0",
       "</a>"
     ],
-    "description": "Tel link"
+    "description": "Phone link"
   },
   "Download Link": {
     "prefix": "xdownload",
     "body": [
-      "<a href=\"${1:file.pdf}\" class=\"${2:download-link}\" download>",
+      "<a class=\"${2:download-link}\" href=\"${1:file.pdf}\" download>",
       "<!-- English: Download link -->",
       "  $0",
       "</a>"
     ],
     "description": "Download link"
   },
+
   "Audio": {
     "prefix": "xaudio",
     "body": [
-      "<audio controls class=\"${1:audio-player}\">",
+      "<audio class=\"${1:audio-player}\" controls>",
       "<!-- English: Audio player -->",
       "  <source src=\"${2:audio.mp3}\" type=\"audio/mpeg\">",
-      "  <!-- English: Audio source -->",
-      "  Your browser does not support audio.",
-      "  <!-- English: Fallback message -->",
+      "<!-- English: Audio source -->",
+      "  Ваш браузер не підтримує аудіо.",
+      "<!-- English: Fallback message -->",
       "</audio>"
     ],
     "description": "Audio"
@@ -435,12 +437,12 @@
   "Video": {
     "prefix": "xvideo",
     "body": [
-      "<video controls class=\"${1:video-player}\" width=\"${2:640}\" height=\"${3:360}\" poster=\"${4:poster.jpg}\">",
+      "<video class=\"${1:video-player}\" controls width=\"${2:640}\" height=\"${3:360}\" poster=\"${4:poster.jpg}\">",
       "<!-- English: Video player -->",
       "  <source src=\"${5:video.mp4}\" type=\"video/mp4\">",
-      "  <!-- English: Video source -->",
-      "  Your browser does not support video.",
-      "  <!-- English: Fallback message -->",
+      "<!-- English: Video source -->",
+      "  Ваш браузер не підтримує відео.",
+      "<!-- English: Fallback message -->",
       "</video>"
     ],
     "description": "Video"
@@ -456,7 +458,7 @@
   "Track": {
     "prefix": "xtrack",
     "body": [
-      "<track src=\"${1:subtitles.vtt}\" kind=\"${2|subtitles,captions,descriptions|}\" srclang=\"${3|uk,en|}\" label=\"${4:German}\">",
+      "<track src=\"${1:subtitles.vtt}\" srclang=\"${3|uk,en|}\" kind=\"${2|subtitles,captions,descriptions|}\" label=\"${4:Ukrainian}\">",
       "<!-- English: Subtitles or descriptions -->"
     ],
     "description": "Track"
@@ -478,13 +480,12 @@
     "body": [
       "<figure class=\"${1:figure}\">",
       "<!-- English: Image with caption -->",
-      "  <img src=\"${2:image.jpg}\" alt=\"${3}\" class=\"${1:figure}__image\">",
+      "  <img class=\"${1:figure}__image\" src=\"${2:image.jpg}\" alt=\"${3}\">",
       "  <figcaption class=\"${1:figure}__caption\">$0</figcaption>",
       "</figure>"
     ],
     "description": "Figure"
   },
-
   "Figcaption": {
     "prefix": "xfigcaption",
     "body": [
@@ -493,38 +494,38 @@
       "  $0",
       "</figcaption>"
     ],
-    "description": "Figcaption"
+    "description": "Figure caption"
   },
   "Map": {
     "prefix": "xmap",
     "body": [
-      "<map name=\"${1:map-name}\" class=\"${2:image-map}\">",
+      "<map class=\"${2:image-map}\" name=\"${1:map-name}\">",
       "<!-- English: Image map -->",
       "  <area shape=\"${3|rect,circle,poly|}\" coords=\"${4}\" href=\"${5:#}\" alt=\"${6}\">",
       "</map>"
     ],
-    "description": "Map"
+    "description": "Image map"
   },
   "Area": {
     "prefix": "xarea",
     "body": [
-      "<area shape=\"${1|rect,circle,poly|}\" coords=\"${2}\" href=\"${3:#}\" alt=\"${4}\" class=\"${5:hotspot}\">",
+      "<area class=\"${5:hotspot}\" shape=\"${1|rect,circle,poly|}\" coords=\"${2}\" href=\"${3:#}\" alt=\"${4}\">",
       "<!-- English: Hotspot area -->"
     ],
-    "description": "Area"
+    "description": "Hotspot area"
   },
   "Embed": {
     "prefix": "xembed",
     "body": [
-      "<embed src=\"${1:file.pdf}\" type=\"${2:application/pdf}\" width=\"${3:600}\" height=\"${4:400}\" class=\"${5:embedded}\">",
+      "<embed class=\"${5:embedded}\" src=\"${1:file.pdf}\" type=\"${2:application/pdf}\" width=\"${3:600}\" height=\"${4:400}\">",
       "<!-- English: Embedded object -->"
     ],
-    "description": "Embed"
+    "description": "Embedded object"
   },
   "Object": {
     "prefix": "xobject",
     "body": [
-      "<object data=\"${1:file.swf}\" type=\"${2:application/x-shockwave-flash}\" width=\"${3:600}\" height=\"${4:400}\" class=\"${5:flash-object}\">",
+      "<object class=\"${5:flash-object}\" data=\"${1:file.swf}\" type=\"${2:application/x-shockwave-flash}\" width=\"${3:600}\" height=\"${4:400}\">",
       "<!-- English: Embedded media object -->",
       "  $0",
       "</object>"
@@ -542,14 +543,15 @@
   "IFrame": {
     "prefix": "xiframe",
     "body": [
-      "<iframe src=\"${1:https://example.com}\" width=\"${2:800}\" height=\"${3:600}\" class=\"${4:embedded-frame}\" loading=\"${5|lazy,eager|}\" allowfullscreen>",
+      "<iframe class=\"${4:embedded-frame}\" src=\"${1:https://example.com}\" width=\"${2:800}\" height=\"${3:600}\" loading=\"${5|lazy,eager|}\" allowfullscreen>",
       "<!-- English: Embedded web page -->",
-      "  Your browser does not support iframes.",
-      "  <!-- English: Fallback message -->",
+      "  Ваш браузер не підтримує iframes.",
+      "<!-- English: Fallback message -->",
       "</iframe>"
     ],
     "description": "IFrame"
   },
+
   "Table Row": {
     "prefix": "xtr",
     "body": [
@@ -563,7 +565,7 @@
   "Table Header Cell": {
     "prefix": "xth",
     "body": [
-      "<th scope=\"${1|col,row|}\" class=\"${2:header-cell}\">",
+      "<th class=\"${2:header-cell}\" scope=\"${1|col,row|}\">",
       "<!-- English: Column/row header -->",
       "  $0",
       "</th>"
@@ -606,61 +608,62 @@
       "<col class=\"${1:column}\" span=\"${2:1}\">",
       "<!-- English: Table column(s) -->"
     ],
-    "description": "Column"
+    "description": "Table column(s)"
   },
+
   "Label": {
     "prefix": "xlabel",
     "body": [
-      "<label for=\"${1:input-id}\" class=\"${2:form-label}\">",
+      "<label class=\"${2:form-label}\" for=\"${1:input-id}\">",
       "<!-- English: Input label -->",
       "  $0",
       "</label>"
     ],
-    "description": "Label"
+    "description": "Input label"
   },
   "Input": {
     "prefix": "xinput",
     "body": [
-      "<input type=\"${1|text,email,password,number,tel,url,search,date,time,checkbox,radio,file,hidden,submit,reset,button|}\" id=\"${2:input-id}\" name=\"${3:input-name}\" class=\"${4:form-input}\" ${5:required}>",
+      "<input class=\"${4:form-input}\" type=\"${1|text,email,password,number,tel,url,search,date,time,checkbox,radio,file,hidden,submit,reset,button|}\" id=\"${2:input-id}\" name=\"${3:input-name}\" ${5:required}>",
       "<!-- English: Input field -->"
     ],
-    "description": "Input"
+    "description": "Input field"
   },
   "Textarea": {
     "prefix": "xtextarea",
     "body": [
-      "<textarea id=\"${1:textarea-id}\" name=\"${2:textarea-name}\" class=\"${3:form-textarea}\" rows=\"${4:4}\" cols=\"${5:50}\" ${6:required}>",
+      "<textarea class=\"${3:form-textarea}\" id=\"${1:textarea-id}\" name=\"${2:textarea-name}\" rows=\"${4:4}\" cols=\"${5:50}\" ${6:required}>",
       "<!-- English: Multiline text input -->",
       "  $0",
       "</textarea>"
     ],
-    "description": "Textarea"
+    "description": "Multiline text input"
   },
   "Select": {
     "prefix": "xselect",
     "body": [
-      "<select id=\"${1:select-id}\" name=\"${2:select-name}\" class=\"${3:form-select}\" ${4:required}>",
+      "<select class=\"${3:form-select}\" id=\"${1:select-id}\" name=\"${2:select-name}\" ${4:required}>",
       "<!-- English: Dropdown list -->",
       "  <option value=\"${5:value1}\">${6:Option 1}</option>",
       "  <option value=\"${7:value2}\">${8:Option 2}</option>",
       "</select>"
     ],
-    "description": "Select"
+    "description": "Dropdown list"
   },
   "Option": {
     "prefix": "xoption",
     "body": [
-      "<option value=\"${1:value}\" class=\"${2:select-option}\" ${3|selected,disabled|}>",
+      "<option class=\"${2:select-option}\" value=\"${1:value}\" ${3|selected,disabled|}>",
       "<!-- English: Dropdown option -->",
       "  $0",
       "</option>"
     ],
-    "description": "Option"
+    "description": "Dropdown option"
   },
   "Option Group": {
     "prefix": "xoptgroup",
     "body": [
-      "<optgroup label=\"${1:Group Label}\" class=\"${2:option-group}\">",
+      "<optgroup class=\"${2:option-group}\" label=\"${1:Group Label}\">",
       "<!-- English: Option group -->",
       "  <option value=\"${3:value1}\">${4:Option 1}</option>",
       "</optgroup>"
@@ -670,7 +673,7 @@
   "Button": {
     "prefix": "xbutton",
     "body": [
-      "<button type=\"${1|button,submit,reset|}\" class=\"${2:btn}\">",
+      "<button class=\"${2:btn}\" type=\"${1|button,submit,reset|}\">",
       "<!-- English: Button -->",
       "  $0",
       "</button>"
@@ -680,12 +683,12 @@
   "Data List": {
     "prefix": "xdatalist",
     "body": [
-      "<datalist id=\"${1:list-id}\" class=\"${2:data-list}\">",
+      "<datalist class=\"${2:data-list}\" id=\"${1:list-id}\">",
       "<!-- English: Autocomplete options -->",
       "  <option value=\"${3:Option 1}\">",
       "</datalist>"
     ],
-    "description": "Datalist"
+    "description": "Autocomplete options"
   },
   "Fieldset": {
     "prefix": "xfieldset",
@@ -696,7 +699,7 @@
       "  $0",
       "</fieldset>"
     ],
-    "description": "Fieldset"
+    "description": "Form field group"
   },
   "Legend": {
     "prefix": "xlegend",
@@ -706,38 +709,39 @@
       "  $0",
       "</legend>"
     ],
-    "description": "Legend"
+    "description": "Fieldset title"
   },
   "Meter": {
     "prefix": "xmeter",
     "body": [
-      "<meter value=\"${1:50}\" min=\"${2:0}\" max=\"${3:100}\" class=\"${4:meter}\">",
+      "<meter class=\"${4:meter}\" value=\"${1:50}\" min=\"${2:0}\" max=\"${3:100}\">",
       "<!-- English: Scalar measurement -->",
       "  ${1:50}%",
       "</meter>"
     ],
-    "description": "Meter"
+    "description": "Scalar measurement"
   },
   "Progress": {
     "prefix": "xprogress",
     "body": [
-      "<progress value=\"${1:50}\" max=\"${2:100}\" class=\"${3:progress}\">",
+      "<progress class=\"${3:progress}\" value=\"${1:50}\" max=\"${2:100}\">",
       "<!-- English: Progress indicator -->",
       "  ${1:50}%",
       "</progress>"
     ],
-    "description": "Progress"
+    "description": "Progress indicator"
   },
   "Output": {
     "prefix": "xoutput",
     "body": [
-      "<output for=\"${1:input-id}\" class=\"${2:form-output}\">",
+      "<output class=\"${2:form-output}\" for=\"${1:input-id}\">",
       "<!-- English: Calculation result -->",
       "  $0",
       "</output>"
     ],
-    "description": "Output"
+    "description": "Calculation result"
   },
+
   "Navigation": {
     "prefix": "xnav",
     "body": [
@@ -770,6 +774,7 @@
     ],
     "description": "Article with header"
   },
+
   "Ruby Annotation": {
     "prefix": "xruby",
     "body": [
@@ -801,25 +806,26 @@
   },
   "Bidirectional Override": {
     "prefix": "xbdo",
-    "body": ["<bdo dir=\"${1|rtl,ltr|}\" class=\"${2:direction}\">$0</bdo>"],
+    "body": ["<bdo class=\"${2:direction}\" dir=\"${1|rtl,ltr|}\">$0</bdo>"],
     "description": "Bidirectional override"
   },
   "Data": {
     "prefix": "xdata",
-    "body": ["<data value=\"${1:value}\" class=\"${2:data}\">$0</data>"],
+    "body": ["<data class=\"${2:data}\" value=\"${1:value}\">$0</data>"],
     "description": "Machine-readable data"
   },
   "Time with Timezone": {
     "prefix": "xtime-tz",
     "body": [
-      "<time datetime=\"${1:2023-01-01T12:00+02:00}\" class=\"${2:time}\">$0</time>"
+      "<time class=\"${2:time}\" datetime=\"${1:2023-01-01T12:00+02:00}\">$0</time>"
     ],
     "description": "Time with timezone"
   },
+
   "SVG Container": {
     "prefix": "xsvg",
     "body": [
-      "<svg width=\"${1:100}\" height=\"${2:100}\" class=\"${3:svg}\">",
+      "<svg class=\"${3:svg}\" width=\"${1:100}\" height=\"${2:100}\">",
       "  <circle cx=\"${4:50}\" cy=\"${5:50}\" r=\"${6:40}\" fill=\"${7:red}\"/>",
       "</svg>"
     ],
@@ -828,7 +834,7 @@
   "MathML Formula": {
     "prefix": "xmath",
     "body": [
-      "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" class=\"${1:math}\">",
+      "<math class=\"${1:math}\" xmlns=\"http://www.w3.org/1998/Math/MathML\">",
       "  <mrow>",
       "    <msup><mi>a</mi><mn>2</mn></msup>",
       "    <mo>+</mo>",
@@ -840,6 +846,7 @@
     ],
     "description": "MathML formula"
   },
+
   "Template": {
     "prefix": "xtemplate",
     "body": ["<template class=\"${1:template}\">", "  $0", "</template>"],
@@ -850,6 +857,7 @@
     "body": ["<slot name=\"${1:slot-name}\" class=\"${2:slot}\">$0</slot>"],
     "description": "Shadow DOM slot"
   },
+
   "Base": {
     "prefix": "xbase",
     "body": [
@@ -860,7 +868,7 @@
   "Link": {
     "prefix": "xlink",
     "body": [
-      "<link rel=\"${1|stylesheet,icon,preload|}\" href=\"${2:file.css}\" class=\"${3:link}\">"
+      "<link class=\"${3:link}\" rel=\"${1|stylesheet,icon,preload|}\" href=\"${2:file.css}\">"
     ],
     "description": "External resource"
   },
@@ -882,7 +890,7 @@
   "Script": {
     "prefix": "xscript",
     "body": [
-      "<script${1: type=\"module\"} class=\"${2:script}\">",
+      "<script class=\"${2:script}\"${1: type=\"module\"}>",
       "  $0",
       "</script>"
     ],
@@ -897,10 +905,11 @@
     ],
     "description": "No-JS content"
   },
+
   "Dialog": {
     "prefix": "xdialog",
     "body": [
-      "<dialog open class=\"${1:dialog}\">",
+      "<dialog class=\"${1:dialog}\" open>",
       "  <form method=\"dialog\">",
       "    <button class=\"${1:dialog}__close\">Close</button>",
       "  </form>",
@@ -921,49 +930,51 @@
   "Command": {
     "prefix": "xcommand",
     "body": [
-      "<command type=\"${1|command,checkbox,radio|}\" label=\"${2:Label}\" class=\"${3:command}\">"
+      "<command class=\"${3:command}\" type=\"${1|command,checkbox,radio|}\" label=\"${2:Label}\">"
     ],
     "description": "Menu command"
   },
   "Full HTML5 Template": {
     "prefix": "z!",
     "body": [
-      "<!DOCTYPE html>",
+      "<!doctype html>",
       "<!-- English: HTML5 document type declaration -->",
-      "<html lang=\"${1|en,uk|}\">",
+      "<html lang=\"${1|uk,en|}\">",
       "<!-- English: Specifies page language -->",
       "<head>",
       "  <meta charset=\"UTF-8\">",
-      "  <!-- English: Character encoding (UTF-8 supports all languages) -->",
+      "<!-- English: Character encoding (UTF-8 supports all languages) -->",
       "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
-      "  <!-- English: Responsive design settings -->",
-      "  <title>${2:Page Title}</title>",
-      "  <!-- English: Page title (browser tab) -->",
-      "  <meta name=\"description\" content=\"${3:Page description}\">",
-      "  <!-- English: Page description for SEO -->",
-      "  <link rel=\"stylesheet\" href=\"${4:css/main.css}\">",
-      "  <!-- English: CSS stylesheet link -->",
+      "<!-- English: Responsive design settings -->",
+
+      "  <meta name=\"description\" content=\"${2:Page description}\">",
+      "<!-- English: Page description for SEO -->",
+      "  <link rel=\"stylesheet\" href=\"${3:css/main.css}\">",
+      "<!-- English: CSS stylesheet link -->",
+      "  <title>${4:Page Title}</title>",
+      "<!-- English: Page title (browser tab) -->",
       "</head>",
       "<body class=\"page\">",
       "  <header class=\"header\">",
-      "    <!-- English: Top section (logo, navigation) -->",
+      "<!-- English: Top section (logo, navigation) -->",
       "    $5",
       "  </header>",
       "  <main class=\"main\">",
-      "    <!-- English: Main page content -->",
+      "<!-- English: Main page content -->",
       "    $6",
       "  </main>",
       "  <footer class=\"footer\">",
-      "    <!-- English: Bottom section (copyright, links) -->",
+      "<!-- English: Bottom section (copyright, links) -->",
       "    $7",
       "  </footer>",
       "  <script src=\"${8:js/app.js}\" defer></script>",
-      "  <!-- English: JavaScript with deferred execution -->",
+      "<!-- English: JavaScript with deferred execution -->",
       "</body>",
       "</html>"
     ],
     "description": "Full HTML5 template"
   },
+
   "BEM Navigation": {
     "prefix": "znav",
     "body": [
@@ -971,14 +982,15 @@
       "<!-- English: Main website navigation -->",
       "  <ul class=\"${1:nav}__list\">",
       "    <li class=\"${1:nav}__item\">",
-      "      <a href=\"#\" class=\"${1:nav}__link\" aria-current=\"page\">${3:Home}</a>",
-      "      <!-- English: Link to home page -->",
+      "      <a class=\"${1:nav}__link\" href=\"#\" aria-current=\"page\">${3:Home}</a>",
+      "<!-- English: Link to home page -->",
       "    </li>",
       "  </ul>",
       "</nav>"
     ],
     "description": "BEM navigation"
   },
+
   "Accessible Form": {
     "prefix": "zform",
     "body": [
@@ -986,28 +998,29 @@
       "<!-- English: Accessible user form -->",
       "  <h2 id=\"${1:form}__heading\" class=\"${1:form}__title\">${2:Form Title}</h2>",
       "  <div class=\"${1:form}__group\">",
-      "    <label for=\"${3:input-id}\" class=\"${1:form}__label\">${4:Label}</label>",
-      "    <!-- English: Input field label -->",
-      "    <input type=\"${5|text,email,password|}\" id=\"${3:input-id}\" class=\"${1:form}__input\" required>",
-      "    <!-- English: Required input field -->",
+      "    <label class=\"${1:form}__label\" for=\"${3:input-id}\">${4:Label}</label>",
+      "<!-- English: Input field label -->",
+      "    <input class=\"${1:form}__input\" type=\"${5|text,email,password|}\" id=\"${3:input-id}\" required>",
+      "<!-- English: Required input field -->",
       "  </div>",
       "  <button type=\"submit\" class=\"${1:form}__submit\">${6:Submit}</button>",
-      "  <!-- English: Form submit button -->",
+      "<!-- English: Form submit button -->",
       "</form>"
     ],
     "description": "Accessible form"
   },
+
   "Modal Dialog": {
     "prefix": "zmodal",
     "body": [
       "<div class=\"${1:modal}\" id=\"${2:modal-id}\" aria-hidden=\"true\">",
       "<!-- English: Modal dialog (popup) -->",
       "  <div class=\"${1:modal}__overlay\" tabindex=\"-1\" data-modal-close></div>",
-      "  <!-- English: Modal background overlay -->",
+      "<!-- English: Modal background overlay -->",
       "  <div class=\"${1:modal}__content\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"${2:modal-id}__title\">",
       "    <button class=\"${1:modal}__close\" aria-label=\"Close modal\" data-modal-close>&times;</button>",
-      "    <!-- English: Modal close button -->",
-      "    <h2 id=\"${2:modal-id}__title\" class=\"${1:modal}__title\">${3:Modal Title}</h2>",
+      "<!-- English: Modal close button -->",
+      "    <h2 class=\"${1:modal}__title\" id=\"${2:modal-id}__title\">${3:Modal Title}</h2>",
       "    <div class=\"${1:modal}__body\">",
       "      $4",
       "    </div>",
@@ -1016,79 +1029,84 @@
     ],
     "description": "Modal dialog"
   },
+
   "Card Component": {
     "prefix": "zcard",
     "body": [
       "<article class=\"${1:card}\">",
       "<!-- English: Product/service card -->",
-      "  <img src=\"${2:image.jpg}\" alt=\"${3}\" class=\"${1:card}__image\" loading=\"lazy\">",
-      "  <!-- English: Card image with lazy loading -->",
+      "  <img class=\"${1:card}__image\" src=\"${2:image.jpg}\" alt=\"${3}\" loading=\"lazy\">",
+      "<!-- English: Card image with lazy loading -->",
       "  <div class=\"${1:card}__content\">",
       "    <h3 class=\"${1:card}__title\">${4:Title}</h3>",
       "    <p class=\"${1:card}__text\">${5:Description}</p>",
-      "    <a href=\"${6:#}\" class=\"${1:card}__link\">${7:Read more}</a>",
-      "    <!-- English: \"Read more\" link -->",
+      "    <a class=\"${1:card}__link\" href=\"${6:#}\">${7:Read more}</a>",
+      "<!-- English: \"Read more\" link -->",
       "  </div>",
       "</article>"
     ],
     "description": "BEM card component"
   },
+
   "Grid Layout": {
     "prefix": "zgrid",
     "body": [
       "<div class=\"${1:grid}\">",
       "<!-- English: Grid page layout -->",
       "  <div class=\"${1:grid}__item\">$2</div>",
-      "  <!-- English: Grid item 1 -->",
+      "<!-- English: Grid item 1 -->",
       "  <div class=\"${1:grid}__item\">$3</div>",
-      "  <!-- English: Grid item 2 -->",
+      "<!-- English: Grid item 2 -->",
       "  <div class=\"${1:grid}__item\">$4</div>",
-      "  <!-- English: Grid item 3 -->",
+      "<!-- English: Grid item 3 -->",
       "</div>"
     ],
     "description": "CSS Grid layout"
   },
+
   "FAQ Section": {
     "prefix": "zfaq",
     "body": [
       "<section class=\"${1:faq}\" aria-labelledby=\"${1:faq}__heading\">",
       "<!-- English: \"Frequently Asked Questions\" section -->",
-      "  <h2 id=\"${1:faq}__heading\" class=\"${1:faq}__title\">${2:FAQ}</h2>",
+      "  <h2 class=\"${1:faq}__title\" id=\"${1:faq}__heading\">${2:FAQ}</h2>",
       "  <div class=\"${1:faq}__item\">",
       "    <h3 class=\"${1:faq}__question\">",
-      "      <button type=\"button\" aria-expanded=\"false\" aria-controls=\"${3:answer1}\">",
+      "      <button class=\"${1:faq}__trigger\" type=\"button\" aria-expanded=\"false\" aria-controls=\"${3:answer1}\">",
       "        ${4:Question 1}",
       "      </button>",
-      "      <!-- English: Expandable question -->",
+      "<!-- English: Expandable question -->",
       "    </h3>",
-      "    <div id=\"${3:answer1}\" class=\"${1:faq}__answer\" hidden>",
+      "    <div class=\"${1:faq}__answer\" id=\"${3:answer1}\" hidden>",
       "      ${5:Answer 1}",
-      "      <!-- English: Answer (hidden by default) -->",
+      "<!-- English: Answer (hidden by default) -->",
       "    </div>",
       "  </div>",
       "</section>"
     ],
     "description": "FAQ section"
   },
+
   "Breadcrumbs": {
     "prefix": "zbread",
     "body": [
-      "<nav class=\"${1:breadcrumbs}\" aria-label=\"${2:Breadcrumbs}\">",
+      "<nav class=\"${1:breadcrumbs}\" aria-label=\"${2:Breadcrumb}\">",
       "<!-- English: Breadcrumb navigation (page path) -->",
       "  <ol class=\"${1:breadcrumbs}__list\">",
       "    <li class=\"${1:breadcrumbs}__item\">",
-      "      <a href=\"${3:#}\" class=\"${1:breadcrumbs}__link\">${4:Home}</a>",
-      "      <!-- English: Link to home page -->",
+      "      <a class=\"${1:breadcrumbs}__link\" href=\"${3:#}\">${4:Home}</a>",
+      "<!-- English: Link to home page -->",
       "    </li>",
       "    <li class=\"${1:breadcrumbs}__item\" aria-current=\"page\">",
       "      ${5:Current Page}",
-      "      <!-- English: Current page (active item) -->",
+      "<!-- English: Current page (active item) -->",
       "    </li>",
       "  </ol>",
       "</nav>"
     ],
     "description": "Breadcrumbs"
   },
+
   "Pagination": {
     "prefix": "zpagination",
     "body": [
@@ -1096,26 +1114,27 @@
       "<!-- English: Pagination (page navigation) -->",
       "  <ul class=\"${1:pagination}__list\">",
       "    <li class=\"${1:pagination}__item\">",
-      "      <a href=\"${3:#}\" class=\"${1:pagination}__link ${1:pagination}__link--prev\" aria-label=\"Previous\">",
+      "      <a class=\"${1:pagination}__link ${1:pagination}__link--prev\" href=\"${3:#}\" aria-label=\"Previous\">",
       "        &laquo;",
       "      </a>",
-      "      <!-- English: \"Previous page\" button -->",
+      "<!-- English: \"Previous page\" button -->",
       "    </li>",
       "    <li class=\"${1:pagination}__item\">",
-      "      <a href=\"${4:#}\" class=\"${1:pagination}__link\" aria-current=\"page\">1</a>",
-      "      <!-- English: Current page -->",
+      "      <a class=\"${1:pagination}__link\" href=\"${4:#}\" aria-current=\"page\">1</a>",
+      "<!-- English: Current page -->",
       "    </li>",
       "    <li class=\"${1:pagination}__item\">",
-      "      <a href=\"${5:#}\" class=\"${1:pagination}__link ${1:pagination}__link--next\" aria-label=\"Next\">",
+      "      <a class=\"${1:pagination}__link ${1:pagination}__link--next\" href=\"${5:#}\" aria-label=\"Next\">",
       "        &raquo;",
       "      </a>",
-      "      <!-- English: \"Next page\" button -->",
+      "<!-- English: \"Next page\" button -->",
       "    </li>",
       "  </ul>",
       "</nav>"
     ],
     "description": "Pagination"
   },
+
   "Testimonial": {
     "prefix": "ztestimonial",
     "body": [
@@ -1124,16 +1143,17 @@
       "  <div class=\"${1:testimonial}__content\">",
       "    <p class=\"${1:testimonial}__text\">${2:Testimonial text}</p>",
       "    <footer class=\"${1:testimonial}__footer\">",
-      "      <img src=\"${3:avatar.jpg}\" alt=\"${4}\" class=\"${1:testimonial}__avatar\">",
-      "      <!-- English: Testimonial author avatar -->",
-      "      <cite class=\"${1:testimonial}__author\">${5:Author name}</cite>",
-      "      <!-- English: Testimonial author name -->",
+      "      <img class=\"${1:testimonial}__avatar\" src=\"${3:avatar.jpg}\" alt=\"${4}\">",
+      "<!-- English: Testimonial author avatar -->",
+      "      <cite class=\"${1:testimonial}__author\">${5:Author Name}</cite>",
+      "<!-- English: Testimonial author name -->",
       "    </footer>",
       "  </div>",
       "</blockquote>"
     ],
     "description": "Testimonial"
   },
+
   "Price Card": {
     "prefix": "zprice",
     "body": [
@@ -1141,17 +1161,18 @@
       "<!-- English: Pricing card with features -->",
       "  <h3 class=\"${1:price-card}__title\">${2:Plan Name}</h3>",
       "  <p class=\"${1:price-card}__amount\">${3:$9.99}<span class=\"${1:price-card}__period\">${4:/month}</span></p>",
-      "  <!-- English: Price and payment period -->",
+      "<!-- English: Price and payment period -->",
       "  <ul class=\"${1:price-card}__features\">",
       "    <li class=\"${1:price-card}__feature\">${5:Feature 1}</li>",
-      "    <!-- English: Plan feature -->",
+      "<!-- English: Plan feature -->",
       "  </ul>",
-      "  <button type=\"button\" class=\"${1:price-card}__button\">${6:Select Plan}</button>",
-      "  <!-- English: \"Select Plan\" button -->",
+      "  <button class=\"${1:price-card}__button\" type=\"button\">${6:Select Plan}</button>",
+      "<!-- English: \"Select Plan\" button -->",
       "</div>"
     ],
     "description": "Price card"
   },
+
   "Timeline": {
     "prefix": "ztimeline",
     "body": [
@@ -1159,7 +1180,7 @@
       "<!-- English: Events timeline -->",
       "  <div class=\"${1:timeline}__item\">",
       "    <time class=\"${1:timeline}__date\">${2:2023}</time>",
-      "    <!-- English: Event date -->",
+      "<!-- English: Event date -->",
       "    <div class=\"${1:timeline}__content\">",
       "      <h4 class=\"${1:timeline}__title\">${3:Event Title}</h4>",
       "      <p class=\"${1:timeline}__text\">${4:Event description}</p>",
@@ -1167,8 +1188,9 @@
       "  </div>",
       "</div>"
     ],
-    "description": "Timeline"
+    "description": "Events timeline"
   },
+
   "Stats Grid": {
     "prefix": "zstats",
     "body": [
@@ -1176,14 +1198,15 @@
       "<!-- English: Statistics block -->",
       "  <div class=\"${1:stats}__item\">",
       "    <span class=\"${1:stats}__number\">${2:100}+</span>",
-      "    <!-- English: Numeric value -->",
+      "<!-- English: Numeric value -->",
       "    <span class=\"${1:stats}__label\">${3:Clients}</span>",
-      "    <!-- English: Value label -->",
+      "<!-- English: Value label -->",
       "  </div>",
       "</div>"
     ],
-    "description": "Stats grid"
+    "description": "Statistics block"
   },
+
   "Hero Section": {
     "prefix": "zhero",
     "body": [
@@ -1192,15 +1215,16 @@
       "  <div class=\"${1:hero}__content\">",
       "    <h1 class=\"${1:hero}__title\">${2:Main Heading}</h1>",
       "    <p class=\"${1:hero}__text\">${3:Hero section description}</p>",
-      "    <a href=\"${4:#}\" class=\"${1:hero}__button\">${5:Call to Action}</a>",
-      "    <!-- English: Call to action button -->",
+      "    <a class=\"${1:hero}__button\" href=\"${4:#}\">${5:Call to Action}</a>",
+      "<!-- English: Call to action button -->",
       "  </div>",
-      "  <img src=\"${6:hero-image.jpg}\" alt=\"${7}\" class=\"${1:hero}__image\" loading=\"lazy\">",
-      "  <!-- English: Hero image with lazy loading -->",
+      "  <img class=\"${1:hero}__image\" src=\"${6:hero-image.jpg}\" alt=\"${7}\" loading=\"lazy\">",
+      "<!-- English: Hero image with lazy loading -->",
       "</section>"
     ],
-    "description": "Hero section"
+    "description": "Main page banner"
   },
+
   "Feature List": {
     "prefix": "zfeatures",
     "body": [
@@ -1208,45 +1232,48 @@
       "<!-- English: Features list -->",
       "  <li class=\"${1:features}__item\">",
       "    <svg class=\"${1:features}__icon\">${2:Icon}</svg>",
-      "    <!-- English: Feature icon -->",
+      "<!-- English: Feature icon -->",
       "    <h3 class=\"${1:features}__title\">${3:Feature Title}</h3>",
       "    <p class=\"${1:features}__text\">${4:Feature description}</p>",
       "  </li>",
       "</ul>"
     ],
-    "description": "Feature list"
+    "description": "Features list"
   },
+
   "Contact Form": {
     "prefix": "zcontact",
     "body": [
       "<form class=\"${1:contact-form}\">",
       "<!-- English: Contact form -->",
       "  <div class=\"${1:contact-form}__group\">",
-      "    <label for=\"${2:name}\" class=\"${1:contact-form}__label\">${3:Name}</label>",
-      "    <input type=\"text\" id=\"${2:name}\" class=\"${1:contact-form}__input\" required>",
-      "    <!-- English: Name input field -->",
+      "    <label class=\"${1:contact-form}__label\" for=\"${2:name}\">${3:Name}</label>",
+      "    <input class=\"${1:contact-form}__input\" type=\"text\" id=\"${2:name}\" required>",
+      "<!-- English: Name input field -->",
       "  </div>",
-      "  <button type=\"submit\" class=\"${1:contact-form}__submit\">${4:Send Message}</button>",
-      "  <!-- English: \"Send message\" button -->",
+      "  <button class=\"${1:contact-form}__submit\" type=\"submit\">${4:Send Message}</button>",
+      "<!-- English: \"Send message\" button -->",
       "</form>"
     ],
     "description": "Contact form"
   },
+
   "Team Grid": {
     "prefix": "zteam",
     "body": [
       "<div class=\"${1:team}\">",
       "<!-- English: Team members grid -->",
       "  <div class=\"${1:team}__member\">",
-      "    <img src=\"${2:member.jpg}\" alt=\"${3}\" class=\"${1:team}__photo\">",
-      "    <!-- English: Team member photo -->",
+      "    <img class=\"${1:team}__photo\" src=\"${2:member.jpg}\" alt=\"${3}\">",
+      "<!-- English: Team member photo -->",
       "    <h3 class=\"${1:team}__name\">${4:Name}</h3>",
       "    <p class=\"${1:team}__position\">${5:Position}</p>",
       "  </div>",
       "</div>"
     ],
-    "description": "Team grid"
+    "description": "Team members grid"
   },
+
   "Accordion": {
     "prefix": "zaccordion",
     "body": [
@@ -1254,545 +1281,38 @@
       "<!-- English: Accordion (expandable blocks) -->",
       "  <div class=\"${1:accordion}__item\">",
       "    <h3 class=\"${1:accordion}__header\">",
-      "      <button type=\"button\" aria-expanded=\"false\" class=\"${1:accordion}__trigger\">",
+      "      <button class=\"${1:accordion}__trigger\" type=\"button\" aria-expanded=\"false\">",
       "        ${2:Question}",
       "      </button>",
-      "      <!-- English: Expand trigger -->",
+      "<!-- English: Expand trigger -->",
       "    </h3>",
       "    <div class=\"${1:accordion}__panel\" hidden>",
       "      ${3:Answer}",
-      "      <!-- English: Content (hidden by default) -->",
+      "<!-- English: Content (hidden by default) -->",
       "    </div>",
       "  </div>",
       "</div>"
     ],
     "description": "Accordion"
   },
+
   "Tab System": {
     "prefix": "ztabs",
     "body": [
       "<div class=\"${1:tabs}\">",
       "<!-- English: Tab system -->",
-      "  <div role=\"tablist\" class=\"${1:tabs}__nav\">",
-      "    <button type=\"button\" role=\"tab\" id=\"${2:tab1}\" aria-selected=\"true\" class=\"${1:tabs}__trigger\">",
+      "  <div class=\"${1:tabs}__nav\" role=\"tablist\">",
+      "    <button class=\"${1:tabs}__trigger\" role=\"tab\" id=\"${2:tab1}\" aria-selected=\"true\">",
       "      ${3:Tab 1}",
       "    </button>",
-      "    <!-- English: Tab 1 button -->",
+      "<!-- English: Tab 1 button -->",
       "  </div>",
-      "  <div role=\"tabpanel\" aria-labelledby=\"${2:tab1}\" class=\"${1:tabs}__panel\">",
+      "  <div class=\"${1:tabs}__panel\" role=\"tabpanel\" aria-labelledby=\"${2:tab1}\">",
       "    ${4:Content 1}",
-      "    <!-- English: Tab 1 content -->",
+      "<!-- English: Tab 1 content -->",
       "  </div>",
       "</div>"
     ],
     "description": "Tab system"
-  },
-
-  "Dropdown Menu": {
-    "prefix": "zdropdown",
-    "body": [
-      "<div class=\"${1:dropdown}\">",
-      "<!-- English: Dropdown menu component -->",
-      "  <button class=\"${1:dropdown}__toggle\" aria-expanded=\"false\" aria-controls=\"${2:menu1}\">",
-      "    ${3:Menu}",
-      "    <!-- English: Dropdown toggle button -->",
-      "  </button>",
-      "  <ul id=\"${2:menu1}\" class=\"${1:dropdown}__menu\" hidden>",
-      "    <li class=\"${1:dropdown}__item\"><a href=\"#\" class=\"${1:dropdown}__link\">${4:Item 1}</a></li>",
-      "    <!-- English: Dropdown menu item -->",
-      "  </ul>",
-      "</div>"
-    ],
-    "description": "Dropdown menu"
-  },
-  "Notification": {
-    "prefix": "znotification",
-    "body": [
-      "<div class=\"${1:notification} ${1:notification}--${2|success,error,info|}\" role=\"alert\">",
-      "<!-- English: Notification message -->",
-      "  <p class=\"${1:notification}__text\">${3:Notification message}</p>",
-      "  <button class=\"${1:notification}__close\" aria-label=\"Close notification\">",
-      "    &times;",
-      "    <!-- English: Close button -->",
-      "  </button>",
-      "</div>"
-    ],
-    "description": "Notification"
-  },
-  "Loader": {
-    "prefix": "zloader",
-    "body": [
-      "<div class=\"${1:loader}\" aria-busy=\"true\" aria-live=\"polite\">",
-      "<!-- English: Loading indicator -->",
-      "  <div class=\"${1:loader}__spinner\"></div>",
-      "  <p class=\"${1:loader}__text\">${2:Loading...}</p>",
-      "</div>"
-    ],
-    "description": "Loader"
-  },
-  "Tooltip": {
-    "prefix": "ztooltip",
-    "body": [
-      "<div class=\"${1:tooltip}\">",
-      "<!-- English: Tooltip component -->",
-      "  <button class=\"${1:tooltip}__trigger\" aria-describedby=\"${2:tip1}\">",
-      "    ${3:Hover me}",
-      "    <!-- English: Tooltip trigger -->",
-      "  </button>",
-      "  <div id=\"${2:tip1}\" role=\"tooltip\" class=\"${1:tooltip}__content\">",
-      "    ${4:Tooltip content}",
-      "    <!-- English: Tooltip text -->",
-      "  </div>",
-      "</div>"
-    ],
-    "description": "Tooltip"
-  },
-  "Badge": {
-    "prefix": "zbadge",
-    "body": [
-      "<span class=\"${1:badge} ${1:badge}--${2|primary,secondary,success,danger|}${3: ${1:badge}--pill}\">",
-      "<!-- English: Status badge -->",
-      "  ${4:Badge}",
-      "</span>"
-    ],
-    "description": "Badge"
-  },
-  "Alert": {
-    "prefix": "zalert",
-    "body": [
-      "<div class=\"${1:alert} ${1:alert}--${2|success,error,info,warning|}\" role=\"alert\">",
-      "<!-- English: Alert message -->",
-      "  <h3 class=\"${1:alert}__title\">${3:Alert title}</h3>",
-      "  <p class=\"${1:alert}__text\">${4:Alert message}</p>",
-      "</div>"
-    ],
-    "description": "Alert"
-  },
-  "Progress Steps": {
-    "prefix": "zsteps",
-    "body": [
-      "<ol class=\"${1:steps}\">",
-      "<!-- English: Progress steps indicator -->",
-      "  <li class=\"${1:steps}__item ${1:steps}__item--completed\">",
-      "    <span class=\"${1:steps}__marker\">1</span>",
-      "    <span class=\"${1:steps}__label\">${2:Step 1}</span>",
-      "    <!-- English: Completed step -->",
-      "  </li>",
-      "  <li class=\"${1:steps}__item ${1:steps}__item--active\">",
-      "    <span class=\"${1:steps}__marker\">2</span>",
-      "    <span class=\"${1:steps}__label\">${3:Step 2}</span>",
-      "    <!-- English: Active step -->",
-      "  </li>",
-      "</ol>"
-    ],
-    "description": "Progress steps"
-  },
-  "Rating": {
-    "prefix": "zrating",
-    "body": [
-      "<div class=\"${1:rating}\" aria-label=\"${2:Rating: 3 out of 5 stars}\">",
-      "<!-- English: Star rating component -->",
-      "  <span class=\"${1:rating}__star ${1:rating}__star--active\" aria-hidden=\"true\">★</span>",
-      "  <span class=\"${1:rating}__star ${1:rating}__star--active\" aria-hidden=\"true\">★</span>",
-      "  <span class=\"${1:rating}__star ${1:rating}__star--active\" aria-hidden=\"true\">★</span>",
-      "  <span class=\"${1:rating}__star\" aria-hidden=\"true\">★</span>",
-      "  <span class=\"${1:rating}__star\" aria-hidden=\"true\">★</span>",
-      "</div>"
-    ],
-    "description": "Rating"
-  },
-  "Carousel": {
-    "prefix": "zcarousel",
-    "body": [
-      "<div class=\"${1:carousel}\">",
-      "<!-- English: Image carousel -->",
-      "  <div class=\"${1:carousel}__track\">",
-      "    <div class=\"${1:carousel}__slide\">",
-      "      <img src=\"${2:image1.jpg}\" alt=\"${3}\" class=\"${1:carousel}__image\">",
-      "      <!-- English: Carousel slide -->",
-      "    </div>",
-      "  </div>",
-      "  <button class=\"${1:carousel}__control ${1:carousel}__control--prev\" aria-label=\"Previous slide\">",
-      "    &larr;",
-      "  </button>",
-      "  <button class=\"${1:carousel}__control ${1:carousel}__control--next\" aria-label=\"Next slide\">",
-      "    &rarr;",
-      "  </button>",
-      "</div>"
-    ],
-    "description": "Carousel"
-  },
-  "Gallery": {
-    "prefix": "zgallery",
-    "body": [
-      "<div class=\"${1:gallery}\">",
-      "<!-- English: Image gallery -->",
-      "  <figure class=\"${1:gallery}__item\">",
-      "    <img src=\"${2:image1.jpg}\" alt=\"${3}\" class=\"${1:gallery}__image\" loading=\"lazy\">",
-      "    <figcaption class=\"${1:gallery}__caption\">${4:Caption}</figcaption>",
-      "    <!-- English: Gallery item -->",
-      "  </figure>",
-      "</div>"
-    ],
-    "description": "Gallery"
-  },
-  "Lightbox": {
-    "prefix": "zlightbox",
-    "body": [
-      "<div class=\"${1:lightbox}\" hidden>",
-      "<!-- English: Lightbox modal -->",
-      "  <div class=\"${1:lightbox}__overlay\"></div>",
-      "  <div class=\"${1:lightbox}__content\">",
-      "    <img src=\"${2:image.jpg}\" alt=\"${3}\" class=\"${1:lightbox}__image\">",
-      "    <button class=\"${1:lightbox}__close\" aria-label=\"Close lightbox\">",
-      "      &times;",
-      "    </button>",
-      "  </div>",
-      "</div>"
-    ],
-    "description": "Lightbox"
-  },
-  "Video Player": {
-    "prefix": "zvideoplayer",
-    "body": [
-      "<div class=\"${1:video-player}\">",
-      "<!-- English: Custom video player -->",
-      "  <video class=\"${1:video-player}__video\" poster=\"${2:poster.jpg}\">",
-      "    <source src=\"${3:video.mp4}\" type=\"video/mp4\">",
-      "  </video>",
-      "  <div class=\"${1:video-player}__controls\">",
-      "    <button class=\"${1:video-player}__play\" aria-label=\"Play/pause\">",
-      "      ▶️",
-      "    </button>",
-      "    <div class=\"${1:video-player}__progress\">",
-      "      <progress value=\"0\" max=\"100\"></progress>",
-      "    </div>",
-      "  </div>",
-      "</div>"
-    ],
-    "description": "Video player"
-  },
-  "Audio Player": {
-    "prefix": "zaudioplayer",
-    "body": [
-      "<div class=\"${1:audio-player}\">",
-      "<!-- English: Custom audio player -->",
-      "  <audio class=\"${1:audio-player}__audio\">",
-      "    <source src=\"${2:audio.mp3}\" type=\"audio/mpeg\">",
-      "  </audio>",
-      "  <div class=\"${1:audio-player}__controls\">",
-      "    <button class=\"${1:audio-player}__play\" aria-label=\"Play/pause\">",
-      "      ▶️",
-      "    </button>",
-      "    <div class=\"${1:audio-player}__progress\">",
-      "      <progress value=\"0\" max=\"100\"></progress>",
-      "    </div>",
-      "  </div>",
-      "</div>"
-    ],
-    "description": "Audio player"
-  },
-  "Search Form": {
-    "prefix": "zsearch",
-    "body": [
-      "<form class=\"${1:search}\" role=\"search\">",
-      "<!-- English: Search form -->",
-      "  <label for=\"${2:search-input}\" class=\"${1:search}__label\">${3:Search}</label>",
-      "  <input type=\"search\" id=\"${2:search-input}\" class=\"${1:search}__input\" placeholder=\"${4:Search...}\">",
-      "  <button type=\"submit\" class=\"${1:search}__button\" aria-label=\"Search\">",
-      "    🔍",
-      "  </button>",
-      "</form>"
-    ],
-    "description": "Search form"
-  },
-  "Login Form": {
-    "prefix": "zlogin",
-    "body": [
-      "<form class=\"${1:login}\">",
-      "<!-- English: Login form -->",
-      "  <h2 class=\"${1:login}__title\">${2:Login}</h2>",
-      "  <div class=\"${1:login}__group\">",
-      "    <label for=\"${3:email}\" class=\"${1:login}__label\">${4:Email}</label>",
-      "    <input type=\"email\" id=\"${3:email}\" class=\"${1:login}__input\" required>",
-      "  </div>",
-      "  <div class=\"${1:login}__group\">",
-      "    <label for=\"${5:password}\" class=\"${1:login}__label\">${6:Password}</label>",
-      "    <input type=\"password\" id=\"${5:password}\" class=\"${1:login}__input\" required>",
-      "  </div>",
-      "  <button type=\"submit\" class=\"${1:login}__submit\">${7:Login}</button>",
-      "</form>"
-    ],
-    "description": "Login form"
-  },
-  "Registration Form": {
-    "prefix": "zregister",
-    "body": [
-      "<form class=\"${1:register}\">",
-      "<!-- English: Registration form -->",
-      "  <h2 class=\"${1:register}__title\">${2:Register}</h2>",
-      "  <div class=\"${1:register}__group\">",
-      "    <label for=\"${3:name}\" class=\"${1:register}__label\">${4:Full Name}</label>",
-      "    <input type=\"text\" id=\"${3:name}\" class=\"${1:register}__input\" required>",
-      "  </div>",
-      "  <div class=\"${1:register}__group\">",
-      "    <label for=\"${5:email}\" class=\"${1:register}__label\">${6:Email}</label>",
-      "    <input type=\"email\" id=\"${5:email}\" class=\"${1:register}__input\" required>",
-      "  </div>",
-      "  <button type=\"submit\" class=\"${1:register}__submit\">${7:Register}</button>",
-      "</form>"
-    ],
-    "description": "Registration form"
-  },
-  "Newsletter": {
-    "prefix": "znewsletter",
-    "body": [
-      "<form class=\"${1:newsletter}\">",
-      "<!-- English: Newsletter signup -->",
-      "  <h3 class=\"${1:newsletter}__title\">${2:Subscribe to our newsletter}</h3>",
-      "  <div class=\"${1:newsletter}__group\">",
-      "    <label for=\"${3:email}\" class=\"${1:newsletter}__label\">${4:Email address}</label>",
-      "    <input type=\"email\" id=\"${3:email}\" class=\"${1:newsletter}__input\" placeholder=\"${5:your@email.com}\" required>",
-      "  </div>",
-      "  <button type=\"submit\" class=\"${1:newsletter}__submit\">${6:Subscribe}</button>",
-      "</form>"
-    ],
-    "description": "Newsletter"
-  },
-  "Comment Form": {
-    "prefix": "zcomment",
-    "body": [
-      "<form class=\"${1:comment-form}\">",
-      "<!-- English: Comment submission form -->",
-      "  <div class=\"${1:comment-form}__group\">",
-      "    <label for=\"${2:comment}\" class=\"${1:comment-form}__label\">${3:Leave a comment}</label>",
-      "    <textarea id=\"${2:comment}\" class=\"${1:comment-form}__input\" rows=\"4\" required></textarea>",
-      "  </div>",
-      "  <button type=\"submit\" class=\"${1:comment-form}__submit\">${4:Post Comment}</button>",
-      "</form>"
-    ],
-    "description": "Comment form"
-  },
-  "Comment List": {
-    "prefix": "zcomments",
-    "body": [
-      "<div class=\"${1:comments}\">",
-      "<!-- English: Comments list -->",
-      "  <div class=\"${1:comments}__item\">",
-      "    <div class=\"${1:comments}__header\">",
-      "      <img src=\"${2:avatar.jpg}\" alt=\"${3}\" class=\"${1:comments}__avatar\">",
-      "      <h4 class=\"${1:comments}__author\">${4:Author Name}</h4>",
-      "      <time class=\"${1:comments}__date\">${5:2023-01-01}</time>",
-      "    </div>",
-      "    <div class=\"${1:comments}__content\">",
-      "      ${6:Comment text}",
-      "    </div>",
-      "  </div>",
-      "</div>"
-    ],
-    "description": "Comment list"
-  },
-  "Banner": {
-    "prefix": "zbanner",
-    "body": [
-      "<section class=\"${1:banner} ${1:banner}--${2|primary,secondary|}\">",
-      "<!-- English: Promotional banner -->",
-      "  <div class=\"${1:banner}__content\">",
-      "    <h2 class=\"${1:banner}__title\">${3:Banner Title}</h2>",
-      "    <p class=\"${1:banner}__text\">${4:Banner text content}</p>",
-      "    <a href=\"${5:#}\" class=\"${1:banner}__button\">${6:Learn More}</a>",
-      "  </div>",
-      "</section>"
-    ],
-    "description": "Banner"
-  },
-  "Cookie Consent": {
-    "prefix": "zcookie",
-    "body": [
-      "<div class=\"${1:cookie-consent}\" hidden>",
-      "<!-- English: Cookie consent banner -->",
-      "  <div class=\"${1:cookie-consent}__content\">",
-      "    <p class=\"${1:cookie-consent}__text\">${2:We use cookies to improve your experience}</p>",
-      "    <div class=\"${1:cookie-consent}__buttons\">",
-      "      <button class=\"${1:cookie-consent}__accept\">${3:Accept}</button>",
-      "      <button class=\"${1:cookie-consent}__reject\">${4:Reject}</button>",
-      "    </div>",
-      "  </div>",
-      "</div>"
-    ],
-    "description": "Cookie consent"
-  },
-  "404 Page": {
-    "prefix": "z404",
-    "body": [
-      "<main class=\"${1:error-page}\">",
-      "<!-- English: 404 error page -->",
-      "  <h1 class=\"${1:error-page}__title\">404</h1>",
-      "  <p class=\"${1:error-page}__text\">${2:Page not found}</p>",
-      "  <a href=\"${3:/}\" class=\"${1:error-page}__link\">${4:Return home}</a>",
-      "</main>"
-    ],
-    "description": "404 page"
-  },
-  "Maintenance Page": {
-    "prefix": "zmaintenance",
-    "body": [
-      "<main class=\"${1:maintenance}\">",
-      "<!-- English: Maintenance mode page -->",
-      "  <h1 class=\"${1:maintenance}__title\">${2:Under Maintenance}</h1>",
-      "  <p class=\"${1:maintenance}__text\">${3:We'll be back soon}</p>",
-      "</main>"
-    ],
-    "description": "Maintenance page"
-  },
-  "Coming Soon": {
-    "prefix": "zcomingsoon",
-    "body": [
-      "<section class=\"${1:coming-soon}\">",
-      "<!-- English: Coming soon page -->",
-      "  <h1 class=\"${1:coming-soon}__title\">${2:Coming Soon}</h1>",
-      "  <p class=\"${1:coming-soon}__text\">${3:Our website is under construction}</p>",
-      "  <div class=\"${1:coming-soon}__countdown\">",
-      "    <div class=\"${1:coming-soon}__timer\">",
-      "      <span class=\"${1:coming-soon}__days\">00</span>",
-      "      <span class=\"${1:coming-soon}__label\">Days</span>",
-      "    </div>",
-      "  </div>",
-      "</section>"
-    ],
-    "description": "Coming soon"
-  },
-  "Admin Dashboard": {
-    "prefix": "zdashboard",
-    "body": [
-      "<div class=\"${1:dashboard}\">",
-      "<!-- English: Admin dashboard layout -->",
-      "  <aside class=\"${1:dashboard}__sidebar\">",
-      "    <nav class=\"${1:dashboard}__nav\">",
-      "      <a href=\"#\" class=\"${1:dashboard}__link ${1:dashboard}__link--active\">${2:Dashboard}</a>",
-      "    </nav>",
-      "  </aside>",
-      "  <main class=\"${1:dashboard}__content\">",
-      "    <h1 class=\"${1:dashboard}__title\">${3:Admin Dashboard}</h1>",
-      "    $4",
-      "  </main>",
-      "</div>"
-    ],
-    "description": "Admin dashboard"
-  },
-  "Data Table": {
-    "prefix": "ztable",
-    "body": [
-      "<div class=\"${1:table-responsive}\">",
-      "<!-- English: Responsive data table -->",
-      "  <table class=\"${1:table-responsive}__table\">",
-      "    <thead>",
-      "      <tr>",
-      "        <th>${2:Header 1}</th>",
-      "        <th>${3:Header 2}</th>",
-      "      </tr>",
-      "    </thead>",
-      "    <tbody>",
-      "      <tr>",
-      "        <td>${4:Data 1}</td>",
-      "        <td>${5:Data 2}</td>",
-      "      </tr>",
-      "    </tbody>",
-      "  </table>",
-      "</div>"
-    ],
-    "description": "Data table"
-  },
-  "Chart Container": {
-    "prefix": "zchart",
-    "body": [
-      "<div class=\"${1:chart}\">",
-      "<!-- English: Data visualization container -->",
-      "  <canvas id=\"${2:chart-id}\" width=\"${3:400}\" height=\"${4:400}\"></canvas>",
-      "  <div class=\"${1:chart}__legend\"></div>",
-      "</div>"
-    ],
-    "description": "Chart container"
-  },
-  "E-commerce Product": {
-    "prefix": "zproduct",
-    "body": [
-      "<article class=\"${1:product}\">",
-      "<!-- English: E-commerce product card -->",
-      "  <div class=\"${1:product}__badge\">${2:New}</div>",
-      "  <img src=\"${3:product.jpg}\" alt=\"${4}\" class=\"${1:product}__image\" loading=\"lazy\">",
-      "  <div class=\"${1:product}__content\">",
-      "    <h3 class=\"${1:product}__title\">${5:Product Name}</h3>",
-      "    <div class=\"${1:product}__price\">",
-      "      <span class=\"${1:product}__current\">${6:$19.99}</span>",
-      "      <span class=\"${1:product}__original\">${7:$24.99}</span>",
-      "    </div>",
-      "    <button class=\"${1:product}__add\" aria-label=\"Add to cart\">",
-      "      ${8:Add to Cart}",
-      "    </button>",
-      "  </div>",
-      "</article>"
-    ],
-    "description": "E-commerce product"
-  },
-  "Shopping Cart": {
-    "prefix": "zcart",
-    "body": [
-      "<div class=\"${1:cart}\">",
-      "<!-- English: Shopping cart component -->",
-      "  <h2 class=\"${1:cart}__title\">${2:Your Cart}</h2>",
-      "  <ul class=\"${1:cart}__items\">",
-      "    <li class=\"${1:cart}__item\">",
-      "      <img src=\"${3:product.jpg}\" alt=\"${4}\" class=\"${1:cart}__image\">",
-      "      <div class=\"${1:cart}__details\">",
-      "        <h3 class=\"${1:cart}__name\">${5:Product Name}</h3>",
-      "        <div class=\"${1:cart}__price\">${6:$19.99}</div>",
-      "      </div>",
-      "    </li>",
-      "  </ul>",
-      "  <div class=\"${1:cart}__total\">",
-      "    <span>Total:</span>",
-      "    <span>${7:$19.99}</span>",
-      "  </div>",
-      "  <button class=\"${1:cart}__checkout\">${8:Checkout}</button>",
-      "</div>"
-    ],
-    "description": "Shopping cart"
-  },
-  "Checkout Form": {
-    "prefix": "zcheckout",
-    "body": [
-      "<form class=\"${1:checkout}\">",
-      "<!-- English: Checkout process form -->",
-      "  <div class=\"${1:checkout}__section\">",
-      "    <h3 class=\"${1:checkout}__title\">${2:Shipping Information}</h3>",
-      "    <div class=\"${1:checkout}__group\">",
-      "      <label for=\"${3:address}\" class=\"${1:checkout}__label\">${4:Address}</label>",
-      "      <input type=\"text\" id=\"${3:address}\" class=\"${1:checkout}__input\" required>",
-      "    </div>",
-      "  </div>",
-      "  <button type=\"submit\" class=\"${1:checkout}__submit\">${5:Place Order}</button>",
-      "</form>"
-    ],
-    "description": "Checkout form"
-  },
-  "Order Summary": {
-    "prefix": "zordersummary",
-    "body": [
-      "<div class=\"${1:order-summary}\">",
-      "<!-- English: Order summary component -->",
-      "  <h3 class=\"${1:order-summary}__title\">${2:Order Summary}</h3>",
-      "  <ul class=\"${1:order-summary}__items\">",
-      "    <li class=\"${1:order-summary}__item\">",
-      "      ${3:Product 1} <span>${4:$19.99}</span>",
-      "    </li>",
-      "  </ul>",
-      "  <div class=\"${1:order-summary}__total\">",
-      "    <span>Total:</span>",
-      "    <span>${5:$19.99}</span>",
-      "  </div>",
-      "</div>"
-    ],
-    "description": "Order summary"
   }
 }
