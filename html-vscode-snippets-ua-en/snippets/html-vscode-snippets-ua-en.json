@@ -2,9 +2,9 @@
   "Section": {
     "prefix": "xsection",
     "body": [
-      "<section class=\"${1:section}\">",
+      "<section class=\"${1:page-section}\">",
       "<!-- Українською: Тематична група контенту / English: Thematic content group -->",
-      "  <h2 class=\"${1:section}__title\" id=\"${2:section-id}\">$3</h2>",
+      "  <h2 class=\"${1:page-section}-title\" id=\"${2:page-section-id}\">$3</h2>",
       "  $0",
       "</section>"
     ],
@@ -13,8 +13,9 @@
   "Article": {
     "prefix": "xarticle",
     "body": [
-      "<article class=\"${1:article}\">",
+      "<article class=\"${1:page-article}\">",
       "<!-- Українською: Незалежний блок контенту / English: Independent content block -->",
+      "  <h2 class=\"${1:page-article}-title\" id=\"${2:page-article-id}\">$3</h2>",
       "  $0",
       "</article>"
     ],
@@ -83,7 +84,7 @@
   "Heading 4": {
     "prefix": "xh4",
     "body": [
-      "<h4 class=\"${1:small-heading}\">",
+      "<h4 class=\"${1:title}\">",
       "<!-- Українською: Заголовок 4 рівня / English: Heading level 4 -->",
       "  $0",
       "</h4>"
@@ -113,7 +114,7 @@
   "Paragraph": {
     "prefix": "xp",
     "body": [
-      "<p class=\"${1:paragraph}\">",
+      "<p class=\"${1:page-text}\">",
       "<!-- Українською: Абзац / English: Paragraph -->",
       "  $0",
       "</p>"
@@ -367,7 +368,7 @@
   "Image": {
     "prefix": "ximg",
     "body": [
-      "<img class=\"${3:image}\" src=\"${1:image.jpg}\" alt=\"${2:description}\" width=\"${4:300}\" height=\"${5:200}\" loading=\"${6|lazy,eager|}\">",
+      "<img class=\"${3:page-image}\" src=\"${1:image.jpg}\" alt=\"${2:description}\" width=\"${4:300}\" height=\"${5:200}\" loading=\"${6|lazy,eager|}\">",
       "<!-- Українською: Зображення / English: Image -->"
     ],
     "description": "Зображення / Image"
@@ -376,7 +377,7 @@
   "Anchor": {
     "prefix": "xa",
     "body": [
-      "<a class=\"${2:link}\" href=\"${1:#}\" target=\"${3|_self,_blank|}\" rel=\"${4|noopener,noreferrer|}\">",
+      "<a class=\"${2:page-link}\" href=\"${1:#}\" target=\"${3|_self,_blank|}\" rel=\"${4|noopener,noreferrer|}\">",
       "<!-- Українською: Гіперпосилання / English: Hyperlink -->",
       "  $0",
       "</a>"
@@ -944,6 +945,7 @@
       "<!-- Українською: Декларація типу документу HTML5 / English: HTML5 document type declaration -->",
       "<html lang=\"${1|uk,en|}\">",
       "<!-- Українською: Вказує мову сторінки / English: Specifies page language -->",
+      "<!--!!! HEAD !!!-->",
       "<head>",
       "  <meta charset=\"UTF-8\">",
       "  <!-- Українською: Кодування символів (UTF-8 підтримує всі мови) / English: Character encoding (UTF-8 supports all languages) -->",
@@ -952,24 +954,30 @@
 
       "  <meta name=\"description\" content=\"${2:Page description}\">",
       "  <!-- Українською: Опис сторінки для SEO / English: Page description for SEO -->",
+      "<!--!!! STYLES !!!-->",
       "  <link rel=\"stylesheet\" href=\"${3:css/main.css}\">",
       "  <!-- Українською: Підключення CSS стилів / English: CSS stylesheet link -->",
+      "<!--!!! TITLE !!!-->",
       "  <title>${4:Page Title}</title>",
       "  <!-- Українською: Заголовок сторінки (вкладка браузера) / English: Page title (browser tab) -->",
       "</head>",
+      "<!--!!! BODY !!!-->",
       "<body class=\"page\">",
-      "  <header class=\"header\">",
+      "  <header class=\"page-header\">",
       "    <!-- Українською: Верхня частина сторінки (лого, навігація) / English: Top section (logo, navigation) -->",
       "    $5",
       "  </header>",
-      "  <main class=\"main\">",
+      "<!--!!! MAIN !!!-->",
+      "  <main class=\"main-page\">",
       "    <!-- Українською: Основний вміст сторінки / English: Main page content -->",
       "    $6",
       "  </main>",
-      "  <footer class=\"footer\">",
+      "<!--!!! FOOTER !!!-->",
+      "  <footer class=\"page-footer\">",
       "    <!-- Українською: Нижня частина сторінки (копірайт, посилання) / English: Bottom section (copyright, links) -->",
       "    $7",
       "  </footer>",
+      "<!--!!! SCRIPT !!!-->",
       "  <script src=\"${8:js/app.js}\" defer></script>",
       "  <!-- Українською: Підключення JavaScript з відкладеним виконанням / English: JavaScript with deferred execution -->",
       "</body>",
