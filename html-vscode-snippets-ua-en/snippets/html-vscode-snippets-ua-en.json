@@ -954,7 +954,7 @@
 
       "  <meta name=\"description\" content=\"${2:Page description}\">",
       "  <!-- Українською: Опис сторінки для SEO / English: Page description for SEO -->",
-      "<!--!!! STYLES !!!-->",
+      "<!--!!! MODERN NORMALIZE !!!-->",
       "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css\">",
       "<!--!!! STYLES !!!-->",
       "  <link rel=\"stylesheet\" href=\"${3:css/main.css}\">",
