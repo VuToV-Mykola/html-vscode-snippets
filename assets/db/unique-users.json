@@ -1,0 +1,24 @@
+{
+  "total_unique_users": 4,
+  "unique_visitors": 99,
+  "stargazers": {
+    "count": 4,
+    "users": [
+  "Stanislaw0001",
+  "juliavutova-oss",
+  "frankman74",
+  "VuToV-Mykola"
+]
+  },
+  "manual_likes": {
+    "count": 0,
+    "users": []
+  },
+  "all_engaged_users": [
+  "Stanislaw0001",
+  "VuToV-Mykola",
+  "frankman74",
+  "juliavutova-oss"
+],
+  "updated_at": "2025-08-15 20:45:03"
+}
