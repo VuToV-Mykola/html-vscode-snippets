@@ -5,12 +5,24 @@
 
 # HTML5 & BEM Snippets for VS Code
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://html.spec.whatwg.org/)
-[![BEM](https://img.shields.io/badge/BEM-000000?style=for-the-badge&logo=bem&logoColor=white)](https://en.bem.info/)
+<!-- AUTOGEN:STATS -->
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
-[![Version](https://img.shields.io/github/v/release/VuToV-Mykola/html-vscode-snippets)](https://github.com/VuToV-Mykola/html-vscode-snippets/releases)
-[![Downloads](https://img.shields.io/github/downloads/VuToV-Mykola/html-vscode-snippets/total?label=Downloads)](https://github.com/VuToV-Mykola/html-vscode-snippets/releases/latest)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
+
+[![📊 Views](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-markup-hw-02/main/assets/db/visitors-badge.json)](https://github.com/VuToV-Mykola/goit-markup-hw-02/graphs/traffic)
+[![⭐ Stars](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-markup-hw-02/main/assets/db/likes-badge.json)](https://github.com/VuToV-Mykola/goit-markup-hw-02/actions/workflows/screenshot-and-visitor.yaml)
+[![📦 Size](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-markup-hw-02/main/assets/db/repo-size.json)](https://github.com/VuToV-Mykola/goit-markup-hw-02)
+[![📝 Language](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-markup-hw-02/main/assets/db/repo-language.json)](https://github.com/VuToV-Mykola/goit-markup-hw-02)
+[![📄 License](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-markup-hw-02/main/assets/db/repo-license.json)](https://github.com/VuToV-Mykola/goit-markup-hw-02/blob/main/LICENSE)
+
+## 📸 Latest Screenshot
+
+![Project Screenshot](assets/screenshot.png)
+
+<!-- END:AUTOGEN -->
 
 Колекція зручних снипетів для швидкої HTML5-верстки з використанням
 BEM-методології. Повністю підтримує семантичну верстку, доступність та сучасні
@@ -19,7 +31,8 @@ BEM-методології. Повністю підтримує семантич
 
 ## 🎥 Відео-приклад
 
-🇺🇦 [![Video Demo](https://img.youtube.com/vi/ZEnn5RbKXUw/0.jpg)](https://www.youtube.com/watch?v=ZEnn5RbKXUw)
+🇺🇦
+[![Video Demo](https://img.youtube.com/vi/ZEnn5RbKXUw/0.jpg)](https://www.youtube.com/watch?v=ZEnn5RbKXUw)
 
 ## ✨ Особливості
 
