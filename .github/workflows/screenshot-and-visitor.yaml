@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout repository
+      - name: 🔥 Checkout repository
         uses: actions/checkout@v4
         with:
           persist-credentials: true
@@ -53,7 +53,7 @@ jobs:
           {
             cat README_before.tmp
             echo "<!-- AUTOGEN:STATS -->"
-            echo "🔄 Updating statistics and screenshot..."
+            echo "📄 Updating statistics and screenshot..."
             echo "<!-- END:AUTOGEN -->"
             cat README_after.tmp
           } > README.md
@@ -183,7 +183,7 @@ jobs:
           {
             echo "{"
             echo "  \"schemaVersion\": 1,"
-            echo "  \"label\": \"📝 language\","
+            echo "  \"label\": \"🔤 language\","
             echo "  \"message\": \"$MAIN_LANGUAGE\","
             echo "  \"color\": \"green\","
             echo "  \"style\": \"$BADGE_STYLE\""
@@ -292,12 +292,14 @@ jobs:
           sudo apt-get install -y google-chrome-stable jq libgbm-dev
 
           # Install Node dependencies
-          npm install --no-package-lock --no-save puppeteer@latest canvas@latest
+          npm install --no-package-lock --no-save puppeteer@latest
 
           echo "✅ All dependencies installed"
 
       - name: 📸 Generate screenshot
         run: |
+          SCREENSHOT_CREATED=false
+
           node -e "
           const puppeteer = require('puppeteer');
           const fs = require('fs');
@@ -321,10 +323,63 @@ jobs:
               const githubPages = 'https://' + '${{ github.repository_owner }}' + '.github.io/' + '${{ github.event.repository.name }}' + '/';
               const indexPath = path.join(process.cwd(), 'index.html');
               
-              let targetUrl = fs.existsSync(indexPath) ? 'file://' + indexPath : githubPages;
-              console.log('📡 Target URL:', targetUrl);
-
-              await page.goto(targetUrl, { waitUntil: 'networkidle2', timeout: 30000 });
+              let targetUrl;
+              let urlType;
+              let shouldTakeScreenshot = false;
+              
+              if (fs.existsSync(indexPath)) {
+                targetUrl = 'file://' + indexPath;
+                urlType = 'local file';
+                shouldTakeScreenshot = true;
+                console.log('📁 Found local index.html file');
+              } else {
+                targetUrl = githubPages;
+                urlType = 'GitHub Pages';
+                console.log('🌐 Checking GitHub Pages availability...');
+                
+                // Перевіряємо доступність GitHub Pages перед створенням скриншоту
+                try {
+                  const response = await page.goto(targetUrl, { waitUntil: 'networkidle2', timeout: 15000 });
+                  const pageTitle = await page.title();
+                  const pageContent = await page.content();
+                  
+                  // Перевіряємо на помилки 404, 503 або інші проблеми
+                  if (response.status() === 404) {
+                    console.log('❌ GitHub Pages returns 404 - site not found');
+                    console.log('ℹ️ Reason: GitHub Pages is not set up or deployed for this repository');
+                  } else if (response.status() >= 400) {
+                    console.log('❌ GitHub Pages returns error status:', response.status());
+                    console.log('ℹ️ Reason: Server error or site unavailable');
+                  } else if (pageTitle.includes('404') || pageContent.includes('There isn\\'t a GitHub Pages site here')) {
+                    console.log('❌ GitHub Pages shows 404 content - site not properly configured');
+                    console.log('ℹ️ Reason: GitHub Pages exists but shows error page');
+                  } else if (pageContent.includes('github.io') && pageContent.length < 1000) {
+                    console.log('❌ GitHub Pages shows minimal/error content');
+                    console.log('ℹ️ Reason: Site appears to be a placeholder or error page');
+                  } else {
+                    console.log('✅ GitHub Pages is accessible and has content');
+                    shouldTakeScreenshot = true;
+                  }
+                } catch (navError) {
+                  console.log('❌ Cannot access GitHub Pages:', navError.message);
+                  console.log('ℹ️ Reason: Network error or site is completely unavailable');
+                }
+              }
+              
+              if (!shouldTakeScreenshot) {
+                console.log('🚫 Skipping screenshot - no valid content found');
+                console.log('SCREENSHOT_SUCCESS=false');
+                return;
+              }
+              
+              console.log('🔗 Taking screenshot from', urlType + ':', targetUrl);
+              
+              // Якщо це локальний файл, завантажуємо його зараз
+              if (urlType === 'local file') {
+                await page.goto(targetUrl, { waitUntil: 'networkidle2', timeout: 30000 });
+              }
+              
+              // Прокручуємо сторінку для повного завантаження контенту
               await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
               await new Promise(resolve => setTimeout(resolve, 2000));
               await page.evaluate(() => window.scrollTo(0, 0));
@@ -333,34 +388,47 @@ jobs:
               await page.screenshot({ path: screenshotPath, fullPage: true });
               
               const stats = fs.statSync(screenshotPath);
-              console.log('✅ Screenshot created:', Math.round(stats.size / 1024) + 'KB');
+              const fileSizeKB = Math.round(stats.size / 1024);
+              
+              if (stats.size > 0) {
+                console.log('✅ Screenshot created successfully:', fileSizeKB + 'KB from', urlType);
+                console.log('SCREENSHOT_SUCCESS=true');
+              } else {
+                console.log('❌ Screenshot file is empty');
+                if (fs.existsSync(screenshotPath)) fs.unlinkSync(screenshotPath);
+                console.log('SCREENSHOT_SUCCESS=false');
+              }
               
             } catch (error) {
-              console.error('❌ Screenshot failed:', error.message);
+              console.log('❌ Screenshot failed:', error.message);
               
-              const screenshotDir = process.env.SCREENSHOT_DIR || 'assets';
-              const screenshotPath = path.resolve(screenshotDir, 'screenshot.png');
-              if (!fs.existsSync(screenshotDir)) fs.mkdirSync(screenshotDir, { recursive: true });
+              // Визначаємо причину помилки
+              const indexPath = path.join(process.cwd(), 'index.html');
+              if (!fs.existsSync(indexPath)) {
+                console.log('ℹ️ Reason: No index.html found and GitHub Pages is not available');
+              } else {
+                console.log('ℹ️ Reason: Technical error during screenshot capture');
+              }
               
-              const { createCanvas } = require('canvas');
-              const canvas = createCanvas(800, 600);
-              const ctx = canvas.getContext('2d');
-              ctx.fillStyle = '#f0f0f0';
-              ctx.fillRect(0, 0, 800, 600);
-              ctx.fillStyle = '#333';
-              ctx.font = '24px Arial';
-              ctx.textAlign = 'center';
-              ctx.fillText('Screenshot not available', 400, 300);
-              
-              fs.writeFileSync(screenshotPath, canvas.toBuffer('image/png'));
-              console.log('ℹ️ Created fallback screenshot');
+              console.log('SCREENSHOT_SUCCESS=false');
             } finally {
               if (browser) await browser.close();
             }
           }
 
           takeScreenshot().catch(console.error);
-          "
+          " | tee screenshot_output.log
+
+          # Перевіряємо результат створення скриншоту
+          if grep -q "SCREENSHOT_SUCCESS=true" screenshot_output.log; then
+            echo "SCREENSHOT_CREATED=true" >> $GITHUB_ENV
+            echo "🎯 Screenshot will be included in README"
+          else
+            echo "SCREENSHOT_CREATED=false" >> $GITHUB_ENV
+            echo "⏭️ Screenshot section will be skipped in README"
+          fi
+
+          rm -f screenshot_output.log
 
       - name: 📝 Update README with all content
         run: |
@@ -386,14 +454,22 @@ jobs:
             echo "[![📊 Views](https://img.shields.io/endpoint?url=$REPO_URL/$DATA_DIR/visitors-badge.json)](https://github.com/${{ github.repository }}/graphs/traffic)"
             echo "[![⭐ Stars](https://img.shields.io/endpoint?url=$REPO_URL/$DATA_DIR/likes-badge.json)](https://github.com/${{ github.repository }}/actions/workflows/screenshot-and-visitor.yaml)"
             echo "[![📦 Size](https://img.shields.io/endpoint?url=$REPO_URL/$DATA_DIR/repo-size.json)](https://github.com/${{ github.repository }})"
-            echo "[![📝 Language](https://img.shields.io/endpoint?url=$REPO_URL/$DATA_DIR/repo-language.json)](https://github.com/${{ github.repository }})"
+            echo "[![🔤 Language](https://img.shields.io/endpoint?url=$REPO_URL/$DATA_DIR/repo-language.json)](https://github.com/${{ github.repository }})"
             echo "[![📄 License](https://img.shields.io/endpoint?url=$REPO_URL/$DATA_DIR/repo-license.json)](https://github.com/${{ github.repository }}/blob/main/LICENSE)"
             if [ -n "$DOWNLOADS_BADGE" ]; then
               echo "$DOWNLOADS_BADGE"
             fi
-            echo ""
-            echo "## 📸 Latest Screenshot"
-            echo "![Project Screenshot]($SCREENSHOT_DIR/screenshot.png)"
+            
+            # Додаємо секцію скриншоту тільки якщо він був успішно створений
+            if [ "$SCREENSHOT_CREATED" = "true" ] && [ -f "$SCREENSHOT_DIR/screenshot.png" ]; then
+              SCREENSHOT_SIZE=$(stat -f%z "$SCREENSHOT_DIR/screenshot.png" 2>/dev/null || stat -c%s "$SCREENSHOT_DIR/screenshot.png" 2>/dev/null || echo "0")
+              if [ "$SCREENSHOT_SIZE" -gt 0 ]; then
+                echo ""
+                echo "## 📸 Latest Screenshot"
+                echo "![Project Screenshot]($SCREENSHOT_DIR/screenshot.png)"
+              fi
+            fi
+            
             echo "<!-- END:AUTOGEN -->"
             cat README_after.tmp
           } > README.md
@@ -401,17 +477,24 @@ jobs:
           # Очищуємо тимчасові файли
           rm -f README_before.tmp README_after.tmp
 
-          echo "✅ README updated with all content using standard block syntax"
+          echo "✅ README updated with all content"
 
       - name: 📤 Commit and deploy
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "📊 Auto-update: visitors, likes, and screenshot" || exit 0
+
+          # Створюємо більш детальний коміт повідомлення
+          COMMIT_MSG="📊 Auto-update: visitors, likes"
+          if [ "$SCREENSHOT_CREATED" = "true" ]; then
+            COMMIT_MSG="$COMMIT_MSG, and screenshot"
+          fi
+
+          git commit -m "$COMMIT_MSG" || exit 0
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
-          echo "🔄 Triggering updates..."
+          echo "📄 Triggering updates..."
           if curl -s -f -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             "https://api.github.com/repos/${{ github.repository }}/pages" >/dev/null 2>&1; then
             curl -s -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
