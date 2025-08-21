@@ -11,7 +11,7 @@
 [![📊 Views](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/html-vscode-snippets/main/assets/db/visitors-badge.json)](https://github.com/VuToV-Mykola/html-vscode-snippets/graphs/traffic)
 [![⭐ Stars](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/html-vscode-snippets/main/assets/db/likes-badge.json)](https://github.com/VuToV-Mykola/html-vscode-snippets/actions/workflows/screenshot-and-visitor.yaml)
 [![📦 Size](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/html-vscode-snippets/main/assets/db/repo-size.json)](https://github.com/VuToV-Mykola/html-vscode-snippets)
-[![📝 Language](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/html-vscode-snippets/main/assets/db/repo-language.json)](https://github.com/VuToV-Mykola/html-vscode-snippets)
+[![🔤 Language](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/html-vscode-snippets/main/assets/db/repo-language.json)](https://github.com/VuToV-Mykola/html-vscode-snippets)
 [![📄 License](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/html-vscode-snippets/main/assets/db/repo-license.json)](https://github.com/VuToV-Mykola/html-vscode-snippets/blob/main/LICENSE)
 [![⬇️ Downloads](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/html-vscode-snippets/main/assets/db/downloads-badge.json)](https://github.com/VuToV-Mykola/html-vscode-snippets/releases)
 
