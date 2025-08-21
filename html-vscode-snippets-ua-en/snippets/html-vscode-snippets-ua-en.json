@@ -955,7 +955,7 @@
       "    <link rel=\"${10:preconnect}\" href=\"${11:https://fonts.googleapis.com}\">",
       "    <link rel=\"${12:preconnect}\" href=\"${13:https://fonts.gstatic.com}\" crossorigin>",
       "    <link",
-      "      href=\"${14:Google Fonts URL}\"",
+      "      href=\"${14:https://fonts.googleapis.com/}\"",
       "      rel=\"${15:stylesheet}\">",
       "    <!--!!! STYLES !!!-->",
       "    <link rel=\"${16:stylesheet}\" href=\"${17:./css/style.css}\">",
