@@ -2,9 +2,9 @@
   "Section": {
     "prefix": "xsection",
     "body": [
-      "<section class=\"${1:page-section}\">",
+      "<section class=\"${1:page-section section}\">",
       "<!-- Українською: Тематична група контенту / English: Thematic content group -->",
-      "  <h2 class=\"${1/(.*)/$1/}__title\" id=\"${2:${1/(.*)/$1/}-id}\">$3</h2>",
+      "  <h2 class=\"${1/(.*)/$1/}-title\" id=\"${2:${1/(.*)/$1/}-id}\">$3</h2>",
       "  $0",
       "</section>"
     ],
@@ -315,7 +315,7 @@
     "body": [
       "<ul class=\"${1:unordered-list}\">",
       "<!-- Українською: Ненумерований список / English: Unordered List -->",
-      "  <li class=\"${1/(.*)/$1/}__list-item\">",
+      "  <li class=\"${1/(.*)/$1/}-item\">",
       "  <!-- Українською: Елемент списку / English: List item -->",
       "    $0",
       "  </li>",
@@ -367,7 +367,7 @@
   "Image": {
     "prefix": "ximg",
     "body": [
-      "<img class=\"${3:page-image}\" src=\"${1:image.jpg}\" alt=\"${2:description}\" width=\"${4:300}\" height=\"${5:200}\" loading=\"${6|lazy,eager|}\">",
+      "<img class=\"${1:page-image}\" src=\"${2:./images/}\" alt=\"${3:description}\" width=\"${4:300}\" height=\"${5:200}\" loading=\"${6|lazy,eager|}\">",
       "<!-- Українською: Зображення / English: Image -->"
     ],
     "description": "Зображення / Image"
@@ -818,14 +818,15 @@
     ],
     "description": "Час із часовим поясом / Time with timezone"
   },
-  "SVG Container": {
-    "prefix": "xsvg",
+  "SVG Icon Template": {
+    "prefix": "svg-icon",
     "body": [
-      "<svg class=\"${3:svg}\" width=\"${1:100}\" height=\"${2:100}\">",
-      "  <circle cx=\"${4:50}\" cy=\"${5:50}\" r=\"${6:40}\" fill=\"${7:red}\"/>",
+      "<svg class=\"${1:icon}\" width=\"${2:80}\" height=\"${3:80}\">",
+      "  <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->",
+      "  <use href=\"${4:#icon-name}\"></use>",
       "</svg>"
     ],
-    "description": "SVG-контейнер / SVG container"
+    "description": "Українською: SVG іконка з елементом use та плейсхолдерами для всіх атрибутів / English: SVG icon with use element and placeholders for all attributes"
   },
   "MathML Formula": {
     "prefix": "xmath",
