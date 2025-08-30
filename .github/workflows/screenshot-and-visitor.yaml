@@ -233,10 +233,26 @@ jobs:
             echo "SCREENSHOT_DEPENDENCIES_AVAILABLE=false" >> $GITHUB_ENV
           fi
 
+      - name: 🔍 Check if screenshot is commented in README
+        run: |
+          if grep -q "^<!--.*📸 Скріншот проекту" README.md || grep -q "^<!--.*📸 Latest Screenshot" README.md; then
+            echo "📸 Screenshot section is commented out - skipping screenshot generation"
+            echo "SCREENSHOT_SKIP=true" >> $GITHUB_ENV
+          else
+            echo "📸 Screenshot section is active - proceeding with generation"
+            echo "SCREENSHOT_SKIP=false" >> $GITHUB_ENV
+          fi
+
       - name: 📸 Generate screenshot from GitHub Pages
         run: |
           if [ "$SCREENSHOT_DEPENDENCIES_AVAILABLE" = "false" ]; then
             echo "❌ Screenshot dependencies not available - skipping screenshot"
+            echo "SCREENSHOT_CREATED=false" >> $GITHUB_ENV
+            exit 0
+          fi
+
+          if [ "$SCREENSHOT_SKIP" = "true" ]; then
+            echo "⏭️ Screenshot generation skipped - section is commented out"
             echo "SCREENSHOT_CREATED=false" >> $GITHUB_ENV
             exit 0
           fi
@@ -454,8 +470,8 @@ jobs:
               SCREENSHOT_SIZE=$(stat -f%z "$SCREENSHOT_DIR/screenshot.png" 2>/dev/null || stat -c%s "$SCREENSHOT_DIR/screenshot.png" 2>/dev/null || echo "0")
               if [ "$SCREENSHOT_SIZE" -gt 0 ]; then
                 echo ""
-                echo "## 📸 Latest Screenshot"
-                echo "![Project Screenshot]($SCREENSHOT_DIR/screenshot.png)"
+                echo "## 📸 Скріншот проекту"
+                echo "![Project Screenshot](./$SCREENSHOT_DIR/screenshot.png)"
               fi
             fi
             
