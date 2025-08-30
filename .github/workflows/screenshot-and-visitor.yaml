@@ -39,6 +39,16 @@ jobs:
           persist-credentials: true
           fetch-depth: 0
 
+      - name: 🔍 Check if screenshot is commented in README
+        run: |
+          if grep -q "^[[:space:]]*<!--.*📸 Скріншот проекту" README.md || grep -q "^[[:space:]]*<!--.*📸 Latest Screenshot" README.md; then
+            echo "📸 Screenshot section is commented out - skipping screenshot generation"
+            echo "SCREENSHOT_SKIP=true" >> $GITHUB_ENV
+          else
+            echo "📸 Screenshot section is active - proceeding with generation"
+            echo "SCREENSHOT_SKIP=false" >> $GITHUB_ENV
+          fi
+
       - name: 🚀 Initialize workflow
         run: |
           DATA_DIR="$DATA_DIR"
@@ -205,6 +215,10 @@ jobs:
 
       - name: 🖥 Setup Node.js and dependencies
         run: |
+          if [ "$SCREENSHOT_SKIP" = "true" ]; then
+            echo "⏭️ Skipping Node.js setup - screenshot generation disabled"
+            exit 0
+          fi
           echo "🔧 Setting up Node.js..."
           curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
           sudo apt-get install -y nodejs
@@ -231,16 +245,6 @@ jobs:
           else
             echo "❌ Puppeteer could not be installed - screenshot functionality disabled"
             echo "SCREENSHOT_DEPENDENCIES_AVAILABLE=false" >> $GITHUB_ENV
-          fi
-
-      - name: 🔍 Check if screenshot is commented in README
-        run: |
-          if grep -q "^<!--.*📸 Скріншот проекту" README.md || grep -q "^<!--.*📸 Latest Screenshot" README.md; then
-            echo "📸 Screenshot section is commented out - skipping screenshot generation"
-            echo "SCREENSHOT_SKIP=true" >> $GITHUB_ENV
-          else
-            echo "📸 Screenshot section is active - proceeding with generation"
-            echo "SCREENSHOT_SKIP=false" >> $GITHUB_ENV
           fi
 
       - name: 📸 Generate screenshot from GitHub Pages
